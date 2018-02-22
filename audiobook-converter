@@ -1,0 +1,518 @@
+#!/usr/bin/python
+#!coding: utf-8
+import os
+import sys
+import commands
+from espeak import espeak
+import locale
+import gettext
+
+def kivetelszotar(javitottfajl):
+    eredetiszo=[]
+    helyettesitoszo=[]
+    try:    
+        f=open(os.getenv('HOME')+'/hangoskonyv.kiv', "r")
+        sor=f.read()
+    except:
+        return()
+    szavak=sor.split("\n")
+    for i in range(0,len(szavak)-1, 2):
+        eredetiszo=eredetiszo+[szavak[i]]
+        helyettesitoszo=helyettesitoszo+[szavak[i+1]]
+        if szavak[i].islower():
+            eredetiszo=eredetiszo+[str(szavak[i].capitalize())]
+            helyettesitoszo=helyettesitoszo+[str(szavak[i+1].capitalize())]
+    g=open(javitottfajl,"rw")
+    sor=g.read()
+    g.close()
+    i=0
+    for szo in eredetiszo:
+        sor=sor.replace(szo,helyettesitoszo[eredetiszo.index(szo)])
+    g=open(javitottfajl,"w")
+    g.write(sor)
+    if legyeneszunet=="2":
+        g.write("\n\n\n\nv")
+    g.close
+
+def quickstart():
+    title=_("Welcome to Audiobook Converter")
+    message=_("Welcome to Audiobook Converter!\n\
+This application will help you create mp3 audiobooks using\n\
+Espeak. You can choose from the following options:\n\
+Quick Mode - Create an audiobook with the default settings\n\
+Custom Mode - Set all of the conversion parameters manually\n\
+Which mode would you like?")
+    ok_label=_("_Quick Mode")
+    cancel_label=_("_Custom Mode")
+    quit_label=_("_Exit")
+    quickstart_choose=commands.getoutput('message -t "'+title+'" -d "'+message+'" "'+ok_label+'" "'+cancel_label+'" "'+quit_label+'"')
+    if (quickstart_choose=="3") or (quickstart_choose=="-4"):
+        sys.exit()
+#commands.getoutput('zenity --question --title="'+title+'" --text="'+message+'" --ok-label="'+ok_label+'" --cancel-label="'+cancel_label+'" ;echo $?')
+    return quickstart_choose
+
+def filenevbekerese():
+    messagetitle=_("Select source file")
+    filter1=_("All supported formats")
+    filter2=_("Plain text files")
+    filter3=_("Word documents")
+    filter4=_("Pdf files")
+    filter5=_("Odt files")
+    filter6=_("HTML files")
+    parancs='zenity --file-selection --title="'+messagetitle+'" --multiple --separator="\n" --file-filter="'+filter1+' *.txt *.doc *.pdf *.odt *.html" --file-filter="'+filter2+' *.txt" \
+--file-filter="'+filter3+' *.doc" --file-filter="'+filter4+' *.pdf" \
+--file-filter="'+filter5+' *.odt" --file-filter="'+filter6+' *.html *.htm"'
+    adat=commands.getoutput(parancs)
+    if (adat!="") and (adat.find("\n")==-1):
+        if not os.path.exists(adat):
+            #Translators: this is the file not exist error dialog title
+            error_dialog_title=_("This file does not exist")
+            #Translators: this is the file not exist error dialog text
+            #
+            message=_("The file you chose: %s - does not exist.") %(adat)
+            commands.getoutput('zenity --error --title="'+error_dialog_title+'" --text="'+message+'"')
+            adat=filenevbekerese()
+    return adat
+def vagasidobeallitasa():
+    # Translators: this string mean cutting dialog title.
+    #
+    cim=_("Setting the cutting time")
+    # Translators: This string present the cutting time setting dialog text
+    #
+    uzenet=_("Please set the cutting time for splitting\n\
+the audio book. The value is in minutes,\n\
+in 15 minute steps.\n\
+The minimum value of this slider is 15 minutes,\n\
+the maximum value of this slider is 600 minutes.\n\
+The default value of this slider is 60 minutes:")
+    parancs='zenity --scale --title="'+cim+'" --text="'+uzenet+'" --min-value=15 --max-value=600 --value=60 --step=15'
+    vagasido=commands.getoutput(parancs)
+    if vagasido=="":
+        vagasido=60
+    return vagasido
+
+def sebessegbeallitasa():
+    # Translators: this string means the speech rate setting dialog title
+    #
+    cim=_("Setting the speech rate")
+    # Translators: This string meaning the setting speech rate dialog message
+    #
+    uzenet=_("Please set the speech rate in words per minute.\n\
+The minimum value of this slider is 80 words per minute,\n\
+the maximum value of this slider is 390 words per minute.\n\
+The default value of this slider is 230 words per minute:")
+    parancs='zenity --scale --title="'+cim+'" --text="'+uzenet+'" --min-value=80 --max-value=390 --value=230 --step=10'
+    sebesseg=commands.getoutput(parancs)
+    if sebesseg=="":
+        sebesseg=230
+    return sebesseg
+
+def hangmagassagbeallitasa():
+    # Translators: this string meaning setting speech pitch dialog title
+    #
+    cim=_("Setting the speech pitch")
+    # Translators: this string meaning setting speech pitch dialog text
+    #
+    uzenet=_("Please set the speech pitch.\n\
+The minimum value of this slider is 0,\nthe maximum value\
+of this slider is 90.\n\
+The default value of this slider is 30:")
+    hangmagassag=commands.getoutput('zenity --scale --title="'+cim+'" --text="'+uzenet+'" --min-value=0 --max-value=90 --value=30 --step=5')
+    if hangmagassag=="":
+        hangmagassag=30
+    return hangmagassag
+
+def bitratabeallitasa():
+    # Translators: this string meaning bitrate dialog setting title
+    #
+    cim=_("Set the output mp3 files bitrate")
+    # Translators: This string meaning output mp3 bitrate setting dialog text
+    #
+    uzenet=_("Please set the bitrate for the mp3 file(s).\n\
+The range is from 32 to 128, the\ndefault value is 64:")
+    bitrate=commands.getoutput('zenity --scale --title="'+cim+'" --text="'+uzenet+'" --min-value=32 --max-value=128 --step=32 --value=64')
+    if bitrate=="":
+        bitrate=64
+    return bitrate
+
+def legyeneszunet():
+    title=_("Pausing between sentences")
+    uzenet=_("Would you like to insert pauses between the sentences?")
+    oklabeltext=_("_Yes")
+    cancellabeltext=_("_No")
+    legyeneszunet=commands.getoutput('message -t "'+title+'" -d "'+uzenet+'" "'+oklabeltext+'" "'+cancellabeltext+'" -D 1')
+    if legyeneszunet=="-4":
+        legyeneszunet="1"
+    #legyeneszunet=commands.getoutput('zenity --question --text="'+uzenet+'" --ok-label="'+oklabeltext+'" --cancel-label="'+cancellabeltext+'" ;echo $?')
+    return legyeneszunet
+
+def selectwishedvoicecharacter():
+    voicelist=espeak.list_voices()
+    voicename=''
+    for voice in voicelist:
+        voicename=voicename+'"'+voice.name+' ('+voice.identifier+')" '
+    #Translators: this is the title of voice character selection dialog
+    #
+    messagetitle=_("Select the voice character")
+    #Translators: this is the dialog text for voice character selection dialog.
+    #
+    message=_("Select the language variant with which you\nwould like Espeak to\
+read the audio book.\nIf you press the Escape key, the\ncurrent language variant will be used.")
+    #Translators: this is the column name for awailable voice characters.
+    #
+    column=_("Available voices")
+    voicename=commands.getoutput('zenity --list --title="'+messagetitle+'" --text="'+message+'" --column="'+column+'" '+voicename)
+    if voicename!='':
+        return voicename
+    else:
+        lang=os.getenv('LANG')
+        language=lang.split('_')
+        voicecharacter=language[0]
+        return voicecharacter
+
+def need_alternative_language_dialog():
+    need_language_dialog_title=_("language selection")
+    need_language_dialog_message=_("Would you like to choose a different language?\n\
+If you click 'yes', the language selection window will open.\n\
+If you click no, the current language variant will be used.")
+    oklabeltext=_("_Yes")
+    cancellabeltext=_("_No")
+    need_language_list_presenting=commands.getoutput('zenity --question --title="'+need_language_dialog_title+'" --text="'+need_language_dialog_message+'" --ok-label="'+oklabeltext+'" --cancel-label="'+cancellabeltext+'" ; echo $?')
+    return need_language_list_presenting
+
+def present_join_question_dialog():
+    join_dialog_message=_("You have selected multiple files.\n\
+What type of audio file would you like to create from the selected files?")
+    ok_label=_("_Create a single audiobook")
+    cancel_label=_("Create _separate audiobooks")
+    need_joining=commands.getoutput('zenity --question --text="'+join_dialog_message+'" --ok-label="'+ok_label+'" --cancel-label="'+cancel_label+'" ; echo $?')
+    return need_joining
+
+def ask_joined_audio_book_title():
+    default_title_string=_("untitled")
+    dialog_title=_("Choosing an audiobook title")
+    dialog_message=_("You chose to create a combined audiobook.\n\
+Please enter a title for the audiobook.\n\
+This title will be the basename for the audiobook mp3 file(s).\n\
+If you don't provide a title, the audiobook\n\
+will be called %s.") %(default_title_string)
+    audiobook_title=commands.getoutput('zenity --entry --title="'+dialog_title+'" --text="'+dialog_message+'" --entry-text="'+default_title_string+'"')
+    if audiobook_title=="":
+        audiobook_title=default_title_string
+    return audiobook_title
+
+def final_summary_dialog_present(filename, splitting_time, speechrate, speechpitch, bitrate, voicevariant):
+    #Translators: this is the final summary dialog title
+    #
+    summary_message_dialog_title=_("Final summary before conversion")
+    #Translators: this is the final summary dialog message text:
+    #
+    summary_dialog_message=_("You made the following choices:\n")
+    if len(filenevek)<11:
+        summary_dialog_message=summary_dialog_message+gettext.ngettext("Source file:\n%s\n", "Source file(s):\n%s\n", len(filenevek)) %(filename)
+    else:
+        summary_dialog_message=summary_dialog_message+_("Source file(s): Too many files to display!\n")
+    if (len(filenevek)>1) and (need_joining=="0"):
+        summary_dialog_message=summary_dialog_message+_("You requested to create a single audiobook from the selected files,\n\
+the audiobook title will be %s.\n") %(audiobook_title)
+    if (len(filenevek)>1) and (need_joining!="0"):
+        summary_dialog_message=summary_dialog_message+_("You requested to create a separate audiobook for each file.\n")
+    if splitting_time==0:
+        summary_dialog_message=summary_dialog_message+_("You did not request file splitting.\n")
+    else:
+        summary_dialog_message=summary_dialog_message+_("You requested file splitting, the splitting time is %s\nminute(s).\n") %(splitting_time)
+    summary_dialog_message=summary_dialog_message+_("Speech rate: %s\n") %(speechrate)
+    summary_dialog_message=summary_dialog_message+_("Speech pitch: %s\n") %(speechpitch)
+    summary_dialog_message=summary_dialog_message+_("MP3 Bitrate: %s KBPS\n") %(bitrate)
+    if legyeneszunet=="1":
+        summary_dialog_message=summary_dialog_message+_("You requested pauses between sentences.\n")
+    else:
+        summary_dialog_message=summary_dialog_message+_("You did not request pauses between sentences.\n")
+
+    if len(voicevariant)>2:
+        summary_dialog_message=summary_dialog_message+_("Language: %s\n") %(voicevariant)
+    else:
+        summary_dialog_message=summary_dialog_message+_("Language: the current language\n")
+    summary_dialog_message=summary_dialog_message+_("Would you like to continue?\nIf you click 'yes', the conversion will begin.\n\
+If you click 'no', the application will close.")
+    oklabel=_("_Yes")
+    cancellabel=_("_No")
+    answer=commands.getoutput('zenity --question --title="'+summary_message_dialog_title+'" --text="'+summary_dialog_message+'" --ok-label="'+oklabel+'" \
+    --cancel-label="'+cancellabel+'" --no-wrap ;echo $?')
+    return answer
+
+def pdftotxt():
+    if (len(filenevek)>1) and (need_joining=="0"):
+        commands.getoutput('pdftotext "'+TXT_FILE+'" /tmp/temptext.txt')
+        file1=open('/tmp/temptext.txt', 'r')
+        szoveg=file1.read()
+        file1.close()
+        if not os.path.exists(TMP_FILE):
+            file2=open(TMP_FILE, "w")
+        else:
+            file2=open(TMP_FILE, "a")
+        file2.write(szoveg)
+        file2.close()
+    else:
+        commands.getoutput('pdftotext "'+TXT_FILE+'" '+TMP_FILE)
+    kivetelszotar(TMP_FILE)
+
+def doctotxt():
+    if (len(filenevek)>1) and (need_joining=="0"):
+        commands.getoutput('antiword "'+TXT_FILE+'" >>'+TMP_FILE)
+    else:
+        commands.getoutput('antiword "'+TXT_FILE+'" >'+TMP_FILE)
+    kivetelszotar(TMP_FILE)
+
+def odt2txt():
+    if (len(filenevek)>1) and (need_joining=="0"):
+        commands.getoutput('odt2txt --width=80 "'+TXT_FILE+'" >> "'+TMP_FILE+'"')
+    else:
+        commands.getoutput('odt2txt --width=80 "'+TXT_FILE+'" > "'+TMP_FILE+'"')
+    kivetelszotar(TMP_FILE)
+
+def vagas(voicename):
+    filenev=''
+    # Translators: This string meaning main audio book folder name with the users home directory. Feel free to translate this folder name
+    #
+    audiobookdir=_("audiobooks")
+    if (len(filenevek)>1) and (need_joining=="0"):
+        utvonal=str(os.environ['HOME']+'/'+audiobookdir+'/'+audiobook_title)
+        filenev=audiobook_title
+    else:
+        utvonal=str(os.environ['HOME']+'/'+audiobookdir+'/'+basename[0])
+        filenev=basename[0]
+    commands.getoutput('mkdir -p "'+utvonal+'"')
+    utvonal=utvonal+"/"
+    wavfileneve='/tmp/'+filenev+'.wav'
+    # Translators: This string mean temporary speech audio files generation dialog title
+    #
+    cim=_("Generating temporary audio files")
+    uzenet=_("Generating temporary audio files. Please be patient,\n\
+this task could take a long time.")
+    if voicename.find("(")!=-1:
+        voicecharacter=voicename.split("(")[1]
+        voicecharacter=voicecharacter.replace(")", "")
+    else:
+        voicecharacter=voicename
+    if legyeneszunet=="1":
+        commands.getoutput('espeak -v '+voicecharacter+' -m -p '+str(hangmagassag)+' -s '+str(sebesseg)+' -f "'+TMP_FILE+'" -w "'+wavfileneve+'" --split='+str(vagasido)+'|zenity --progress --title="'+cim+'" --text="'+uzenet+'" --auto-close --auto-kill')
+    else:
+        commands.getoutput('espeak -v '+voicecharacter+' -m -z -p '+str(hangmagassag)+' -s '+str(sebesseg)+' -f "'+TMP_FILE+'" -w "'+wavfileneve+'" --split='+str(vagasido)+'|zenity --progress --title="'+cim+'" --text="'+uzenet+'" --auto-close --auto-kill')
+    commands.getoutput('mkdir -p "'+os.environ['HOME']+'/'+audiobookdir+'"')
+    wavok=commands.getoutput("ls /tmp/*.wav")
+    wavok=wavok.split("\n")
+    m3u="/tmp/book.m3u"
+    os.path.supports_unicode_filenames=True
+    f=open(m3u, "w")
+    for wav in wavok:
+        mp3nev=os.path.splitext(os.path.basename(wav))
+        mp3neve=mp3nev[0]+".mp3"
+        # Translators: This message meaning converting mp3 files information message string
+        #
+        uzenet=_("Generating %s...") % mp3neve
+        parancs=('lame -S -b '+str(bitrate)+' "'+wav+'" "'+utvonal+mp3neve+'" |zenity --progress --text="'+uzenet+'" --auto-close --auto-kill')
+        os.system(parancs)
+        f.write(mp3neve+'\n')
+        commands.getoutput('rm "'+wav+'"')
+    f.close()
+    os.system("mv /tmp/book.m3u \""+utvonal+filenev+".m3u\"")
+    mp3szam=commands.getoutput('ls "'+utvonal+filenev+'"*.mp3|wc -l')
+    cim=_("Audio Book Converter")
+    audiobookpath=audiobookdir+'/'+filenev
+    uzenet=gettext.ngettext("The audio book conversion is now finished.\n\
+The converted book is split into %s\n\
+mp3 file. You can find the converted\n\
+audio book in your home directory\n\
+in the %s folder. A M3u playlist\n\
+file is automaticaly generated.",
+    "The audio book conversion is now finished.\n\
+The converted book is split into %s\n\
+mp3 files. You can find the converted\n\
+audio book in your home directory\n\
+in the %s folder. A M3u playlist\n\
+file is automaticaly generated.", int(mp3szam)) % (str(mp3szam), audiobookpath)
+    commands.getoutput('zenity --info --title="'+cim+'" --text="'+uzenet+'"')
+    commands.getoutput('rm "'+TMP_FILE+'"')
+
+def konvertalasegyben(voicename):
+    # Translators: This string meaning main audio book folder name with the users home directory. Feel free to translate this folder name
+    #
+    audiobookdir=_("audiobooks")
+    commands.getoutput('mkdir -p "'+os.environ['HOME']+'/'+audiobookdir+'"')
+    filenev=''
+    if (len(filenevek)>1) and (need_joining=="0"):
+        utvonal=str(os.environ['HOME']+'/'+audiobookdir+'/'+audiobook_title)
+        filenev=audiobook_title
+        uzenet=_("Converting joined audio book...")
+    else:
+        utvonal=str(os.environ['HOME']+'/'+audiobookdir+'/'+basename[0])
+        filenev=basename[0]
+    # Translators: if the user converting a book with one audio file, this string meaning the conversation progress dialog message
+    #
+        uzenet=_("Converting %s file...") % (filenev+basename[1])
+
+    commands.getoutput('mkdir -p "'+utvonal+'"')
+    utvonal=utvonal+'/'
+    if voicename.find("(")!=-1:
+        voicecharacter=voicename.split("(")[1]
+        voicecharacter=voicecharacter.replace(")", "")
+    else:
+        voicecharacter=voicename
+    if legyeneszunet=='1':
+        commands.getoutput('espeak -v '+voicecharacter+' -z -m -p '+str(hangmagassag)+' -s '+str(sebesseg)+' -f "'+TMP_FILE+'" -w /dev/stdout|lame -S -b '+str(bitrate)+' /dev/stdin "'+utvonal+filenev+'.mp3" |zenity --progress --text="'+uzenet+'" --auto-close --auto-kill')
+    else:
+        commands.getoutput('espeak -v '+voicecharacter+' -m -p '+str(hangmagassag)+' -s '+str(sebesseg)+' -f "'+TMP_FILE+'" -w /dev/stdout|lame -S -b '+str(bitrate)+' /dev/stdin "'+utvonal+filenev+'.mp3" |zenity --progress --text="'+uzenet+'" --auto-close --auto-kill')
+    # Translators: This string meaning main audio book converter title
+    #
+    cim=_("Audio Book Converter")
+    # Translators: when the conversation is finished, this string meaning the information message dialog text. %s meaning the audio book folder path.
+    #
+    uzenet=_("The conversion is finished. You can find\n the converted audio book in your home\n \
+directory in the %s folder.") % (audiobookdir+'/'+filenev)
+    commands.getoutput('zenity --info --title="'+cim+'" --text="'+uzenet+'"')
+    commands.getoutput('rm "'+TMP_FILE+'"')
+
+#Main program
+APP="audiobook-converter"
+DIR="/usr/share/locale"
+
+locale.setlocale(locale.LC_ALL, "")
+gettext.bindtextdomain(APP, DIR)
+gettext.textdomain(APP)
+gettext.install(APP, DIR, unicode=True)
+_=gettext.gettext
+if len(sys.argv)!=1:
+    filenevek=[]
+    for i in range(1,len(sys.argv)):
+        if not os.path.exists(sys.argv[i]):
+            print _("The %s file does not exist, the application has not launched.\n") %(sys.argv[i])
+            sys.exit()
+        else:
+            filenevek=filenevek+[sys.argv[i]]
+quickstart_choose=quickstart()
+if len(sys.argv)==1:
+    TXT_FILE=filenevbekerese()
+    filenevek=[]
+    if TXT_FILE.find("\n")!=-1:
+        file=TXT_FILE.split("\n")
+        for name in file:
+            filenevek=filenevek+[name]
+    else:
+        filenevek=filenevek+[TXT_FILE]
+    if TXT_FILE=="":
+        sys.exit()
+if len(filenevek)>1:
+    need_joining=present_join_question_dialog()
+    if need_joining=="0":
+        audiobook_title=ask_joined_audio_book_title()
+if (len(filenevek)>1) and (need_joining=="0"):
+    TMP_FILE='/tmp/'+audiobook_title+'.txt'
+else:
+    TMP_FILE="/tmp/espeak.txt"
+if quickstart_choose=="1":
+    kellvagas="0"
+    vagasido=60
+    sebesseg=230
+    hangmagassag=30
+    bitrate=64
+    legyeneszunet="1"
+else:
+    uzenet=_("Would you like to split the converted\n audio book into smaller files?")
+    oklabel=_("_Yes")
+    cancellabel=_("_No")
+    kellvagas=commands.getoutput('zenity  --question --text="'+uzenet+'" --ok-label="'+oklabel+'" --cancel-label="'+cancellabel+'"; echo $?')
+    if kellvagas=="0":
+        vagasido=vagasidobeallitasa()
+    sebesseg=sebessegbeallitasa()
+    hangmagassag=hangmagassagbeallitasa()
+    bitrate=bitratabeallitasa()
+    legyeneszunet=legyeneszunet()
+needotherlanguage=need_alternative_language_dialog()
+if needotherlanguage=="1":
+    voicecharacter=""
+    lang=os.getenv('LANG')
+    language=lang.split('_')
+    voicecharacter=language[0]
+else:
+    voicecharacter=selectwishedvoicecharacter()
+if len(filenevek)>1:
+    filenev=""
+    for nev in filenevek:
+        if filenevek.index(nev)==len(filenevek)-1:
+            filenev=filenev+nev
+        else:
+            filenev=filenev+nev+"\n"
+else:
+    filenev=filenevek[0]
+if kellvagas=="0":
+    answer=final_summary_dialog_present(filenev, vagasido, sebesseg, hangmagassag,bitrate, voicecharacter)
+else:
+    answer=final_summary_dialog_present(filenev, 0, sebesseg, hangmagassag,bitrate, voicecharacter)
+if answer=="1":
+    sys.exit()
+if (len(filenevek)==1) or (need_joining=="1"):
+    for TXT_FILE in filenevek:
+        basename=os.path.splitext(os.path.basename(TXT_FILE))
+        if basename[1]==".doc":
+            doctotxt()
+        if basename[1]==".pdf":
+            pdftotxt()
+        if basename[1]==".odt":
+            odt2txt()
+        if (basename[1]==".html") or (basename[1]==".htm"):
+            f=open(TXT_FILE,"r")
+            szoveg=f.read()
+            f.close()
+            f=open(TMP_FILE,"w")
+            f.write(szoveg)
+            f.close()
+            kivetelszotar(TMP_FILE)
+        if basename[1]==".txt":
+            f=open(TXT_FILE,"r")
+            szoveg=f.read()
+            f.close()
+            f=open(TMP_FILE,"w")
+            f.write(szoveg)
+            f.close()
+            kivetelszotar(TMP_FILE)
+        if kellvagas=="0":
+            vagas(voicecharacter)
+        else:
+            konvertalasegyben(voicecharacter)
+else:
+    for TXT_FILE in filenevek:
+        basename=os.path.splitext(os.path.basename(TXT_FILE))
+        if basename[1]==".doc":
+            doctotxt()
+        if basename[1]==".pdf":
+            pdftotxt()
+        if basename[1]==".odt":
+            odt2txt()
+        if (basename[1]==".html") or (basename[1]==".htm"):
+            f=open(TXT_FILE,"r")
+            szoveg=f.read()
+            f.close()
+            if not os.path.exists(TMP_FILE):
+                f=open(TMP_FILE,"w")
+            else:
+                f=open(TMP_FILE,"a")
+            f.write(szoveg)
+            f.close()
+            kivetelszotar(TMP_FILE)
+        if basename[1]==".txt":
+            f=open(TXT_FILE,"r")
+            szoveg=f.read()
+            f.close()
+            if not os.path.exists(TMP_FILE):
+                f=open(TMP_FILE,"w")
+            else:
+                f=open(TMP_FILE,"a")
+            f.write(szoveg)
+            f.close()
+            kivetelszotar(TMP_FILE)
+    if kellvagas=="0":
+        vagas(voicecharacter)
+    else:
+        konvertalasegyben(voicecharacter)
+
