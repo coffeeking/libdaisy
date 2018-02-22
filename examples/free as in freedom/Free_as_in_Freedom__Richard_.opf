@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE package PUBLIC "+//ISBN 0-9673008-1-9//DTD OEB 1.2 Package//EN" "http://openebook.org/dtds/oeb-1.2/oebpkg12.dtd">
+<package xmlns="http://openebook.org/namespaces/oeb-package/1.0/" unique-identifier="bookid">
+  <metadata>
+    <dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+      <dc:Identifier id="bookid">urn:isbn:9781449323363</dc:Identifier>
+      <dc:Title>Free as in Freedom: Richard Stallman's Crusade for Free Software</dc:Title>
+      <dc:Rights>Copyright © 2011 Sam Williams</dc:Rights>
+      <dc:Publisher>Bookshare</dc:Publisher>
+      <dc:Subject>COMPUTERS / Operating Systems / Linux</dc:Subject>
+      <dc:Date>2011-11-23</dc:Date>
+      <dc:Description>&lt;p&gt;&lt;i&gt;Free as in Freedom&lt;/i&gt; interweaves biographical snapshots of GNU project founder Richard Stallman with the political, social and economic history of the free software movement. It examines Stallman's unique personality and how that personality has been at turns a driving force and a drawback in terms of the movement's overall success. &lt;/p&gt;</dc:Description>
+      <dc:Identifier scheme="ISBN" id="ID-9781449323363">9781449323363</dc:Identifier>
+      <dc:Creator file-as="Williams, Sam">Sam Williams</dc:Creator>
+      <dc:Language>en-US</dc:Language>
+      <dc:Format>ANSI/NISO Z39.86-2005</dc:Format>
+      <dc:Identifier scheme="BKSH" id="bksh-id">Bookshare-1570464_18462776</dc:Identifier>
+    </dc-metadata>
+    <x-metadata>
+      <meta name="cover" content="cover-image" />
+      <meta name="dtb:multimediaType" content="textNCX" />
+      <meta name="dtb:multimediaContent" content="text,image" />
+      <meta name="dtb:sourcePublisher" content="O'Reilly Media" />
+      <meta name="DCTERMS.date.dateCopyrighted" content="2011" />
+      <meta name="Copyright" content="Sam Williams" />
+      <meta name="Synopsis" content="&amp;lt;p&amp;gt;&amp;lt;i&amp;gt;Free as in Freedom&amp;lt;/i&amp;gt; interweaves biographical snapshots of GNU project founder Richard Stallman with the political, social and economic history of the free software movement. It examines Stallman&amp;apos;s unique personality and how that personality has been at turns a driving force and a drawback in terms of the movement&amp;apos;s overall success. &amp;lt;/p&amp;gt;" />
+      <meta name="dtb:sourceRights" content="Sam Williams" />
+      <meta name="dtb:sourceDate" content="2011-11-23" />
+    </x-metadata>
+  </metadata>
+  <manifest>
+    <item id="xml" href="Free_as_in_Freedom__Richard_.xml" media-type="application/x-dtbook+xml" />
+    <item id="ncx" href="Free_as_in_Freedom__Richard_.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="opf" href="Free_as_in_Freedom__Richard_.opf" media-type="text/xml" />
+    <item id="SMIL1" href="Free_as_in_Freedom__Richard_00001.smil" media-type="application/smil" />
+    <item id="SMIL2" href="Free_as_in_Freedom__Richard_00002.smil" media-type="application/smil" />
+    <item id="SMIL3" href="Free_as_in_Freedom__Richard_00003.smil" media-type="application/smil" />
+    <item id="SMIL4" href="Free_as_in_Freedom__Richard_00004.smil" media-type="application/smil" />
+    <item id="SMIL5" href="Free_as_in_Freedom__Richard_00005.smil" media-type="application/smil" />
+    <item id="SMIL6" href="Free_as_in_Freedom__Richard_00006.smil" media-type="application/smil" />
+    <item id="SMIL7" href="Free_as_in_Freedom__Richard_00007.smil" media-type="application/smil" />
+    <item id="daisyTransform" href="daisyTransform.xsl" media-type="application/xslt+xml" />
+    <item id="daisyCss" href="daisy.css" media-type="text/css" />
+    <item id="htmlCss" href="html.css" media-type="text/css" />
+  </manifest>
+  <spine>
+    <itemref idref="SMIL1" />
+    <itemref idref="SMIL2" />
+    <itemref idref="SMIL3" />
+    <itemref idref="SMIL4" />
+    <itemref idref="SMIL5" />
+    <itemref idref="SMIL6" />
+    <itemref idref="SMIL7" />
+  </spine>
+</package>

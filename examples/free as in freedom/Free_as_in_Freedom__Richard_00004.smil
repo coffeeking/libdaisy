@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+  <head>
+    <meta name="dtb:uid" content="9781449323363" />
+    <meta name="dtb:generator" content="Bookshare.org" />
+    <meta name="dtb:totalElapsedTime" content="0" />
+    <layout>
+      <region id="textRegion" height="auto" width="auto" bottom="auto" top="auto" left="auto" right="auto" fit="hidden" showBackground="always" />
+    </layout>
+    <customAttributes>
+      <customTest id="pagenumCustomTest" defaultState="false" override="visible" />
+      <customTest id="noteCustomTest" defaultState="false" override="visible" />
+    </customAttributes>
+  </head>
+  <body>
+    <seq id="baseseq" class="book" fill="remove">
+      <par id="apc-iddle1052" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#apc-iddle1052" region="textRegion" />
+      </par>
+      <par id="span_000642" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000642" region="textRegion" />
+      </par>
+      <par id="em_000215" class="em">
+        <text src="Free_as_in_Freedom__Richard_.xml#em_000215" region="textRegion" />
+      </par>
+      <par id="span_000644" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000644" region="textRegion" />
+      </par>
+      <par id="p_000957" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000957" region="textRegion" />
+      </par>
+      <par id="p_000958" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000958" region="textRegion" />
+      </par>
+      <par id="apd-gnu_free_documentation_license_left_pare" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#apd-gnu_free_documentation_license_left_pare" region="textRegion" />
+      </par>
+      <par id="span_000645" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000645" region="textRegion" />
+      </par>
+      <par id="span_000646" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000646" region="textRegion" />
+      </par>
+      <par id="span_000647" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000647" region="textRegion" />
+      </par>
+      <par id="span_000648" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000648" region="textRegion" />
+      </par>
+      <par id="apd-iddle1162" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#apd-iddle1162" region="textRegion" />
+      </par>
+      <par id="apd-preamble" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#apd-preamble" region="textRegion" />
+      </par>
+      <par id="p_000960" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000960" region="textRegion" />
+      </par>
+      <par id="p_000961" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000961" region="textRegion" />
+      </par>
+      <par id="p_000962" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000962" region="textRegion" />
+      </par>
+      <par id="apds02-applicability_and_definitions" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds02-applicability_and_definitions" region="textRegion" />
+      </par>
+      <par id="p_000963" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000963" region="textRegion" />
+      </par>
+      <par id="p_000964" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000964" region="textRegion" />
+      </par>
+      <par id="p_000965" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000965" region="textRegion" />
+      </par>
+      <par id="p_000966" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000966" region="textRegion" />
+      </par>
+      <par id="p_000967" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000967" region="textRegion" />
+      </par>
+      <par id="p_000968" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000968" region="textRegion" />
+      </par>
+      <par id="p_000969" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000969" region="textRegion" />
+      </par>
+      <par id="p_000970" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000970" region="textRegion" />
+      </par>
+      <par id="apds03-verbatim_copying" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds03-verbatim_copying" region="textRegion" />
+      </par>
+      <par id="p_000971" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000971" region="textRegion" />
+      </par>
+      <par id="p_000972" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000972" region="textRegion" />
+      </par>
+      <par id="apds04-copying_in_quantity" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds04-copying_in_quantity" region="textRegion" />
+      </par>
+      <par id="p_000973" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000973" region="textRegion" />
+      </par>
+      <par id="p_000974" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000974" region="textRegion" />
+      </par>
+      <par id="p_000975" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000975" region="textRegion" />
+      </par>
+      <par id="p_000976" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000976" region="textRegion" />
+      </par>
+      <par id="apds05-modifications" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds05-modifications" region="textRegion" />
+      </par>
+      <par id="p_000977" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000977" region="textRegion" />
+      </par>
+      <par id="p_000978" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000978" region="textRegion" />
+      </par>
+      <par id="p_000979" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000979" region="textRegion" />
+      </par>
+      <par id="p_000980" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000980" region="textRegion" />
+      </par>
+      <par id="p_000981" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000981" region="textRegion" />
+      </par>
+      <par id="p_000982" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000982" region="textRegion" />
+      </par>
+      <par id="p_000983" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000983" region="textRegion" />
+      </par>
+      <par id="p_000984" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000984" region="textRegion" />
+      </par>
+      <par id="p_000985" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000985" region="textRegion" />
+      </par>
+      <par id="p_000986" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000986" region="textRegion" />
+      </par>
+      <par id="p_000987" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000987" region="textRegion" />
+      </par>
+      <par id="p_000988" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000988" region="textRegion" />
+      </par>
+      <par id="p_000989" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000989" region="textRegion" />
+      </par>
+      <par id="p_000990" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000990" region="textRegion" />
+      </par>
+      <par id="p_000991" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000991" region="textRegion" />
+      </par>
+      <par id="p_000992" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000992" region="textRegion" />
+      </par>
+      <par id="p_000993" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000993" region="textRegion" />
+      </par>
+      <par id="p_000994" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000994" region="textRegion" />
+      </par>
+      <par id="p_000995" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000995" region="textRegion" />
+      </par>
+      <par id="apds06-combining_documents" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds06-combining_documents" region="textRegion" />
+      </par>
+      <par id="p_000996" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000996" region="textRegion" />
+      </par>
+      <par id="p_000997" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000997" region="textRegion" />
+      </par>
+      <par id="p_000998" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000998" region="textRegion" />
+      </par>
+      <par id="apds07-collections_of_documents" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds07-collections_of_documents" region="textRegion" />
+      </par>
+      <par id="p_000999" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_000999" region="textRegion" />
+      </par>
+      <par id="p_001000" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001000" region="textRegion" />
+      </par>
+      <par id="apds08-aggregation_with_independent_works" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds08-aggregation_with_independent_works" region="textRegion" />
+      </par>
+      <par id="p_001001" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001001" region="textRegion" />
+      </par>
+      <par id="p_001002" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001002" region="textRegion" />
+      </par>
+      <par id="apds09-translation" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds09-translation" region="textRegion" />
+      </par>
+      <par id="p_001003" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001003" region="textRegion" />
+      </par>
+      <par id="apds10-termination" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds10-termination" region="textRegion" />
+      </par>
+      <par id="p_001004" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001004" region="textRegion" />
+      </par>
+      <par id="apds11-future_revisions_of_this_license" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds11-future_revisions_of_this_license" region="textRegion" />
+      </par>
+      <par id="span_000649" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000649" region="textRegion" />
+      </par>
+      <a href="http://www.gnu.org/copyleft/" external="true">
+        <par id="a_000087" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000087" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000651" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000651" region="textRegion" />
+      </par>
+      <par id="p_001006" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001006" region="textRegion" />
+      </par>
+      <par id="apds12-addendum_how_to_use_this_license_for_you" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#apds12-addendum_how_to_use_this_license_for_you" region="textRegion" />
+      </par>
+      <par id="p_001007" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001007" region="textRegion" />
+      </par>
+      <par id="em_000217" class="em">
+        <text src="Free_as_in_Freedom__Richard_.xml#em_000217" region="textRegion" />
+      </par>
+      <par id="span_000654" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000654" region="textRegion" />
+      </par>
+      <a href="#apd" external="false">
+        <par id="a_000088" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000088" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000655" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000655" region="textRegion" />
+      </par>
+      <par id="p_001010" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001010" region="textRegion" />
+      </par>
+      <par id="p_001011" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001011" region="textRegion" />
+      </par>
+      <par id="ix01-id2603837" class="h1">
+        <text src="Free_as_in_Freedom__Richard_.xml#ix01-id2603837" region="textRegion" />
+      </par>
+      <par id="h2_000001" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000001" region="textRegion" />
+      </par>
+      <par id="p_001012" class="p">
+        <text src="Free_as_in_Freedom__Richard_.xml#p_001012" region="textRegion" />
+      </par>
+      <par id="h2_000002" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000002" region="textRegion" />
+      </par>
+      <par id="span_000656" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000656" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1081" external="false">
+        <par id="a_000089" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000089" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000657" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000657" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1564" external="false">
+        <par id="a_000090" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000090" region="textRegion" />
+        </par>
+      </a>
+      <par id="h2_000003" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000003" region="textRegion" />
+      </par>
+      <par id="span_000658" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000658" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1001" external="false">
+        <par id="a_000091" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000091" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000659" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000659" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1002" external="false">
+        <par id="a_000092" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000092" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000660" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000660" region="textRegion" />
+      </par>
+      <a href="#apc-iddle1003" external="false">
+        <par id="a_000093" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000093" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000661" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000661" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1004" external="false">
+        <par id="a_000094" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000094" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000662" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000662" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1007" external="false">
+        <par id="a_000095" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000095" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000663" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000663" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1005" external="false">
+        <par id="a_000096" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000096" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000664" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000664" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1009" external="false">
+        <par id="a_000097" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000097" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000665" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000665" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1006" external="false">
+        <par id="a_000098" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000098" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000666" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000666" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1002" external="false">
+        <par id="a_000099" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000099" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000667" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000667" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1010" external="false">
+        <par id="a_000100" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000100" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000668" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000668" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1007" external="false">
+        <par id="a_000101" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000101" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000669" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000669" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1002" external="false">
+        <par id="a_000102" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000102" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000670" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000670" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1009" external="false">
+        <par id="a_000103" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000103" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000671" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000671" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1010" external="false">
+        <par id="a_000104" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000104" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000672" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000672" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1011" external="false">
+        <par id="a_000105" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000105" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000673" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000673" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1012" external="false">
+        <par id="a_000106" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000106" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000674" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000674" region="textRegion" />
+      </par>
+      <a href="#apa-iddle1013" external="false">
+        <par id="a_000107" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000107" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000675" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000675" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1014" external="false">
+        <par id="a_000108" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000108" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000676" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000676" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1012" external="false">
+        <par id="a_000109" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000109" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000677" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000677" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1016" external="false">
+        <par id="a_000110" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000110" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000678" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000678" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1017" external="false">
+        <par id="a_000111" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000111" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000679" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000679" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1011" external="false">
+        <par id="a_000112" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000112" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000680" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000680" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1019" external="false">
+        <par id="a_000113" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000113" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000681" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000681" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1019" external="false">
+        <par id="a_000114" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000114" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000682" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000682" region="textRegion" />
+      </par>
+      <a href="#ch08-iddle1020" external="false">
+        <par id="a_000115" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000115" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000683" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000683" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1021" external="false">
+        <par id="a_000116" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000116" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000684" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000684" region="textRegion" />
+      </par>
+      <a href="#apc-iddle1022" external="false">
+        <par id="a_000117" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000117" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000685" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000685" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1023" external="false">
+        <par id="a_000118" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000118" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000686" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000686" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1005" external="false">
+        <par id="a_000119" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000119" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000687" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000687" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1025" external="false">
+        <par id="a_000120" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000120" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000688" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000688" region="textRegion" />
+      </par>
+      <par id="span_000689" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000689" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1026" external="false">
+        <par id="a_000121" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000121" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000690" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000690" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1027" external="false">
+        <par id="a_000122" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000122" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000691" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000691" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1028" external="false">
+        <par id="a_000123" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000123" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000692" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000692" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1029" external="false">
+        <par id="a_000124" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000124" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000693" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000693" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1030" external="false">
+        <par id="a_000125" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000125" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000694" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000694" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1031" external="false">
+        <par id="a_000126" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000126" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000695" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000695" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1014" external="false">
+        <par id="a_000127" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000127" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000696" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000696" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1026" external="false">
+        <par id="a_000128" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000128" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000697" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000697" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1027" external="false">
+        <par id="a_000129" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000129" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000698" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000698" region="textRegion" />
+      </par>
+      <a href="#apa-iddle1035" external="false">
+        <par id="a_000130" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000130" region="textRegion" />
+        </par>
+      </a>
+      <par id="h2_000004" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000004" region="textRegion" />
+      </par>
+      <par id="span_000699" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000699" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1014" external="false">
+        <par id="a_000131" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000131" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000700" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000700" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1037" external="false">
+        <par id="a_000132" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000132" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000701" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000701" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1038" external="false">
+        <par id="a_000133" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000133" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000702" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000702" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1039" external="false">
+        <par id="a_000134" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000134" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000703" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000703" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1040" external="false">
+        <par id="a_000135" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000135" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000704" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000704" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1041" external="false">
+        <par id="a_000136" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000136" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000705" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000705" region="textRegion" />
+      </par>
+      <a href="#apa-iddle1042" external="false">
+        <par id="a_000137" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000137" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000706" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000706" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1031" external="false">
+        <par id="a_000138" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000138" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000707" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000707" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000139" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000139" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000708" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000708" region="textRegion" />
+      </par>
+      <par id="span_000709" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000709" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1007" external="false">
+        <par id="a_000140" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000140" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000710" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000710" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000141" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000141" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000711" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000711" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1047" external="false">
+        <par id="a_000142" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000142" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000712" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000712" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1048" external="false">
+        <par id="a_000143" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000143" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000713" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000713" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1029" external="false">
+        <par id="a_000144" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000144" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000714" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000714" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1050" external="false">
+        <par id="a_000145" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000145" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000715" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000715" region="textRegion" />
+      </par>
+      <a href="#ch12-iddle1051" external="false">
+        <par id="a_000146" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000146" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000716" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000716" region="textRegion" />
+      </par>
+      <a href="#apc-iddle1052" external="false">
+        <par id="a_000147" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000147" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000717" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000717" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1010" external="false">
+        <par id="a_000148" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000148" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000718" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000718" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1054" external="false">
+        <par id="a_000149" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000149" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000719" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000719" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1055" external="false">
+        <par id="a_000150" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000150" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000720" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000720" region="textRegion" />
+      </par> 
+      <a href="#ch04-iddle1056" external="false"> 
+        <par id="a_000151" class="a"> 
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000151" region="textRegion" />
+        </par>  
+      </a>   
+      <par id="span_000721" class="span">  
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000721" region="textRegion" />
+      </par>   
+      <a href="#ch11-iddle1057" external="false">   
+        <par id="a_000152" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000152" region="textRegion" />
+        </par> 
+      </a> 
+      <par id="span_000722" class="span"> 
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000722" region="textRegion" />
+      </par>   
+      <a href="#ch13-iddle1058" external="false"> 
+        <par id="a_000153" class="a">   
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000153" region="textRegion" />
+        </par>  
+      </a>   
+      <par id="span_000723" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000723" region="textRegion" />
+      </par> 
+      <a href="#ch09-iddle1031" external="false"> 
+        <par id="a_000154" class="a"> 
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000154" region="textRegion" />
+        </par> 
+      </a> 
+      <par id="span_000724" class="span">  
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000724" region="textRegion" />
+      </par>    
+      <a href="#ch09-iddle1060" external="false"> 
+        <par id="a_000155" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000155" region="textRegion" />
+        </par> 
+      </a> 
+      <par id="span_000725" class="span">  
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000725" region="textRegion" />
+      </par>  
+      <a href="#ch09-iddle1061" external="false"> 
+        <par id="a_000156" class="a">    
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000156" region="textRegion" />
+        </par>    
+      </a>   
+      <par id="h2_000005" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000005" region="textRegion" />
+      </par>
+      <par id="span_000726" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000726" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1062" external="false">
+        <par id="a_000157" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000157" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000727" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000727" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1063" external="false">
+        <par id="a_000158" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000158" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000728" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000728" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1064" external="false">
+        <par id="a_000159" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000159" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000729" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000729" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1064" external="false">
+        <par id="a_000160" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000160" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000730" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000730" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1067" external="false">
+        <par id="a_000161" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000161" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000731" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000731" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000162" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000162" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000732" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000732" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1066" external="false">
+        <par id="a_000163" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000163" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000733" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000733" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000164" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000164" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000734" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000734" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1066" external="false">
+        <par id="a_000165" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000165" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000735" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000735" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1067" external="false">
+        <par id="a_000166" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000166" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000736" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000736" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1068" external="false">
+        <par id="a_000167" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000167" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000737" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000737" region="textRegion" />
+      </par>
+      <a href="#ch01-iddle1029" external="false">
+        <par id="a_000168" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000168" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000738" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000738" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1041" external="false">
+        <par id="a_000169" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000169" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000739" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000739" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1071" external="false">
+        <par id="a_000170" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000170" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000740" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000740" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1072" external="false">
+        <par id="a_000171" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000171" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000741" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000741" region="textRegion" />
+      </par>
+      <a href="#apa-iddle1073" external="false">
+        <par id="a_000172" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000172" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000742" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000742" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1074" external="false">
+        <par id="a_000173" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000173" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000743" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000743" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1026" external="false">
+        <par id="a_000174" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000174" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000744" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000744" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1076" external="false">
+        <par id="a_000175" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000175" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000745" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000745" region="textRegion" />
+      </par>
+      <a href="#ch08-iddle1077" external="false">
+        <par id="a_000176" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000176" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000746" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000746" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1078" external="false">
+        <par id="a_000177" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000177" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000747" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000747" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1048" external="false">
+        <par id="a_000178" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000178" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000748" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000748" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1017" external="false">
+        <par id="a_000179" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000179" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000749" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000749" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1012" external="false">
+        <par id="a_000180" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000180" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000750" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000750" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1009" external="false">
+        <par id="a_000181" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000181" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000751" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000751" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1084" external="false">
+        <par id="a_000182" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000182" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000752" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000752" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1084" external="false">
+        <par id="a_000183" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000183" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000753" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000753" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1086" external="false">
+        <par id="a_000184" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000184" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000754" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000754" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1050" external="false">
+        <par id="a_000185" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000185" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000755" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000755" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1088" external="false">
+        <par id="a_000186" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000186" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000756" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000756" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1050" external="false">
+        <par id="a_000187" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000187" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000757" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000757" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1090" external="false">
+        <par id="a_000188" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000188" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000758" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000758" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1090" external="false">
+        <par id="a_000189" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000189" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000759" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000759" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1092" external="false">
+        <par id="a_000190" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000190" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000760" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000760" region="textRegion" />
+      </par>
+      <a href="#apc-iddle1093" external="false">
+        <par id="a_000191" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000191" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000761" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000761" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1009" external="false">
+        <par id="a_000192" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000192" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000762" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000762" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1006" external="false">
+        <par id="a_000193" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000193" region="textRegion" />
+        </par>
+      </a>
+      <par id="h2_000006" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000006" region="textRegion" />
+      </par>
+      <par id="span_000763" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000763" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1096" external="false">
+        <par id="a_000194" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000194" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000764" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000764" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1097" external="false">
+        <par id="a_000195" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000195" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000765" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000765" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1098" external="false">
+        <par id="a_000196" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000196" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000766" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000766" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1099" external="false">
+        <par id="a_000197" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000197" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000767" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000767" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1062" external="false">
+        <par id="a_000198" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000198" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000768" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000768" region="textRegion" />
+      </par>
+      <par id="span_000769" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000769" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1101" external="false">
+        <par id="a_000199" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000199" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000770" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000770" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1031" external="false">
+        <par id="a_000200" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000200" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000771" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000771" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1012" external="false">
+        <par id="a_000201" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000201" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000772" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000772" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1104" external="false">
+        <par id="a_000202" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000202" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000773" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000773" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1105" external="false">
+        <par id="a_000203" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000203" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000774" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000774" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1106" external="false">
+        <par id="a_000204" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000204" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000775" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000775" region="textRegion" />
+      </par>
+      <par id="span_000776" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000776" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1107" external="false">
+        <par id="a_000205" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000205" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000777" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000777" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1108" external="false">
+        <par id="a_000206" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000206" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000778" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000778" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1109" external="false">
+        <par id="a_000207" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000207" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000779" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000779" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1038" external="false">
+        <par id="a_000208" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000208" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000780" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000780" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1111" external="false">
+        <par id="a_000209" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000209" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000781" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000781" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1039" external="false">
+        <par id="a_000210" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000210" region="textRegion" />
+        </par>
+      </a>
+      <par id="h2_000007" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000007" region="textRegion" />
+      </par>
+      <par id="span_000782" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000782" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1113" external="false">
+        <par id="a_000211" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000211" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000783" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000783" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1114" external="false">
+        <par id="a_000212" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000212" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000784" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000784" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1115" external="false">
+        <par id="a_000213" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000213" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000785" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000785" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1116" external="false">
+        <par id="a_000214" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000214" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000786" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000786" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1117" external="false">
+        <par id="a_000215" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000215" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000787" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000787" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1114" external="false">
+        <par id="a_000216" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000216" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000788" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000788" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1120" external="false">
+        <par id="a_000217" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000217" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000789" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000789" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1090" external="false">
+        <par id="a_000218" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000218" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000790" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000790" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1120" external="false">
+        <par id="a_000219" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000219" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000791" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000791" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1062" external="false">
+        <par id="a_000220" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000220" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000792" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000792" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1122" external="false">
+        <par id="a_000221" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000221" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000793" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000793" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1041" external="false">
+        <par id="a_000222" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000222" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000794" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000794" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1120" external="false">
+        <par id="a_000223" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000223" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000795" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000795" region="textRegion" />
+      </par>
+      <a href="#ch08-iddle1124" external="false">
+        <par id="a_000224" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000224" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000796" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000796" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1090" external="false">
+        <par id="a_000225" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000225" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000797" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000797" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1125" external="false">
+        <par id="a_000226" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000226" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000798" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000798" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1125" external="false">
+        <par id="a_000227" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000227" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000799" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000799" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1128" external="false">
+        <par id="a_000228" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000228" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000800" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000800" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1125" external="false">
+        <par id="a_000229" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000229" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000801" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000801" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1125" external="false">
+        <par id="a_000230" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000230" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000802" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000802" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1090" external="false">
+        <par id="a_000231" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000231" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000803" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000803" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1128" external="false">
+        <par id="a_000232" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000232" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000804" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000804" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1041" external="false">
+        <par id="a_000233" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000233" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000805" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000805" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1108" external="false">
+        <par id="a_000234" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000234" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000806" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000806" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1111" external="false">
+        <par id="a_000235" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000235" region="textRegion" />
+        </par>
+      </a>
+      <par id="h2_000008" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000008" region="textRegion" />
+      </par>
+      <par id="span_000807" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000807" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1057" external="false">
+        <par id="a_000236" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000236" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000808" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000808" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1133" external="false">
+        <par id="a_000237" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000237" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000809" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000809" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1125" external="false">
+        <par id="a_000238" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000238" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000810" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000810" region="textRegion" />
+      </par>
+      <a href="#ch04-iddle1135" external="false">
+        <par id="a_000239" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000239" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000811" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000811" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1133" external="false">
+        <par id="a_000240" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000240" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000812" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000812" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1014" external="false">
+        <par id="a_000241" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000241" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000813" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000813" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1138" external="false">
+        <par id="a_000242" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000242" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000814" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000814" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1064" external="false">
+        <par id="a_000243" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000243" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000815" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000815" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1140" external="false">
+        <par id="a_000244" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000244" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000816" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000816" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1037" external="false">
+        <par id="a_000245" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000245" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000817" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000817" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1074" external="false">
+        <par id="a_000246" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000246" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000818" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000818" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1144" external="false">
+        <par id="a_000247" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000247" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000819" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000819" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1098" external="false">
+        <par id="a_000248" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000248" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000820" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000820" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1141" external="false">
+        <par id="a_000249" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000249" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000821" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000821" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1081" external="false">
+        <par id="a_000250" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000250" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000822" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000822" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1098" external="false">
+        <par id="a_000251" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000251" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000823" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000823" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1074" external="false">
+        <par id="a_000252" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000252" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000824" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000824" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1144" external="false">
+        <par id="a_000253" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000253" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000825" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000825" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1081" external="false">
+        <par id="a_000254" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000254" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000826" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000826" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1037" external="false">
+        <par id="a_000255" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000255" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000827" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000827" region="textRegion" />
+      </par>
+      <a href="#ch08-iddle1147" external="false">
+        <par id="a_000256" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000256" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000828" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000828" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1141" external="false">
+        <par id="a_000257" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000257" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000829" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000829" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1057" external="false">
+        <par id="a_000258" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000258" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000830" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000830" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1150" external="false">
+        <par id="a_000259" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000259" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000831" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000831" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1140" external="false">
+        <par id="a_000260" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000260" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000832" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000832" region="textRegion" />
+      </par>
+      <par id="span_000833" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000833" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1152" external="false">
+        <par id="a_000261" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000261" region="textRegion" />
+        </par>
+      </a>
+      <par id="h2_000009" class="h2">
+        <text src="Free_as_in_Freedom__Richard_.xml#h2_000009" region="textRegion" />
+      </par>
+      <par id="span_000834" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000834" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1144" external="false">
+        <par id="a_000262" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000262" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000835" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000835" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1154" external="false">
+        <par id="a_000263" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000263" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000836" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000836" region="textRegion" />
+      </par>
+      <a href="#ch07-iddle1017" external="false">
+        <par id="a_000264" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000264" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000837" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000837" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1062" external="false">
+        <par id="a_000265" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000265" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000838" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000838" region="textRegion" />
+      </par>
+      <par id="span_000839" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000839" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1062" external="false">
+        <par id="a_000266" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000266" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000840" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000840" region="textRegion" />
+      </par>
+      <par id="span_000841" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000841" region="textRegion" />
+      </par>
+      <a href="#ch03-iddle1158" external="false">
+        <par id="a_000267" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000267" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000842" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000842" region="textRegion" />
+      </par>
+      <a href="#ch06-iddle1133" external="false">
+        <par id="a_000268" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000268" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000843" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000843" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1140" external="false">
+        <par id="a_000269" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000269" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000844" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000844" region="textRegion" />
+      </par>
+      <par id="span_000845" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000845" region="textRegion" />
+      </par>
+      <a href="#apa-iddle1161" external="false">
+        <par id="a_000270" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000270" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000846" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000846" region="textRegion" />
+      </par>
+      <a href="#apd-iddle1162" external="false">
+        <par id="a_000271" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000271" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000847" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000847" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1163" external="false">
+        <par id="a_000272" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000272" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000848" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000848" region="textRegion" />
+      </par>
+      <a href="#ch11-iddle1164" external="false">
+        <par id="a_000273" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000273" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000849" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000849" region="textRegion" />
+      </par>
+      <a href="#ch13-iddle1058" external="false">
+        <par id="a_000274" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000274" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000850" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000850" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000275" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000275" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000851" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000851" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1167" external="false">
+        <par id="a_000276" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000276" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000852" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000852" region="textRegion" />
+      </par>
+      <a href="#ch05-iddle1027" external="false">
+        <par id="a_000277" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000277" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000853" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000853" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1062" external="false">
+        <par id="a_000278" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000278" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000854" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000854" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1063" external="false">
+        <par id="a_000279" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000279" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000855" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000855" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1064" external="false">
+        <par id="a_000280" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000280" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000856" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000856" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000281" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000281" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000857" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000857" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1064" external="false">
+        <par id="a_000282" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000282" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000858" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000858" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000283" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000283" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000859" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000859" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000284" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000284" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000860" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000860" region="textRegion" />
+      </par>
+      <par id="span_000861" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000861" region="textRegion" />
+      </par>
+      <a href="#ch02-iddle1062" external="false">
+        <par id="a_000285" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000285" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000862" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000862" region="textRegion" />
+      </par>
+      <a href="#ch09-iddle1175" external="false">
+        <par id="a_000286" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000286" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000863" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000863" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000287" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000287" region="textRegion" />
+        </par>
+      </a>
+      <par id="span_000864" class="span">
+        <text src="Free_as_in_Freedom__Richard_.xml#span_000864" region="textRegion" />
+      </par>
+      <a href="#ch10-iddle1044" external="false">
+        <par id="a_000288" class="a">
+          <text src="Free_as_in_Freedom__Richard_.xml#a_000288" region="textRegion" />
+        </par>
+      </a>
+    </seq>
+  </body>
+</smil>
+

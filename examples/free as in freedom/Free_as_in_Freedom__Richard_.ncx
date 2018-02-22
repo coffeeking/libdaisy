@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <smilCustomTest id="pagenumCustomTest" defaultState="false" override="visible" bookStruct="PAGE_NUMBER" />
+    <smilCustomTest id="noteCustomTest" defaultState="false" override="visible" bookStruct="NOTE" />
+    <meta name="dtb:uid" content="9781449323363" />
+    <meta name="dtb:depth" content="3" />
+    <meta name="dtb:generator" content="Bookshare.org" />
+    <meta name="dtb:totalPageCount" content="1" />
+    <meta name="dtb:maxPageNumber" content="" />
+  </head>
+  <docTitle>
+    <text>Free as in Freedom: Richard Stallman's Crusade for Free Software</text>
+  </docTitle>
+  <docAuthor>
+    <text>Sam Williams</text>
+  </docAuthor>
+  <navMap>
+    <navInfo>
+      <text>Primary navigation is by level</text>
+    </navInfo>
+    <navPoint id="bks_notice" class="navPoint-level-level1" playOrder="1">
+      <navLabel>
+        <text>NOTICE</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#bks_notice_001" />
+    </navPoint>
+    <navPoint id="level2_000001" class="navPoint-level-level2" playOrder="3">
+      <navLabel>
+        <text>Free as in Freedom: Richard Stallman’s Crusade for Free Software</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#index-free_as_in_freedom_richard_stallmanapost" />
+      <navPoint id="level3_000001" class="navPoint-level-level3" playOrder="4">
+        <navLabel>
+          <text>Sam Williams</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#h3_000001" />
+      </navPoint>
+      <navPoint id="level3_000002" class="navPoint-level-level3" playOrder="5">
+        <navLabel>
+          <text>Editor Laurie Petrycki</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#h3_000002" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="upgrade_offer_front" class="navPoint-level-level1" playOrder="15">
+      <navLabel>
+        <text>SPECIAL OFFER: Upgrade this ebook with O’Reilly</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#upgrade_offer_front-front_of_book_promo" />
+    </navPoint>
+    <navPoint id="pr02" class="navPoint-level-level1" playOrder="16">
+      <navLabel>
+        <text>Preface</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#pr02-preface" />
+      <navPoint id="level2_000002" class="navPoint-level-level2" playOrder="17">
+        <navLabel>
+          <text>Comments and Questions</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#pr02-comments_and_questions" />
+        <navPoint id="level3_000003" class="navPoint-level-level3" playOrder="18">
+          <navLabel>
+            <text>O’Reilly &amp; Associates, Inc. 1005 Gravenstein Highway North Sebastopol, ...</text>
+          </navLabel>
+          <content src="Free_as_in_Freedom__Richard_00001.smil#span_000035" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="pr02s02" class="navPoint-level-level1" playOrder="19">
+      <navLabel>
+        <text>Acknowledgments</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#pr02s02-acknowledgments" />
+    </navPoint>
+    <navPoint id="ch01" class="navPoint-level-level1" playOrder="20">
+      <navLabel>
+        <text>Chapter 1. For Want of a Printer</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#ch01-for_want_of_a_printer" />
+      <navPoint id="level2_000003" class="navPoint-level-level2" playOrder="21">
+        <navLabel>
+          <text>Endnote</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#ch01-endnote-id00001" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch02" class="navPoint-level-level1" playOrder="22">
+      <navLabel>
+        <text>Chapter 2. 2001: A Hacker’s Odyssey</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#ch02-two001_a_hackerapostrophes_odyssey" />
+      <navPoint id="level3_000004" class="navPoint-level-level3" playOrder="23">
+        <navLabel>
+          <text>Richard Stallman, circa 2000. “I decided I would develop a free software ...</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#span_000064" />
+      </navPoint>
+      <navPoint id="level2_000005" class="navPoint-level-level2" playOrder="24">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#ch02-endnotes-id00002" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch03" class="navPoint-level-level1" playOrder="25">
+      <navLabel>
+        <text>Chapter 3. A Portrait of the Hacker as a Young Man</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#ch03-portrait_of_the_hacker_as_a_young_man" />
+      <navPoint id="level3_000005" class="navPoint-level-level3" playOrder="26">
+        <navLabel>
+          <text>Stallman’s senior-year transcript at Louis D. Brandeis H.S., November, ...</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#em_000028" />
+      </navPoint>
+      <navPoint id="level2_000007" class="navPoint-level-level2" playOrder="27">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#ch03-endnotes-id00003" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch04" class="navPoint-level-level1" playOrder="28">
+      <navLabel>
+        <text>Chapter 4. Impeach God</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#ch04-impeach_god" />
+      <navPoint id="level2_000008" class="navPoint-level-level2" playOrder="29">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00001.smil#ch04-endnotes-id00004" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch05" class="navPoint-level-level1" playOrder="30">
+      <navLabel>
+        <text>Chapter 5. Small Puddle of Freedom</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#ch05-small_puddle_of_freedom" />
+      <navPoint id="level2_000009" class="navPoint-level-level2" playOrder="31">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00002.smil#ch05-endnotes-id00005" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch06" class="navPoint-level-level1" playOrder="32">
+      <navLabel>
+        <text>Chapter 6. The Emacs Commune</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00002.smil#ch06-emacs_commune" />
+      <navPoint id="level2_000010" class="navPoint-level-level2" playOrder="33">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00002.smil#ch06-endnotes-id00006" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch07" class="navPoint-level-level1" playOrder="34">
+      <navLabel>
+        <text>Chapter 7. A Stark Moral Choice</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00002.smil#ch07-stark_moral_choice" />
+      <navPoint id="level2_000011" class="navPoint-level-level2" playOrder="35">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00002.smil#ch07-endnotes-id00007" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch08" class="navPoint-level-level1" playOrder="36">
+      <navLabel>
+        <text>Chapter 8. St. Ignucius</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00002.smil#ch08-stdot_ignucius" />
+      <navPoint id="level3_000006" class="navPoint-level-level3" playOrder="37">
+        <navLabel>
+          <text>Stallman dressed as St. Ignucius. Photo by Wouter van Oortmersse...</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00002.smil#em_000109" />
+      </navPoint>
+      <navPoint id="level2_000013" class="navPoint-level-level2" playOrder="38">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00002.smil#ch08-endnotes-id00008" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch09" class="navPoint-level-level1" playOrder="39">
+      <navLabel>
+        <text>Chapter 9. The GNU General Public License</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00002.smil#ch09-gnu_general_public_license" />
+      <navPoint id="level2_000014" class="navPoint-level-level2" playOrder="40">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00003.smil#ch09-endnotes-id00009" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch10" class="navPoint-level-level1" playOrder="41">
+      <navLabel>
+        <text>Chapter 10. GNU/Linux</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00003.smil#ch10-gnusoliduslinux" />
+      <navPoint id="level2_000015" class="navPoint-level-level2" playOrder="42">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00003.smil#ch10-endnotes-id00010" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch11" class="navPoint-level-level1" playOrder="43">
+      <navLabel>
+        <text>Chapter 11. Open Source</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00003.smil#ch11-open_source" />
+      <navPoint id="level2_000016" class="navPoint-level-level2" playOrder="44">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00003.smil#ch11-endnotes-id00011" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch12" class="navPoint-level-level1" playOrder="45">
+      <navLabel>
+        <text>Chapter 12. A Brief Journey Through Hacker Hell</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00003.smil#ch12-brief_journey_through_hacker_hell" />
+      <navPoint id="level2_000017" class="navPoint-level-level2" playOrder="46">
+        <navLabel>
+          <text>Endnote</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00003.smil#ch12-endnote-id00012" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="ch13" class="navPoint-level-level1" playOrder="47">
+      <navLabel>
+        <text>Chapter 13. Continuing the Fight</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00003.smil#ch13-continuing_the_fight" />
+      <navPoint id="level2_000018" class="navPoint-level-level2" playOrder="48">
+        <navLabel>
+          <text>Endnote</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00003.smil#ch13-endnote-id00013" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="apa" class="navPoint-level-level1" playOrder="49">
+      <navLabel>
+        <text>Appendix A. Epilogue: Crushing Loneliness</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00003.smil#apa-epilogue_crushing_loneliness" />
+      <navPoint id="level3_000007" class="navPoint-level-level3" playOrder="50">
+        <navLabel>
+          <text>Stallman’s “pleasure” card, handed to me the night of our dinner...</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00003.smil#em_000206" />
+      </navPoint>
+      <navPoint id="level2_000020" class="navPoint-level-level2" playOrder="51">
+        <navLabel>
+          <text>Endnotes</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00003.smil#apa-endnotes-id00014" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="apb" class="navPoint-level-level1" playOrder="52">
+      <navLabel>
+        <text>Appendix B. Terminology</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00003.smil#apb-terminology" />
+    </navPoint>
+    <navPoint id="apc" class="navPoint-level-level1" playOrder="53">
+      <navLabel>
+        <text>Appendix C. Hack, Hackers, and Hacking</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00003.smil#apc-hackcomma_hackerscomma_and_hacking" />
+    </navPoint>
+    <navPoint id="level2_000021" class="navPoint-level-level2" playOrder="54">
+      <navLabel>
+        <text>Appendix D. GNU Free Documentation License (GFDL)</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apd-gnu_free_documentation_license_left_pare" />
+    </navPoint>
+    <navPoint id="level2_000022" class="navPoint-level-level2" playOrder="55">
+      <navLabel>
+        <text>0. Preamble</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apd-preamble" />
+    </navPoint>
+    <navPoint id="apds02" class="navPoint-level-level1" playOrder="56">
+      <navLabel>
+        <text>1. Applicability and Definitions</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds02-applicability_and_definitions" />
+    </navPoint>
+    <navPoint id="apds03" class="navPoint-level-level1" playOrder="57">
+      <navLabel>
+        <text>2. Verbatim Copying</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds03-verbatim_copying" />
+    </navPoint>
+    <navPoint id="apds04" class="navPoint-level-level1" playOrder="58">
+      <navLabel>
+        <text>3. Copying in Quantity</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds04-copying_in_quantity" />
+    </navPoint>
+    <navPoint id="apds05" class="navPoint-level-level1" playOrder="59">
+      <navLabel>
+        <text>4. Modifications</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds05-modifications" />
+    </navPoint>
+    <navPoint id="apds06" class="navPoint-level-level1" playOrder="60">
+      <navLabel>
+        <text>5. Combining Documents</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds06-combining_documents" />
+    </navPoint>
+    <navPoint id="apds07" class="navPoint-level-level1" playOrder="61">
+      <navLabel>
+        <text>6. Collections of Documents</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds07-collections_of_documents" />
+    </navPoint>
+    <navPoint id="apds08" class="navPoint-level-level1" playOrder="62">
+      <navLabel>
+        <text>7. Aggregation with Independent Works</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds08-aggregation_with_independent_works" />
+    </navPoint>
+    <navPoint id="apds09" class="navPoint-level-level1" playOrder="63">
+      <navLabel>
+        <text>8. Translation</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds09-translation" />
+    </navPoint>
+    <navPoint id="apds10" class="navPoint-level-level1" playOrder="64">
+      <navLabel>
+        <text>9. Termination</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds10-termination" />
+    </navPoint>
+    <navPoint id="apds11" class="navPoint-level-level1" playOrder="65">
+      <navLabel>
+        <text>10. Future Revisions of This License</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds11-future_revisions_of_this_license" />
+    </navPoint>
+    <navPoint id="apds12" class="navPoint-level-level1" playOrder="66">
+      <navLabel>
+        <text>ADDENDUM: How to Use This License for Your Documents</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#apds12-addendum_how_to_use_this_license_for_you" />
+    </navPoint>
+    <navPoint id="ix01" class="navPoint-level-level1" playOrder="67">
+      <navLabel>
+        <text>Index</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00004.smil#ix01-id2603837" />
+      <navPoint id="level2_000023" class="navPoint-level-level2" playOrder="68">
+        <navLabel>
+          <text>A note on the digital index</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000001" />
+      </navPoint>
+      <navPoint id="level2_000024" class="navPoint-level-level2" playOrder="69">
+        <navLabel>
+          <text>Symbols</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000002" />
+      </navPoint>
+      <navPoint id="level2_000025" class="navPoint-level-level2" playOrder="70">
+        <navLabel>
+          <text>A</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000003" />
+      </navPoint>
+      <navPoint id="level2_000026" class="navPoint-level-level2" playOrder="71">
+        <navLabel>
+          <text>B</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000004" />
+      </navPoint>
+      <navPoint id="level2_000027" class="navPoint-level-level2" playOrder="72">
+        <navLabel>
+          <text>C</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000005" />
+      </navPoint>
+      <navPoint id="level2_000028" class="navPoint-level-level2" playOrder="73">
+        <navLabel>
+          <text>D</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000006" />
+      </navPoint>
+      <navPoint id="level2_000029" class="navPoint-level-level2" playOrder="74">
+        <navLabel>
+          <text>E</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000007" />
+      </navPoint>
+      <navPoint id="level2_000030" class="navPoint-level-level2" playOrder="75">
+        <navLabel>
+          <text>F</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000008" />
+      </navPoint>
+      <navPoint id="level2_000031" class="navPoint-level-level2" playOrder="76">
+        <navLabel>
+          <text>G</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00004.smil#h2_000009" />
+      </navPoint>
+      <navPoint id="level2_000032" class="navPoint-level-level2" playOrder="77">
+        <navLabel>
+          <text>H</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000010" />
+      </navPoint>
+      <navPoint id="level2_000033" class="navPoint-level-level2" playOrder="78">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000011" />
+      </navPoint>
+      <navPoint id="level2_000034" class="navPoint-level-level2" playOrder="79">
+        <navLabel>
+          <text>J</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000012" />
+      </navPoint>
+      <navPoint id="level2_000035" class="navPoint-level-level2" playOrder="80">
+        <navLabel>
+          <text>K</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000013" />
+      </navPoint>
+      <navPoint id="level2_000036" class="navPoint-level-level2" playOrder="81">
+        <navLabel>
+          <text>L</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000014" />
+      </navPoint>
+      <navPoint id="level2_000037" class="navPoint-level-level2" playOrder="82">
+        <navLabel>
+          <text>M</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000015" />
+      </navPoint>
+      <navPoint id="level2_000038" class="navPoint-level-level2" playOrder="83">
+        <navLabel>
+          <text>N</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000016" />
+      </navPoint>
+      <navPoint id="level2_000039" class="navPoint-level-level2" playOrder="84">
+        <navLabel>
+          <text>O</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00005.smil#h2_000017" />
+      </navPoint>
+      <navPoint id="level2_000040" class="navPoint-level-level2" playOrder="85">
+        <navLabel>
+          <text>P</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00006.smil#h2_000018" />
+      </navPoint>
+      <navPoint id="level2_000041" class="navPoint-level-level2" playOrder="86">
+        <navLabel>
+          <text>Q</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00006.smil#h2_000019" />
+      </navPoint>
+      <navPoint id="level2_000042" class="navPoint-level-level2" playOrder="87">
+        <navLabel>
+          <text>R</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00006.smil#h2_000020" />
+      </navPoint>
+      <navPoint id="level2_000043" class="navPoint-level-level2" playOrder="88">
+        <navLabel>
+          <text>S</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00006.smil#h2_000021" />
+      </navPoint>
+      <navPoint id="level2_000044" class="navPoint-level-level2" playOrder="89">
+        <navLabel>
+          <text>T</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00006.smil#h2_000022" />
+      </navPoint>
+      <navPoint id="level2_000045" class="navPoint-level-level2" playOrder="90">
+        <navLabel>
+          <text>U</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00006.smil#h2_000023" />
+      </navPoint>
+      <navPoint id="level2_000046" class="navPoint-level-level2" playOrder="91">
+        <navLabel>
+          <text>V</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00007.smil#h2_000024" />
+      </navPoint>
+      <navPoint id="level2_000047" class="navPoint-level-level2" playOrder="92">
+        <navLabel>
+          <text>W</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00007.smil#h2_000025" />
+      </navPoint>
+      <navPoint id="level2_000048" class="navPoint-level-level2" playOrder="93">
+        <navLabel>
+          <text>X</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00007.smil#h2_000026" />
+      </navPoint>
+      <navPoint id="level2_000049" class="navPoint-level-level2" playOrder="94">
+        <navLabel>
+          <text>Y</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00007.smil#h2_000027" />
+      </navPoint>
+      <navPoint id="level2_000050" class="navPoint-level-level2" playOrder="95">
+        <navLabel>
+          <text>Z</text>
+        </navLabel>
+        <content src="Free_as_in_Freedom__Richard_00007.smil#h2_000028" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="author_bios" class="navPoint-level-level1" playOrder="96">
+      <navLabel>
+        <text>About the Author</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00007.smil#author_bios-id2603849" />
+    </navPoint>
+    <navPoint id="co02" class="navPoint-level-level1" playOrder="97">
+      <navLabel>
+        <text>Colophon</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00007.smil#co02-colophon" />
+    </navPoint>
+    <navPoint id="upgrade_offer_back" class="navPoint-level-level1" playOrder="98">
+      <navLabel>
+        <text>SPECIAL OFFER: Upgrade this ebook with O’Reilly</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00007.smil#upgrade_offer_back-back_of_book_promo" />
+    </navPoint>
+  </navMap>
+  <pageList>
+    <navLabel>
+      <text>Pages</text>
+    </navLabel>
+    <pageTarget id="pagenum_000001" playOrder="2" type="normal" value="1">
+      <navLabel>
+        <text>pagenum_000001</text>
+      </navLabel>
+      <content src="Free_as_in_Freedom__Richard_00001.smil#pagenum_000001" />
+    </pageTarget>
+  </pageList>
+</ncx>
+
