@@ -3,6 +3,7 @@ API Definition:
 useful links:
 https://github.com/JavierDorado/dbr
 https://github.com/javido/dbr
+https://github.com/javido/dbr/blob/master/dbr/book.py
 https://github.com/xpilgrim/daisy-creator-book
 https://github.com/jscholes/daisy-extract
 http://www.daisy.org/z3986/2005/errataDaisy_2005.html
