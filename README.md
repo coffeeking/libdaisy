@@ -3,5 +3,4 @@ libdaisy Library for working with files in the DAISY (digital accessible informa
 
 # Requirements:
 - python
-- webkit
 - gstreamer
