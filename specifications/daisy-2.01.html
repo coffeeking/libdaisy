@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.daisy.org/sites/default/files/favicon_6.ico" type="image/vnd.microsoft.icon" />
+<style type="text/css">
+body {font-style: normal; font-weight: normal; font-family: arial, verdana, sans-serif; margin-right: 15%; margin-left: 10%;}
+h6 {font-weight: bold; font-size:  75%; color: #000099; margin-top: 1.2em; margin-bottom: 0.2em;}
+h5 {font-weight: bold; font-size:  80%; color: #000099; margin-top: 1.2em; margin-bottom: 0.2em;}
+h4 {font-weight: bold; font-size:  88%; color: #000099; margin-top: 2.0em; margin-bottom: 0.4em;}
+h3 {font-weight: bold; font-size: 100%; color: #000099; margin-top: 2.0em; margin-bottom: 0.5em; letter-spacing: 0.04em;}
+h2 {font-weight: bold; font-size: 115%; color: #000099; margin-top: 2.5em; margin-bottom: 0.5em; letter-spacing: 0.15em;}
+h1 {font-weight: bold; font-size: 130%; color: #000099; margin-top: 3.0em; margin-bottom: 0.5em; letter-spacing: 0.20em;}
+ul.linklist {list-style: none; margin-left: 0em;}
+ul.linklist ul {list-style: none; margin-left: 2em;}
+.top {font-size: 80%; display: block;}
+img {border:inherit none; float: right}
+*.box {font-size:95%; border: 1px solid rgb(100,100,100); padding:0.3em}
+*.author {color:#000099; font-size:80%;}
+*.comment {color:#000099; font-size:80%;}
+*.alert {border: 1px solid red; padding: 0.2em; font-size:95%; font-weight:bold;}
+*.action {color: rgb(0,0,153); font-size:90%; border: 1px solid rgb(0,0,50); padding: 0.2em; background-color: rgb(240,240,240); font-weight:bold;}
+span.bullet {font-family:"Courier New", sans-serif;}
+span.padding {font:.3em "Courier New", sans-serif;}
+code {font: 80% "Courier New", sans-serif;}
+span.indent {margin-left:1em;text-indent:-1em;}
+span.indent2 {text-indent:1.5em;}
+ol.indent3 {margin-top:0em;}
+dt {font-weight:bold;}
+pre {margin-left:10px;}
+.diff-ins {background:yellow;}
+.diff-del {text-decoration: line-through; background:pink; }
+.hidden { position:absolute; left:0px; top:-100px; width:0px; height:0px; overflow: hidden; }
+.center { text-align:center;}
+</style><link rel="canonical" href="/dtbook/spec/2/final/daisy-201.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/14060" />
+
+  <title>DAISY 2.01 Specification | DAISY Consortium</title>
+
+  <meta name="description" content="All published information should be available for people with print disabilities at no greater cost. We develop and maintain international open DAISY standards." />
+
+  <meta name="keywords" content="accessible publishing, print disabilities, inclusive publishing, DAISY, accessible e-books, visually impaired, e-readers,
+libraries for the blind, reading technologies, software players" />
+
+  <link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_791YXBaKKm1ORM_7huSKEsIV9tSWq6wmRkERhuXpN6w.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_VAWJt5QWBzJpZ4IvBxqNwwgSECSD8x7Bd8EgQiXfvDU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_L9DlDeYSMj2TyMjJuGgObWDWFwt8T0VdOD3gSSdA1cY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_Mr-4pjzF64jU3wyEDijBz9y5WaUtDw0s1MYPNVVV8Y0.css" media="all" />
+
+  <script type="text/javascript" src="http://www.daisy.org/sites/default/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script type="text/javascript" src="http://www.daisy.org/sites/default/files/js/js_lgAAOlplEun7p_8Pb-8dM079wtvnfwLZ0hAK0mH7Dto.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-327448-2"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"standalonehtml", "theme_token":"ba3_5VvXNIshjMbtal7ChQAdNkxAx42oy9JfBSiPlac", "js":{"misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Fmodules\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "0":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_api\u002Fdate.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Flogintoboggan\u002Flogintoboggan.css":1, "sites\u002Fall\u002Fmodules\u002Fmollom\u002Fmollom.css":1, "modules\u002Fnode\u002Fnode.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fcalendar\u002Fcss\u002Fcalendar_multiday.css":1, "modules\u002Fforum\u002Fforum.css":1, "sites\u002Fall\u002Fmodules\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fprint\u002Fcss\u002Fprintlinks.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fsystem.menus.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fnormalize.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fwireframes.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Flayouts\u002Fresponsive-sidebars.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fpage-backgrounds.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Ftabs.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fpages.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fblocks.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fnavigation.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fviews-styles.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fnodes.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fcomments.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fforms.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Ffields.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fprint.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Ffresh.css":1}}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|application|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--><!]]>
+</script>
+
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-14060 node-type-html section-dtbook" >
+
+  <div id="skip-link">
+
+    <a href="#main-content" class="element-invisible element-focusable">Skip to Main Content</a>
+
+  </div>
+
+  
+  
+<div id="page">
+
+  <div id="header">
+
+    
+    
+    
+    
+  </div>
+
+  <div id="main">
+
+    <div id="content" class="column">
+                  <a id="main-content"></a>
+	  
+<a href="/"><img src="http://www.daisy.org/images/daisylogo-w.gif" alt="DAISY Consortium Logo - Link to Home Page" width="150" height="110"  /></a>
+                    <h1 class="title" id="page-title">DAISY 2.01 Specification</h1>
+                                            <div class="region region-content">
+    <div id="block-system-main" class="block block-system first last odd">
+
+      
+  <div class="content">
+    <div id="node-14060" class="node node-html view-mode-full clearfix">
+
+  
+      
+  
+  
+  <div class="content">
+    <span class="print-link"></span><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>STATUS: This is a formal recommendation of the DAISY Consortium. It has moved to formal  recommendation status on September 21, 1999.</p>
+<ul><li> <a href="#1.0%20Preface"> 1.0 Preface</a></li>
+  <li><a href="#2.0%20Introduction">2.0 Introduction</a></li>
+  <li><a href="#3.0%20Sidebars,%20Producer%20Notes,%20Note%20References%20and%20Page%20numbers">3.0 Sidebars, Producer Notes, Note References and Page    Numbers</a></li>
+  <ul><li> <a href="#Sidebar%20Example">3.1 Sidebar Example</a></li>
+    <li> <a href="#3.2%20Optional%20Producer%20Note%20Example"> 3.2 Optional Producer Note Example</a></li>
+    <li><a href="#3.3%20Reference%20to%20note%20pairs%20%28footnotes,%20annotations,%20end%20notes,%20rear%20notes.%29">3.3 Reference to        Note Pairs (Footnotes, Annotations, End Notes, Rear Notes.)</a></li>
+    <li><a href="#Example%20in%20SMIL%20file%20using%20the%20SMIL%20%22switch%22%20mechanism">3.4    Example in SMIL File using the SMIL "Switch" Mechanism</a></li>
+  </ul><li><a href="#4.0%20Resource%20File%20Definition%20using%20CSS">4.0 Resource File Definition using CSS</a></li>
+  <ul><li> <a href="#Example%20of%20ACSS%20used%20as%20a%20Resource%20File">4.1 Example of ACSS used as a Resource File</a></li>
+    <li><a href="#Associating%20the%20ACSS%20File%20with%20a%20Book">4.2 Associating the ACSS File with a Book</a></li>
+  </ul><li><a href="#5.0%20CLARIFICATIONS/ERRATA">5.0 Clarifications/Errata</a></li>
+  <ul><li> <a href="#Required%20Meta%20Data%20in%20NCC">5.1 Required Meta Data in NCC</a></li>
+    <li><a href="#Handling%20Unsupported%20or%20Unavailable%20Media%20Objects">5.2 Handling Unsupported or Unavailable Media Objects</a> </li>
+  </ul><p>Document maintained by: George Kerscher<br />
+    If you have any questions, comments, or suggestions please contact George Kerscher at <a href="mailto:kerscher@montana.com">kerscher@montana.com</a></p>
+  <h2>Acknowledgments</h2>
+  <p>Thanks to everyone who has helped to author the working drafts that went into the DAISY  2.01 specification, and to all those who have sent suggestions and corrections. </p>
+  <p>The authors of this specification, the members of the MarkUp Specification Team deserve  much applause for their diligent review of this document, their constructive comments, and  their hard work. A special thanks goes to:</p>
+  <p>George Kerscher, DAISY Consortium / Recording For the Blind and Dyslexic; Mark  Hakkinen, Productivity Works; Harvey Bingham, Yuri Rubinski Insight Foundation; David  Pawson, Royal National Institute for the Blind; Tatsu Nishizawa, Plextor Ltd; Dominic  Labbé, VisuAide Inc.; Lynn Leith, Canadian National Institute for the Blind; Daniel  Reinhard, Swiss Library for the Blind and Visually Impaired; Michael Moodie, National  Library Service for the Blind and Physically Handicapped Library of Congress; Tom  McCartney, Recording For the Blind and Dyslexic; Jason White, Web Accessibility  Initiative; Edmar Schut, Dutch Library for the Visually and Print-handicapped Students and  Professionals; Susanne Seidelin and Christian Wallin, Danish National Library for the  Blind; Thomas Kalish, Association of Talking Book Libraries of Germany; Jan Lindholm,  Labyrinten Inc; Tomas Johansson, Swedish Library of Talking Books and Braille; Brink  Kuchenbrod and Chad Berkley, University of Montana. </p>
+  <h2><a name="1.0 Preface" id="1.0 Preface">1.0 Preface</a></h2>
+  <p>This 2.01 specification extends the <a href="http://www.daisy.org/z3986/specifications/daisy20.php">DAISY 2.0 specification</a>.  New functionality has been added that allows player developers to implement features for  the end users. It is essential to note that this is an addition to the DAISY 2.0  specification. Essentially this is a module that can be added to increase the  functionality. This specification is compatible with the XML DTBook 3.x Document Type  Definition developed jointly by the DAISY Consortium and NISO.</p>
+  <h2><a name="2.0 Introduction" id="2.0 Introduction">2.0 Introduction</a></h2>
+  <p>The DAISY 2.0 specification should be followed when creating the NCC that accompanies  documents created under this 2.01 specification. The NCC is still an HTML file and  functionality has been added to it and to the file set that makes up a DAISY Digital  Talking Book. The DAISY 2.0 specification is based on HTML. The DAISY 2.01 extends the  data representation to the XML DTBook DTD. The source text should be marked up according  to that DTD and information about the DTD can be found at: <a href="http://www.loc.gov/nls/niso/">http://www.loc.gov/nls/niso/</a>. The documentation  for the DTD can be found at: <a href="http://www.loc.gov/nls/niso/dtbook3doc.htm">http://www.loc.gov/nls/niso/dtbook3doc.htm</a>.  The URL for the DTD is "<a href="http://www.loc.gov/nls/niso/dtbook3.dtd&quot;">http://www.loc.gov/nls/niso/dtbook3.dtd"</a>. Also the DAISY  Consortium has produced a set of <a href="http://www.daisy.org/z3986/structure/">Structure Guidelines</a> associated with the DTD.  Both the DTBook XML DTD and the Structure Guidelines should be used when preparing source  files that are based upon this specification.</p>
+  <p>Producers should create their content using the XML DTD and follow the Structure  Guidelines. Six classes of books are defined in the Structure Guidelines.</p>
+  <p>The extensions to the DAISY 2.0 specification are: </p>
+  <ul><li>User may turn on or off the reading of page numbers, if this is supported in the player.      When page numbers are in the NCC direct navigation is already supported.</li>
+    <li>User control of note reference, sidebars, and optional producer notes - These items may      now be turned on or off by the end user, if the player supports this function. Footnotes,      annotations, endnotes, and rear notes, along with non-essential producer notes, and      floating sidebars can be turned on or off by the end user. These items may be placed in      the NCC to make it easy for the end user to navigate to items they may have skipped.</li>
+    <li>Resource list - This allows players to take advantage of the class attribute on      structure elements. The player announcements may use these resources to tailor the      description of items in the NCC.</li>
+  </ul><h2><a name="3.0 Sidebars, Producer Notes, Note References and Page numbers" id="3.0 Sidebars, Producer Notes, Note References and Page numbers">3.0 Sidebars, Producer Notes, Note References and Page  Numbers</a> </h2>
+  <p>The NCC may include references to elements that can be turned on or off by the end  user. The default style for these items should be on. The end user may select a style to  turn these items off. They may then use the NCC entry to navigate to these items for  reading at a later time. This meets the user requirements documents produced by the EBU  and NISO for DTB books. Note references , non-essential sidebars, optional producer notes,  and page numbers fall into this category.</p>
+  <p>The "div" element should be used to indicate these items in the NCC body. The  class attributes are: </p>
+  <ul><li>sidebar - for references to sidebars</li>
+    <li>optional-prodnote - for optional producer notes</li>
+    <li>note-pair - for a footnote, endnote, annotation, or rear note reference pair. </li>
+  </ul><p>NOTICE: The note-pair is made up of two parts, the note reference with a class of  "noteref", and the note with a class of "note". The note reference  (noteref) is the normally super scripted character that points to the note, i.e. footnote,  annotation, end note or rear note.</p>
+  <p>NOTICE: Page numbers are defined in the 2.0 specification.</p>
+  <h3><a name="Sidebar Example" id="Sidebar Example">3.1 Sidebar Example</a></h3>
+  <p>&lt;div id="x123" class="sidebar"&gt;<br />
+    &lt;a id="y123" href="filename.smil#z123"&gt;Sidebar&lt;/a&gt;<br />
+    &lt;/div&gt; </p>
+  <h3><a name="3.2 Optional Producer Note Example" id="3.2 Optional Producer Note Example">3.2 Optional Producer Note Example</a></h3>
+  <p>&lt;div id="x1234" class="optional-prodnote"&gt;<br />
+    &lt;a id="y1234" href="filename.smil#z1234"&gt;Producer's  Note&lt;/a&gt;<br />
+    &lt;/div&gt; </p>
+  <h3><a name="3.3 Reference to note pairs (footnotes, annotations, end notes, rear notes.)" id="3.3 Reference to note pairs (footnotes, annotations, end notes, rear notes.)">3.3 Reference to  Note Pairs (Footnotes, Annotations, End Notes, Rear Notes.)</a></h3>
+  <p>The example below demonstrates the HTML document coding of a note reference: </p>
+  <blockquote>
+    <p>&lt;div class="note-pair"&gt;<br />
+      &lt;span id="xabc1" class="noteref"&gt;<br />
+      &lt;a id="xabc2"    href="filename.smil#xabc3"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/span&gt;<br />
+      &lt;span id="xicg123" class="note" &gt;<br />
+      &lt;a id="afj123" href="filename.smil#xamp3b"&gt;Note Text&lt;/a&gt;<br />
+      &lt;/span&gt; <br />
+      &lt;/div&gt; </p>
+  </blockquote>
+  <h3><a name="Example in SMIL file using the SMIL 'switch' mechanism" id="Example in SMIL file using the SMIL 'switch' mechanism">3.4  Example in SMIL File using the SMIL "Switch" Mechanism</a></h3>
+  <p>In DAISY 2.01 the SMIL 1.0 system-required test attribute is used to control  selective playback of content such as sidebars, footnotes, producer notes, and page  numbers.</p>
+  <p>For the NCC sidebar example above the following usage of the switch mechanism in the  SMIL file would be used. Let us assume the sidebar has two paragraphs. The SMIL entry  would look like this:</p>
+  <blockquote>
+    <blockquote>
+      <p>&lt;seq&gt;<br /></p>
+      <blockquote>
+        <p>&lt;par id="xabc1" system-required="sidebar-on"&gt;<br />
+          &lt;audio src="xabc.wav" clip-begin=...&gt;<br />
+          &lt;text src="xabc.html#xabc2"&gt;<br />
+          &lt;/par&gt;<br />
+          &lt;par id="xabc2" system-required="sidebar-on"&gt;<br />
+          &lt;audio src="xabc.wav" clip-begin=...&gt;<br />
+          &lt;text src="xabc.html#xabc3"&gt;<br />
+          &lt;/par&gt;</p>
+      </blockquote>
+      <p><br />
+        &lt;/seq&gt;</p>
+    </blockquote>
+  </blockquote>
+  <p>The playback system would allow the user to control playback of document constructs by  exposing to the user a list of optional content, such as the sidebar. If the user requests  that sidebars not be presented, the system-required value of "sidebar-on"  would not be active. In this case the playback system, when encountering the &lt;par&gt;  element with system-required="sidebar-on", will ignore that  element. On the other hand, if the sidebars are requested by the user, the playback system  will set the "sidebar-on" value active, and will play any element with the  attribute system-required="sidebar-on". </p>
+  <p>In DAISY 2.01, the following system required values are allowed:</p>
+  <blockquote>
+    <p>sidebar-on<br />
+      prodnote-on<br />
+      footnote-on<br />
+      pagenumber-on </p>
+  </blockquote>
+  <h2><a name="4.0 Resource File Definition using CSS" id="4.0 Resource File Definition using CSS">4.0 Resource File Definition using CSS</a></h2>
+  <p>Playback systems, both hardware devices and software, require a mechanism to provide  audio descriptions of the structural elements of a book. Though some playback systems may  support synthetic speech presentation of textual information, pre-recorded audio  announcements are preferred as they are most natural and can be supported by all devices.  Pre-recorded messages allow a playback device to correctly announce elements such as  "chapter", "section" or any other class name. </p>
+  <p>A resource file is one mechanism to achieve this functionality. Resources in this case  are individual audio files, which are associated with structural elements. In traditional  software development models, a single resource file may point to or contain multiple  resource definitions. Presently, there are no standards existent for defining resource  files for use in this particular application. </p>
+  <p>DAISY 2.01 uses Audio Style Sheets for defining this resource information. Audio Style  Sheets are part of the W3C’s Cascading Style Sheet recommendation (see <a href="http://www.w3.org/TR/REC-CSS2">http://www.w3.org/TR/REC-CSS 2</a>). In addition to  providing resource definitions to be used by playback devices, Audio Cascading Style  Sheets (ACSS) may be used for general audio styling during playback of DAISY 2.01 books. </p>
+  <p>Audio Style Sheets provide the necessary definition to associate an audio cue with a  structural element. The structural element may be an element name (such as H1) or a class  name (such as chapter). A playback device will interpret the Audio Style Sheet and use  this information as needed in the user interface to describe elements to the user.  Examples include position, "where am I" announcements, and structural summaries. </p>
+  <p>Generalized audio styling may be supported by a playback device to implement  "earcons" and to format textual content for presentation with speech synthesis.  This particular utilization of audio styles is not formally defined or required in  DAISY  2.01. </p>
+  <h3><a name="Example of ACSS used as a Resource File" id="Example of ACSS used as a Resource File">4.1 Example of ACSS used as a Resource File</a></h3>
+  <p>Here is an example of a file which associates an audio file with a document element  (H1) and with two class names ("chapter" and "subhead").</p>
+  <blockquote>
+    <p>h1 {cue-before: uri("resources/en-h1.wav")} </p>
+    <p>.chapter {cue-before: uri("resources/en-chapter.mp3")} </p>
+    <p>.subhead {cue-before: uri("resources/en-subhead.mp3")} </p>
+  </blockquote>
+  <p>The uri value points to the file which contains the audio to be associated  with the element or class name. The location of the audio resource files is left to the  producer. In this example, the audio resource files are stored in a "resources"  sub-directory.</p>
+  <h3><a name="Associating the ACSS File with a Book" id="Associating the ACSS File with a Book">4.2 Associating the ACSS File with a Book</a></h3>
+  <p>The standard mechanism for associating a Style Sheet with an HTML document is through  the LINK element. The format of the LINK element is:</p>
+  <blockquote>
+    <p>&lt;link rel="stylesheet" href="en-resource.css"    media="aural" title="Daisy Resource File"&gt; </p>
+  </blockquote>
+  <p>In DAISY 2.01, the style sheet link reference should be contained in the NCC.HTML file.  Individual HTML and XML source files may also include additional style sheet references  for visual and audio presentation. These need to be specified in the documents themselves,  using either the HTML or XML style sheet link element, and reference the media attribute  value appropriate to the stylesheet.</p>
+  <h2><a name="5.0 CLARIFICATIONS/ERRATA" id="5.0 CLARIFICATIONS/ERRATA">5.0 Clarifications/Errata</a></h2>
+  <h3><a name="Required Meta Data in NCC" id="Required Meta Data in NCC">5.1 Required Meta Data in NCC</a></h3>
+  <p>The DAISY 2.01 specification incorrectly showed the meta data for language with out the  DC: prefix. The language identifier should have the DC:language format.</p>
+  <h3><a name="Handling Unsupported or Unavailable Media Objects" id="Handling Unsupported or Unavailable Media Objects">5.2 Handling Unsupported or Unavailable Media Objects</a></h3>
+  <p>If a player encounters a media type that it can't play, it should not cause a  catastrophic failure in the playback system. The default behavior should be to ignore  missing or unsupported media objects. An example of this in a DAISY book is a text event  with no associated audio event. A playback system will effectively skip the event, as,  without the audio object, it has no implied or explicit duration.</p>
+</ul></div></div></div>  </div>
+
+  <ul class="links inline"><li class="print_html first last"><a href="/print/14060" title="Display a printer-friendly version of this page." class="print-page" rel="nofollow">Printer-friendly version</a></li>
+</ul>
+  
+</div><!-- /.node -->
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+          </div><!-- /#content -->
+
+    <div id="navigation">
+
+      
+      
+    </div><!-- /#navigation -->
+
+    
+    
+  </div><!-- /#main -->
+
+  
+</div><!-- /#page -->
+
+
+  
+</body>
+
+</html>

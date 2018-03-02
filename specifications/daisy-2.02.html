@@ -1,0 +1,2180 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>DAISY 2.02 Specification proposed recommendation</title>
+<meta http-equiv="Content-type" content='text/html; charset="iso-8859-1"' />
+<link rel="stylesheet" href="d202.css" type="text/css" />
+</head>
+
+<body>
+<div>
+<a href="http://www.daisy.org"><img src="daisylog.jpg" alt="Logo of daisy consortium" width="80" height="73" /></a>
+</div>
+
+<h1>DAISY 2.02 Specification</h1>
+
+<p>Recommendation, February 28 2001</p>
+<p class="cr">Copyright &copy; <a href="http://www.daisy.org">The DAISY Consortium</a> 1998, 1999, 2000, 2001.
+</p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>This document defines version 2.02 of the DAISY Digital Talking Book (DTB) format. The DAISY format is based on the W3C defined SGML (ISO 8879) applications <a href="http://www.w3.org/TR/xhtml1">XHTML 1.0</a> and <a href="http://www.w3.org/TR/REC-smil">SMIL 1.0</a>. Using this framework, a talking book format is presented that enables navigation within a sequential and hierarchical structure consisting of (marked-up) text synchronized with audio.</p>
+
+<h2 id="docstatus">Status of this document</h2>
+
+<p>This is a formal recommendation of the DAISY Consortium.</p>
+
+<h2 id="toc">Table of Contents</h2>
+
+<ul class="linklist">
+<li><a href="#introduction">1. Introduction</a>
+
+<ul class="nested">
+<li><a href="#description">1.1 Description</a></li>
+
+<li><a href="#dtbclass">1.2 Types of DTB</a></li>
+
+<li><a href="#relation">1.3 Relation to other specifications</a></li>
+</ul>
+</li>
+
+<li><a href="#documents">2. Documents and files used in the standard</a>
+
+<ul class="nested">
+<li><a href="#ncc">2.1 The Navigation Control Center (NCC) document</a></li>
+
+<li><a href="#textdoc">2.2 The text content document (XHTML)</a></li>
+
+<li><a href="#smil">2.3 The SMIL document</a></li>
+
+<li><a href="#mastersmil">2.4 The Master SMIL document</a></li>
+
+<li><a href="#audioformats">2.5 Audio files and formats</a></li>
+</ul>
+</li>
+
+<li><a href="#distribution">3. DTB distribution issues</a>
+
+<ul class="nested">
+<li><a href="#singlebook">3.1 Single volume DTB</a></li>
+
+<li><a href="#multvolubook">3.2 Multiple volume DTB</a></li>
+
+<li><a href="#multbookvolu">3.3 Multiple DTB volume</a></li>
+
+<li><a href="#cdrom">3.4 Distribution/storage media formats</a></li>
+</ul>
+</li>
+
+<li><a href="#changes">Appendix 1. Changes</a></li>
+
+<li><a href="#metatabs">Appendix 2. Tabular presentations of metadata sets in DAISY 2.02 documents</a></li>
+
+<li><a href="#interoperability">Appendix 3. Interoperability and DAISY certification</a></li>
+</ul>
+
+<p>Document maintained by: Markus Gylling</p>
+
+<!--<p>This document can be found at: <a href="http://www.daisy.org/products/menupps.htm">www.daisy.org/products/menupps.htm</a></p>
+-->
+<p>This document can be found at: <a href="http://www.daisy.org/z3986/specifications/daisy_202.html">www.daisy.org/z3986/specifications/daisy_202.html</a></p>
+
+<p>If you have any questions, comments, or suggestions please contact <a href="mailto:markus.gylling@tpb.se">Markus Gylling</a> at markus.gylling@tpb.se</p>
+
+
+<h2>Acknowledgements</h2>
+
+<p>George Kerscher, DAISY Consortium / Recording For the Blind and Dyslexic;
+Markus Gylling, DAISY Consortium / Swedish Library of Talking Books and Braille;
+James Pritchett, Recording For the Blind and Dyslexic;
+Heinz Zyset and Dorota Pograniczna and Matthias Ragaz, Swiss Library for the Blind and Visually Impaired;
+Lynn Leith and Barbara Freeze, Canadian National Institute for the Blind;
+Lars Sonnebo and Thomas Johansson, Swedish Library of Talking Books and Braille;
+Mark Hakkinen, isSound Corporation;
+Jan Lindholm and Diana Hiorth, Labyrinten Inc;
+Harvey Bingham, W3C Web Accessibility Initiative Invited Expert;
+David Pawson and Stephen King and Keith Gladstone, Royal National Institute for the Blind;
+Tatsu Nishizawa, Plextor Ltd;
+Dominic Labbé and Gilles Pepin, VisuAide Inc.;
+Michael Moodie and Lloyd Rasmussen, National Library Service for the Blind and Physically Handicapped Library of Congress;
+Tom McCartney and
+Rej Tanikella, Recording For the Blind and Dyslexic;
+Jason White, Web Accessibility Initiative;
+Edmar Schut, Dutch Library for the Visually and Print-handicapped Students and Professionals; Susanne Seidelin and Christian Wallin, Danish National Library for the Blind;
+Thomas Kalish, Association of Talking Book Libraries of Germany;
+Brink Kuchenbrod and Chad Berkley, University of Montana;
+Daniel Dardailler and Philipp Hoschka, World Wide Web Consortium; Peter Toneby, Ume&aring; University.</p>
+
+<h1 id="introduction">1. Introduction</h1>
+
+
+<h2 id="description">1.1 Description</h2>
+
+<p>This specification extends and revises the <a href="http://www.daisy.org/dtbook/spec/2/final/daisy-201.html">DAISY 2.01 specification</a>. These revisions are are intended to bring this specification more in line with the DAISY 3/NISO DTB specification, and to clarify ambiguities in the DAISY 2.01 specification.</p>
+
+<p>The major revisions made in this version of the specification are:</p>
+
+
+<ul>
+<li>NCC and text content documents use XHTML 1.0 </li>
+<li>NCC and SMIL document metadata has been revised and clarified</li> 
+<li>SMIL document structure requirements have been clarified</li> 
+<li>A master SMIL document structure has been defined</li>
+<li>Supported audio formats have been defined</li> 
+</ul>
+
+<p>The DAISY 2.02 specification is technically backwards compatible with the DAISY 2.0 specification.</p>
+
+<h3 id="nomenclature">1.1.1 Nomenclature</h3>
+<p>Definition: The key words <i>must, must not, required, shall, shall not, should, should not, recommended, may,</i> and <i>optional</i> in this specification are to be interpreted as described in <a href="http://www.ietf.org/rfc/rfc2119.txt">IETF RFC 2119</a>.</p>
+
+<h2 id="relation">1.2 Relation to other specifications</h2>
+
+<p id="tn010203">This specification uses the <a href="http://www.w3.org/TR/xhtml1">XHTML 1.0</a> and
+<a href="http://www.w3.org/TR/REC-smil">SMIL 1.0</a>
+specifications defined by the <a href="http://www.w3.org">World Wide Web Consortium</a>. Bibliographic and document metadata is based on the <a href="http://purl.org/DC/documents/rec-dces-19990702.htm">Dublin Core Metadata Initiative</a> element set.</p>
+
+<h2 id="dtbclass">1.3 Types of DTB</h2>
+
+<p>As specified in the <a href="http://www.daisy.org/dtbook/guidelines/draft/structguide.htm">DAISY structure guidelines</a>, the DAISY 2.02 standard supports the following types of DTB (Digital Talking Book).</p>
+
+<ol>
+<li>Full audio with Title element only. This is a DTB without navigable structure. Only the title of the DTB is available as text - the actual content is presented as linear audio only. Direct access to points within the DTB is not possible.</li>
+
+<li>Full audio with NCC only. This is  a DTB with structure. The structure is two-dimensional, providing both  sequential and hierarchical navigation. In many cases, the structure in this type of Daisy DTB resembles the table of contents of its print source.</li> 
+
+<li>Full audio with NCC and partial text: This is a DTB with structure as described above, and some additional text. The additional text components may occur where keyword searching and direct access to the text would be beneficial, e.g., index, glossary, etc.</li> 
+
+<li>Full audio and full text: This is a DTB with structure and complete text and audio. The audio and the text are synchronized.</li> 
+
+<li>Full text and some audio: This is a DTB with structure, complete text and limited audio. This type of DTB could be used for a dictionary where only pronunciations were provided in audio form.</li> 
+
+<li>Text and no audio: This is a DTB containing an NCC and structured electronic text only. No audio is present.</li> 
+</ol>
+
+<h1 id="documents">2. Documents and files used in the standard</h1>
+
+<p id="tn040506">To comply with the DAISY 2.02 standard, a DTB must contain exactly one <a href="#ncc">NCC.HTML</a> document and one or more <a href="#smil">SMIL</a> documents. Depending on the <a href="#dtbclass">type of DTB</a> made, the DTB may also contain one or more <a href="#audioformats">audio files</a>, and one or more <a href="#textdoc">text content documents (XHTML)</a>. Finally, the DTB may also contain an optional <a href="#mastersmil">Master SMIL</a> document.</p>
+
+<p>The structure of these document and file types, and the DTB functionality they provide, is defined below in sections 2.1 to 2.5.</p>
+
+<h2 id="ncc">2.1 The Navigation Control Center (NCC) document</h2>
+
+<p id="tn07">The NCC document contains an index of navigable entry points into the DTB.&nbsp;
+In the default case these entry points consist of the elements &lt;h1&gt; through &lt;h6&gt; for headings, and the &lt;span&gt; element for pages. Optionally, blocks (group) of text are also used for navigation by means of using the &lt;div&gt; element.</p>
+
+<p>The NCC also implicitly represents the continuous playback order of all the media objects that make up the DTB.
+This is sometimes referred to as "the flow" of narration and/or text.</p>
+
+<p>The NCC is not necessarily identical to the table of contents (TOC) of the print source. It will
+often contain more elements than a print source TOC, that is, the NCC may be an
+expanded version of the TOC based on the content and structure of the body of
+the book.</p>
+
+<p>The NCC should be a <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">XHTML 1.0 </a> transitional DTD compliant document. Use of HTML 4.01 is deprecated in this version of the Daisy DTB specification.</p>
+
+<p id="tn08">The NCC document must be named "NCC.HTML" or "ncc.html".</p>
+
+<h3 id="ncchead">2.1.1 The NCC.HTML &lt;head&gt;</h3>
+
+<p>The &lt;head&gt; element must contain the following children:</p>
+
+<dl>
+<dt id="tn08b">title [exactly one]</dt>
+<dd>As defined in the <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">XHTML 1.0</a> specification</dd>
+
+<dt>meta [several]</dt>
+<dd>The DAISY 2.02 meta element set as defined in section <a href="#h3metadef">2.1.3</a></dd>
+</dl>
+
+<div class="notice"><b>Note</b> - The &lt;head&gt; title only refers to the HTML document itself; it is not considered as a part of the document (DTB) content. No text-audio synchronization occurs on the &lt;head&gt; title.</div>
+
+<h3 id="h3metadescr">2.1.2 NCC.HTML metadata - description</h3>
+
+<p id="tn11">The NCC &lt;head&gt; element must contain a set of &lt;meta&gt; children. These have bibliographic as well as technical-descriptive content.</p>
+
+<p>
+For bibliographic metadata, the DAISY 2.02 specification uses the <a href="http://purl.org/DC/documents/rec-dces-19990702.htm">Dublin Core (DC) Metadata Initiative</a> element set, which is an internationally approved and broadly accepted tool comprised of 15 data categories, and the rules necessary for the description of document resources. Although the DC element set covers a wide range of bibliographic description for digital talking books, there is some vital information that is not adequately covered in those 15 data categories. Additional elements specific to DAISY DTB´s have therefore been developed. These additional elements are designated as "ncc:"-prefixed elements.</p>
+
+<p>The general syntax of the &lt;meta&gt; element is:</p>
+
+<pre class="example">
+&lt;meta name=&quot;metaname&quot; content=&quot;value of metaname&quot; scheme=&quot;scheme for value of metaname&quot; /&gt;
+</pre>
+
+<h4>The name attribute</h4>
+
+<p id="tn12">The name attribute contains the name for the content of a certain meta statement. In DAISY 2.02 DTB´s there are two categories of metanames identified by the prefixes "dc:" or "ncc:".</p>
+
+<dl>
+<dt>The &quot;dc:&quot; prefix indicates a Dublin Core element label.</dt>
+
+<dt>The &quot;ncc:&quot; prefix indicates elements that are not included in the
+  Dublin Core data categories and that are specific to DAISY DTB's. The following element name can
+  be a label for a DAISY-specific element, or a DC element label preceded by the word "source".&nbsp;
+  In the latter instance the element is referencing the print source document
+  from which the DAISY DTB has been created.</dt>
+</dl>
+
+<h4>The content attribute</h4>
+
+<p>The content attribute contains a value for the name attribute.</p>
+
+<dl>
+<dt>&quot;dc:&quot; prefixed elements contain information about the DAISY DTB itself according to the rules of the Dublin Core Initiative.</dt>
+
+<dt>&quot;ncc:&quot; prefixed elements contain additional metadata about the DAISY DTB and its print source.</dt>
+</dl>
+
+<p>The "dc:" and "ncc:" prefixes should be lower case. However, playback systems must not be
+case sensitive when reading these attributes.</p>
+
+<p>To accommodate the provision of additional information about the print source, the Dublin Core element labels are used in meta statements with an
+&quot;ncc:&quot; prefixed metaname that consists of the DC element label
+preceded by the word "source".</p>
+
+<p>Please note that there is one exception. Information about the edition of the print source
+is included by using the metaname "ncc:sourceEdition". DC does not yet have a
+solution for the inclusion of data regarding editions.</p>
+
+<h4>The scheme attribute</h4>
+
+<p>The scheme attribute contains references as to how the value of the content attribute has to be interpreted. Such a reference may consist of a simple syntax model, but normally it is the name of a standard or an authority list. It
+is not meaningful to use a scheme name that does not refer to a file or a standard. In many cases no scheme is needed.</p>
+
+<h3 id="h3metadef">2.1.3 NCC.HTML metadata - definition</h3>
+<p>The &lt;meta&gt; element set in the NCC.HTML must be compliant with the following definition list.</p>
+
+<dl>
+<dt>dc:contributor</dt>
+<dd>content: name(s) of person(s), organization(s), or service(s) responsible for making contributions to the content of the resource like translators, editors, compilers etc.; not for narrator(s) of the DAISY DTB</dd>
+<dd id="tn13">occurrence: optional</dd>
+
+<dt>dc:creator</dt>
+<dd>content: name(s) of author(s) or creator(s) of the intellectual content of the publication</dd>
+<dd id="tn14">occurrence: mandatory (if a creator is known)</dd>
+
+<dt>dc:coverage</dt>
+<dd>content: extent or scope of the content of the resource</dd>
+<dd id="tn16">occurrence: optional</dd>
+
+<dt>dc:date</dt>
+<dd>content: date for publication of the DAISY DTB</dd>
+<dd>scheme: W3C/<a href="http://www.w3.org/TR/NOTE-datetime">ISO8601</a>; recommended syntax: "yyyy-mm-dd"</dd>
+<dd id="tn17">occurrence: mandatory</dd>
+
+<dt>dc:description</dt>
+<dd>content: account of content - annotations</dd>
+<dd id="tn18">occurrence: optional</dd>
+
+<dt>dc:format</dt>
+<dd>content: code for DAISY DTB format; "Daisy 2.02"</dd>
+<dd id="tn19">occurrence: mandatory </dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:format"</dd>
+
+<dt>dc:identifier</dt>
+<dd>content: identifier of the DAISY publication (unique to the publishing organization or group)</dd>
+<dd>scheme: identifier scheme, if existing</dd>
+<dd id="tn20">occurrence: mandatory</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:identifier"</dd>
+
+<dt>dc:language</dt>
+<dd>content: language(s) of the content of the publication</dd>
+<dd>schemes: <a href="http://www.oasis-open.org/cover/iso639a.html">ISO 639</a> language code optionally followed by a two letter country code as in <a href="http://www.oasis-open.org/cover/country3166.html">ISO 3166</a>. For Sweden: "SV" or "SV-SE", for the United Kingdom: "EN" or "EN-UK" etc.</dd>
+<dd id="tn21">occurrence: mandatory</dd>
+
+<dt>dc:publisher</dt>
+<dd>content: publisher of the DAISY DTB.</dd>
+<dd id="tn22">occurrence: mandatory</dd>
+
+<dt>dc:relation</dt>
+<dd>content: a reference to a related resource</dd>
+<dd id="tn23">occurrence: optional</dd>
+
+<dt>dc:rights</dt>
+<dd>content: Information about rights held in and over the DAISY DTB; description of specific legal issues</dd>
+<dd id="tn24">occurrence: optional</dd>
+
+<dt>dc:source</dt>
+<dd>content: a reference to the print source from which the present resource is derived; use with schema ISBN or schemeless.</dd>
+<dd>scheme: ISBN or schemeless</dd>
+<dd id="tn25">occurrence: optional - recommended</dd>
+
+<dt>dc:subject</dt>
+<dd>content: the topic of the content of the DAISY DTB; keywords or classification codes</dd>
+<dd>scheme: if existing, "keyword" is default</dd>
+<dd id="tn26">occurrence: optional - recommended</dd>
+
+<dt>dc:title</dt>
+<dd>content: title of DTB or publication</dd>
+<dd id="tn27">occurrence: mandatory</dd>
+
+<dt>dc:type</dt>
+<dd>content: the nature or genre of the content of the DAISY DTB ; usually taken from an enumerated list</dd>
+<dd id="tn28">occurrence: optional</dd>
+
+<dt>ncc:charset</dt>
+<dd>content: the character set in which the files in the DTB file set are written; e.g. ISO 8859-1 etc.</dd>
+<dd id="tn29">occurrence: mandatory</dd>
+
+<dt>ncc:depth</dt>
+<dd>content: positive integer indicating depth of structure, 1 to 6 as in h1-h6 XHTML headings</dd>
+<dd id="tn30">occurrence: optional - recommended</dd>
+
+<dt>ncc:files</dt>
+<dd>content: positive integer indicating the absolute number of files making up the distribution version of the DAISY DTB. Only files referenced by the DTB shall be included.</dd>
+<dd id="tnfiles">occurrence: optional - recommended</dd>
+
+<dt>ncc:footnotes</dt>
+<dd>content: positive integer or zero indicating the total number of footnotes occuring in the DTB</dd>
+<dd id="tnfnotes">occurrence: mandatory if footnotes are used; inclusion with content value zero is optional - recommended</dd>
+
+<dt>ncc:generator</dt>
+<dd>content: name and version of software that generated the NCC document</dd>
+<dd id="tngen">occurrence: optional</dd>
+
+<dt>ncc:kByteSize</dt>
+<dd>content: total size in kBytes of DAISY DTB fileset</dd>
+<dd id="tnkbs">occurrence: optional</dd>
+
+<dt>ncc:maxPageNormal</dt>
+<dd>positive integer or zero indicating the content of the highest normal page occuring in the DTB</dd>
+<dd id="tnmpn">occurrence: optional - recommended</dd>
+
+<dt>ncc:multimediaType</dt>
+<dd>content: one of the DAISY DTB categories listed in <a href="#dtbclass">section 1.3</a> above: type 1 "audioOnly"; type 2 "audioNcc"; type 3 "audioPartText"; type 4 "audioFullText"; type 5 "textPartAudio"; type 6 "textNcc". (See also the <a href="http://www.daisy.org/dtbook/guidelines/draft/structguide.htm">DAISY structure guidelines</a>)</dd>
+<dd id="tnmmt">occurrence: optional - recommended</dd>
+
+<dt>ncc:narrator</dt>
+<dd>content: name of narrator(s) of the DTB; the person or the name of the synthetic voice which narrated the text of the DTB</dd>
+<dd id="tnNarrator">occurrence: optional - recommended</dd>
+
+<dt>ncc:pageFront</dt>
+<dd>content: positive integer or zero indicating the total number of front pages occuring in the DTB </dd>
+<dd id="tnpfront">occurrence: mandatory</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:page-front"</dd>
+
+<dt>ncc:pageNormal</dt>
+<dd>content: positive integer or zero indicating the total number of normal pages occuring in the DTB</dd>
+<dd id="tnpnorm">occurrence: mandatory</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:page-normal"</dd>
+
+<dt>ncc:pageSpecial</dt>
+<dd>content: positive integer or zero indicating the total number of special pages occuring in the DTB </dd>
+<dd id="tnpspec">occurrence: mandatory</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:page-special"</dd>
+
+<dt>ncc:prodNotes</dt>
+<dd>content: positive integer or zero indicating the total number of producer's notes occuring in the DTB </dd>
+<dd id="prdnts">occurrence: mandatory if producer's notes are used; inclusion with content value zero is optional - recommended</dd>
+
+<dt>ncc:producer</dt>
+<dd>content: name of organization/production unit generating the DAISY DTB</dd>
+<dd id="tnprod">occurrence: optional</dd>
+
+<dt>ncc:producedDate</dt>
+<dd>content: date of first generation of DTB</dd>
+<dd>scheme: W3C/<a href="http://www.w3.org/TR/NOTE-datetime">ISO8601</a>; recommended syntax: "yyyy-mm-dd"</dd>
+<dd id="tnprodD">occurrence: optional</dd>
+
+<dt>ncc:revision</dt>
+<dd>content: integer describing revision number</dd>
+<dd id="tnrev">occurrence: optional</dd>
+
+<dt>ncc:revisionDate</dt>
+<dd>content: date associated with ncc:revision</dd>
+<dd>scheme: W3C/<a href="http://www.w3.org/TR/NOTE-datetime">ISO8601</a>; recommended syntax: "yyyy-mm-dd"</dd>
+<dd id="tnrevD">occurrence: optional</dd>
+
+<dt>ncc:setInfo</dt>
+<dd>content: k of n ; for the kth medium of a DTB spanned on n distribution media</dd>
+<dd id="tnvolfmt">occurrence: mandatory in multiple volume DTB&acute;s; inclusion in single volume DTB&acute;s is optional - recommended</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:setinfo"</dd>
+
+<dt>ncc:sidebars</dt>
+<dd>content: positive integer or zero indicating the total number of sidebars occuring in the DTB</dd>
+<dd id="tnsbars">occurrence: mandatory if sidebars are used; inclusion with content value zero is optional - recommended</dd>
+
+<dt>ncc:sourceDate</dt>
+<dd>content: date of publication of the print source. This will usually be the year of the publication of the print book</dd>
+<dd>scheme: W3C/<a href="http://www.w3.org/TR/NOTE-datetime">ISO8601</a>; usually with syntax: "yyyy"</dd>
+<dd id="tnsdate">occurrence: optional - recommended</dd>
+
+<dt>ncc:sourceEdition</dt>
+<dd>content: edition of the print source</dd>
+<dd id="tnsedn">occurrence: optional - recommended</dd>
+
+<dt>ncc:sourcePublisher</dt>
+<dd>content: publisher of print source</dd>
+<dd id="tnspub">occurrence: optional - recommended</dd>
+
+<dt>ncc:sourceRights</dt>
+<dd>content: information about rights held in and over the print source</dd>
+<dd id="tnsrcrights">occurrence: optional</dd>
+
+<dt>ncc:sourceTitle</dt>
+<dd>content: the title of the print source; is to be used only if different from dc:title</dd>
+<dd id="tnsrctitle">occurrence: mandatory (if the titles differ)</dd>
+
+<dt>ncc:tocItems</dt>
+<dd>content: positive integer indicating the number of navigation points in the NCC document</dd>
+<dd id="tntocItemsP">occurrence: mandatory</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated names "ncc:tocitems" and "ncc:TOCitems"</dd>
+
+<dt>ncc:totalTime</dt>
+<dd>content: time of the recording</dd>
+<dd>scheme: "hh:mm:ss"</dd>
+<dd id="ttlTime">occurrence: mandatory</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:totaltime"</dd>
+
+<dt>http-equiv</dt>
+<dd>content: a statement that specifies the content type and the character encoding in the document</dd>
+<dd id="httpEqv">occurrence: optional</dd>
+</dl>
+
+<p>
+In addition to the above definition list, it is allowed to use arbitrary metadata elements to support producer-specific metadata issues. Such meta elements shall carry a "prod:" prefix and shall be ignored by playback systems.
+</p>
+
+<div class="notice"><b>Note</b> - &lt;meta&gt; elements in NCC.HTML always describe the full DTB. Example: In a multi volume DTB, ncc:kByteSize describes the total size of the DTB fileset, not the size of files contained on the current carrier media. The only NCC.HTML &lt;meta&gt; element that varies depending on multiple volumes is ncc:setInfo.</div>
+
+<div class="notice"><b>Note</b> - When content data for &lt;meta&gt; elements has multiple entries (for example dc:creator in a book with several authors), the element should occur multiple times within the DTB &lt;meta&gt; element set. See <a href="#nccMetaTab">Appendix A1.2</a>.</div>
+
+<div class="notice" id="oebMetaAttr"><b>Note</b> - For Open eBook&trade; 1.0 meta data harmonization purposes, the attributes "role" and "file-as" occuring on dc:contributor and dc:creator are regarded as DAISY 2.02 compliant. 
+</div>
+
+<h3 id="h3metaex">2.1.4 Example of NCC.HTML &lt;head&gt;</h3>
+
+<p><em>(All mandatory and some optional elements are included in this example)</em></p>
+
+<pre class="example">
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;Economics&lt;/title&gt;
+  &lt;meta http-equiv="Content-type" content='text/html; charset="iso-8859-1"' /&gt;
+  &lt;meta name=&quot;dc:title&quot; content=&quot;Economics&quot; /&gt;
+  &lt;meta name=&quot;dc:creator&quot; content=&quot;Richard G. Lipsey&quot; /&gt;
+  &lt;meta name=&quot;dc:creator&quot; content=&quot;Paul N. Courant&quot; /&gt;
+  &lt;meta name=&quot;dc:creator&quot; content=&quot;Douglas D. Purvis&quot; /&gt;
+  &lt;meta name=&quot;dc:creator&quot; content=&quot;Peter O. Steiner&quot; /&gt;
+  &lt;meta name=&quot;dc:date&quot; content=&quot;2000-09-05&quot; scheme=&quot;yyyy-mm-dd&quot; /&gt;
+  &lt;meta name=&quot;dc:format&quot; content=&quot;Daisy 2.02&quot; /&gt;
+  &lt;meta name=&quot;dc:identifier&quot; content=&quot;DTB00345&quot; /&gt;
+  &lt;meta name=&quot;dc:language&quot; content=&quot;EN&quot; scheme=&quot;ISO 639&quot; /&gt;
+  &lt;meta name=&quot;dc:publisher&quot; content=&quot;TPB&quot; /&gt;
+  &lt;meta name=&quot;dc:source&quot; content=&quot;0-065-01022-1&quot; scheme=&quot;ISBN&quot; /&gt;
+  &lt;meta name=&quot;dc:subject&quot; content=&quot;Qb&quot; /&gt;
+  &lt;meta name=&quot;ncc:sourceDate&quot; content=&quot;1993&quot; scheme=&quot;yyyy&quot; /&gt;
+  &lt;meta name=&quot;ncc:sourceEdition&quot; content=&quot;1&quot; /&gt;
+  &lt;meta name=&quot;ncc:sourcePublisher&quot; content=&quot;Harper Collins&quot; /&gt;
+  &lt;meta name=&quot;ncc:charset&quot; content=&quot;iso-8859-1&quot; /&gt;
+  &lt;meta name=&quot;ncc:generator&quot; content=&quot;LpStudioGen 1.6&quot; /&gt;
+  &lt;meta name=&quot;ncc:narrator&quot; content=&quot;Timothy Ocklind&quot; /&gt;
+  &lt;meta name=&quot;ncc:tocItems&quot; content=&quot;1024&quot; /&gt;
+  &lt;meta name=&quot;ncc:totalTime&quot; content=&quot;91:27:21&quot; scheme=&quot;hh:mm:ss&quot; /&gt;
+  &lt;meta name=&quot;ncc:pageNormal&quot; content=&quot;881&quot; /&gt;
+  &lt;meta name=&quot;ncc:maxPageNormal&quot; content=&quot;881&quot; /&gt;
+  &lt;meta name=&quot;ncc:pageFront&quot; content=&quot;27&quot; /&gt;
+  &lt;meta name=&quot;ncc:pageSpecial&quot; content=&quot;45&quot; /&gt;
+  &lt;meta name=&quot;ncc:prodNotes&quot; content=&quot;0&quot; /&gt;
+  &lt;meta name=&quot;ncc:footnotes&quot; content=&quot;0&quot; /&gt;
+  &lt;meta name=&quot;ncc:sidebars&quot; content=&quot;0&quot; /&gt;
+  &lt;meta name=&quot;ncc:setInfo&quot; content=&quot;1 of 3&quot; /&gt;
+  &lt;meta name=&quot;ncc:depth&quot; content=&quot;4&quot; /&gt;
+  &lt;meta name=&quot;ncc:kByteSize&quot; content=&quot;1530000&quot; /&gt;
+  &lt;meta name=&quot;ncc:multimediaType&quot; content=&quot;audioNCC&quot; /&gt;
+  &lt;meta name=&quot;ncc:files&quot; content=&quot;97&quot; /&gt;
+  &lt;meta name=&quot;prod:recLocation&quot; content=&quot;Studio 2&quot; /&gt;
+  &lt;meta name=&quot;prod:recEngineer&quot; content=&quot;J Klein&quot; /&gt;
+&lt;/head&gt;
+</pre>
+
+
+<h3 id="tnbody">2.1.5 The NCC.HTML &lt;body&gt;</h3>
+
+<p>The &lt;body&gt; element of a DAISY 2.02 NCC must contain the following children:</p>
+
+<dl>
+<dt id="tnbh1">h1 [one or several]</dt>
+<dd>As defined in <a href="#h3headings">section 2.1.6</a></dd>
+</dl>
+
+<p>The &lt;body&gt; element of a DAISY 2.02 NCC may contain the following children:</p>
+
+<dl>
+<dt>h2-h6 [zero or several]</dt>
+<dd>As defined in <a href="#h3headings">section 2.1.6</a></dd>
+<dt>span [zero or several]</dt>
+<dd>As defined in <a href="#h3span">section 2.1.7</a></dd>
+<dt>div [zero or several]</dt>
+<dd>As defined in <a href="#h3blocks">section 2.1.8</a></dd>
+</dl>
+
+<p>No other elements than &lt;h1&gt; to &lt;h6&gt;, &lt;span&gt; and &lt;div&gt; shall occur as children of the NCC.HTML &lt;body&gt;.</p>
+
+<h3 id="h3headings">2.1.6 Headings</h3>
+
+<p>Heading references are provided in DAISY 2.02 DTB&acute;s to support navigation to chapters and sections. Headings occurring in the DTB are represented by XHTML <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">heading</a> elements one through six (&lt;h1&gt; to &lt;h6&gt;). The content of the heading element should be the chapter or section name as it appears in the print source.</p>
+
+<p>The general syntax of the heading element is:</p>
+
+<pre class="example">
+&lt;hx class=&quot;value&quot; id=&quot;value&quot;&gt;&lt;a href=&quot;smil#fragment&quot;&gt;Heading content&lt;/a&gt;&lt;/hx&gt;
+</pre>
+
+<p>The heading element must contain the following attributes:</p>
+
+<dl>
+<dt id="tnHid">id</dt>
+<dd>As defined in <a href="#h3id">section 2.1.9</a></dd>
+<dt>class [for the title heading]</dt>
+<dd>As defined in <a href="#headattr">section 2.1.6.1</a></dd>
+</dl>
+
+<p>The heading element may contain the following attributes:</p>
+
+<dl>
+<dt>class [for headings other than the title]</dt>
+<dd>As defined in <a href="#headattr">section 2.1.6.1</a></dd>
+</dl>
+
+<p>The heading element must contain the following child elements:</p>
+
+<dl>
+<dt>a</dt>
+<dd>As defined in <a href="#anchor">section 2.1.10</a></dd>
+</dl>
+
+<h4 id="headattr">2.1.6.1 Class attribute values on heading elements</h4>
+
+<p>Class attributes may be used to provide additional semantic information. Typical values for class attributes occurring on the heading elements are:</p>
+
+<p>title, jacket, front, title-page, copyright-page, acknowledgments, prolog, introduction, dedication, foreword, preface, print-toc, part, chapter, section, sub-section, minor-head, bibliography, glossary, appendix, index, index-category.</p>
+
+<p id="tnH1first">The first entry in the &lt;body&gt; of the NCC must be the title section of the DTB. The element used must be a &lt;h1&gt;. The class attribute used for this headings must be "title".</p>
+
+<h4>2.1.6.2 Nesting of headings</h4>
+
+<p id="tnhorder">As opposed to both HTML 4.01 and XHTML 1.0, the DAISY 2.02 specification requires proper nesting of headings. A level cannot be skipped. For example an &lt;h3&gt; must always be preceded by an &lt;h2&gt; (or another&nbsp; &lt;h3&gt;) and an &lt;h2&gt; must be preceded by an &lt;h1&gt;
+(or another &lt;h2&gt;).</p>
+
+<h4>2.1.6.3 Examples of proper and improper nesting of headings</h4>
+
+<h5>Example of proper nesting of headings</h5>
+
+<pre class="example">
+...
+&lt;h1&gt;The nature of economics&lt;/h1&gt;
+    &lt;h2&gt;The economic problem&lt;/h2&gt;
+    &lt;h2&gt;Economics as a social science&lt;/h2&gt;
+        &lt;h3&gt;The scientific approach&lt;/h3&gt;
+&lt;h1&gt;An overview of the market economy&lt;/h1&gt;
+...
+</pre>
+
+<h5>Example of improper nesting of headings</h5>
+
+<pre class="example">
+...
+&lt;h1&gt;Demand, supply and price&lt;/h1&gt;
+    &lt;h2&gt;Demand&lt;/h2&gt;
+    &lt;h2&gt;Supply&lt;/h2&gt;
+            &lt;h4&gt;Quantity supplied&lt;/h4&gt;
+        &lt;h3&gt;Determination&lt;/h3&gt;
+&lt;h1&gt;Elasticity&lt;/h1&gt;
+...
+</pre>
+
+<h3 id="h3span">2.1.7 Page numbers</h3>
+
+<p>Page references are provided in DAISY 2.02 DTB&acute;s to support navigation to
+pages by the end users. Pages
+occurring in the DTB are represented by the <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">&lt;span&gt;</a> element.</p>
+
+<p>The &lt;span&gt; element identifies the beginning of the page. The content of the &lt;span&gt; element is the page number as it appears in the print book.</p>
+
+<div class="notice"><b>Note</b> - It is recommended that blank pages which are a part of the numeric page sequence in the book be marked with a &lt;span&gt; element representing the sequential number for that page.</div>
+
+<p>The general syntax of the &lt;span&gt; element is:</p>
+
+<pre class="example">
+&lt;span class=&quot;value&quot; id=&quot;value&quot;&gt;&lt;a href=&quot;smil#fragment&quot;&gt;span content&lt;/a&gt;&lt;/span&gt;
+</pre>
+
+<p>The &lt;span&gt; element must contain the following elements:</p>
+
+<dl>
+<dt  id="tnspna">a</dt>
+<dd>As defined in <a href="#anchor">section 2.1.10</a></dd>
+</dl>
+
+<p>The &lt;span&gt; element must contain the following attributes:</p>
+
+<dl>
+<dt id="tnspnid">id</dt>
+<dd>As defined in <a href="#h3id">section 2.1.9</a></dd>
+<dt id="tnspClass">class</dt>
+<dd>As defined in <a href="#spanclass">section 2.1.7.1</a></dd>
+</dl>
+
+<h4 id="spanclass">2.1.7.1 Valid class attribute values for pages</h4>
+
+<p>Values for the class attributes occurring on the &lt;span&gt; element when used for pages are:</p>
+
+<dl>
+<dt>page-front</dt>
+<dd>The class attribute "page-front" indicates pages at the front of the book before the
+  page numbering sequence for the body of the book begins.</dd>
+<dt>page-normal</dt>
+<dd>The class attribute "page-normal" indicates pages that have a normal scheme that starts at 1 and continues to the back matter or to the end of the book. It is very important to note that the content of normal page numbers must be the ascii value of a positive whole number. Players will use this positive integer for navigation purposes.</dd>
+<dt>page-special</dt>
+<dd>The class attribute "page-special" indicates pages that are not front matter, that do not follow the traditional sequential numbering system used in many printed publications, or, that are separate and apart from the sequential numbering system used throughout the book. An example of this is compound page numbers which may be composed of alpha and numeric combinations reflecting the number of the part and/or chapter,&nbsp; the numeric sequence within that part or chapter,&nbsp; as well as a separator and/or suffix. For example, page '1-15b' could represent section 1, page 15, second inserted page (it would immediately follow page '1-15a' and appear at a point before page '1-16' or '2-1'.)"</dd>
+</dl>
+
+<h3 id="h3blocks">2.1.8 Blocks (&lt;div&gt;)</h3>
+
+<p>Blocks (groups) of text may be used for navigation. For example, paragraphs, list items, or table rows may be identified in the NCC to provide navigation by such structural elements. In the NCC the grouping element <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">&lt;div&gt;</a> is used as a placeholder to point to these blocks. The content of the &lt;div&gt; element is determined by the
+producer in relation to the navigation that will be required by the end users. If full text is used, the &lt;div&gt; in the NCC can point to any HTML element with a unique id.</p>
+
+<p>The general syntax of the &lt;div&gt; element is:</p>
+
+<pre class="example">
+&lt;div class=&quot;value&quot; id=&quot;value&quot;&gt; &lt;a href=&quot;smil#fragment&quot;&gt;content&lt;/a&gt;&lt;/div&gt;
+</pre>
+
+<p>The &lt;div&gt; element must contain the following attributes:</p>
+
+<dl>
+<dt id="tndivid">id</dt>
+<dd>As defined in <a href="#h3id">section 2.1.9</a></dd>
+<dt id="tndivclass">class</dt>
+<dd>As defined in <a href="#blk_clsattr">section 2.1.8.1</a></dd>
+</dl>
+
+<p>The &lt;div&gt; element must contain the following elements:</p>
+
+<dl>
+<dt id="tndiva">a</dt>
+<dd>As defined in <a href="#anchor">section 2.1.10</a></dd>
+</dl>
+
+<h4 id="blk_clsattr">2.1.8.1 Blocks: valid class attribute values on the &lt;div&gt; element</h4>
+
+<p>Values for class attributes occurring on the &lt;div&gt; elements are:</p>
+
+<dl>
+<dt>group</dt>
+</dl>
+
+<h3 id="h3id">2.1.9 The id attribute</h3>
+
+<p id="idVal">Each child of the &lt;body&gt; element in the NCC.HTML used for synchronization must contain an id attribute.</p><p>The value of the id attribute must begin with a letter ([A-Za-z]) and may be followed by any number of letters, digits ([0-9]), hyphens ("-"), underscores ("_"), colons (":"), and periods (".").</p>
+
+<div class="notice" id="idcs"><b>Note</b> - id attribute values are case sensitive.</div>
+
+<div id="tnidnocolon" class="notice"><b>Note</b> - The use of colons in id attribute values should be avoided.</div>
+
+<h3 id="anchor">2.1.10. The anchor element (&lt;a&gt;)</h3>
+
+<p id="tnwavcount">Each child of the &lt;body&gt; element in the NCC.HTML document must contain an anchor element. The href attribute makes this anchor the source anchor of exactly one link.</p>
+
+<p>The general syntax of the &lt;a&gt; element is:</p>
+
+<pre class="example">
+&lt;a href=&quot;smil#fragment&quot;&gt;document content&lt;/a&gt;
+</pre>
+
+<p>The &lt;a&gt; element must contain the following attributes:</p>
+
+<dl>
+<dt id="tnahref">href</dt>
+<dd>As defined in <a href="#ahref">section 2.1.10.1</a></dd>
+</dl>
+
+<p id="tnanonempty">Document content must always occur between the anchor start and close tags.</p>
+
+<h4 id="ahref">2.1.10.1 The href attribute</h4>
+
+<p id="tnhrefsmil">The href attribute defines the link between the source anchor (current position in the NCC) and the destination anchor (a location within a SMIL document). This is expressed as
+a <a href="http://www.ietf.org/rfc/rfc2396.txt">URI</a> where a fragment identifier points to the id of a location within the resource, i.e. the SMIL document.</p>
+
+<p>In DAISY 2.02 books, it is required that the destination anchor resides within
+the SMIL <a href="#smilpar">&lt;par&gt;</a> or within the SMIL <a href="#smiltext">&lt;text&gt;</a> element. Pointers to other types of elements must not occur.</p>
+
+<p id="tntgtpar">Use of the &lt;par&gt; element as destination anchor is recommended. If the target is a &lt;text&gt; element, it is highly recommended that that &lt;text&gt; element be the first element within its parent &lt;par&gt;.</p>
+
+<p id="tnsyncpts">All child elements of the NCC.HTML &lt;body&gt; must be synchronization points, i.e. they must contain an &lt;a&gt; element with an href attribute pointing to a destination anchor within a &lt;par&gt;  or &lt;text&gt; element of a SMIL file.</p>
+
+<h3>2.1.11 Example of NCC.HTML &lt;body&gt;</h3>
+
+<pre class="example">
+&lt;body&gt;
+&lt;h1 class=&quot;title&quot; id=&quot;econ_0001&quot;&gt;&lt;a href=&quot;econ0001.smil#ec1a_0001&quot;&gt;Economics by Richard G. Lipsey et al..&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;econ_0002&quot;&gt;&lt;a href=&quot;econ0002.smil#ec2a0001&quot;&gt;Information about the talking book&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;econ_0003&quot;&gt;&lt;a href=&quot;econ0003.smil#ec3a0001&quot;&gt;Contents in Brief&lt;/a&gt;&lt;/h1&gt;
+&lt;span class=&quot;page-front&quot; id=&quot;econ_0004&quot;&gt;&lt;a href=&quot;econ0003.smil#ec3a0002&quot;&gt;iv&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;page-front&quot; id=&quot;econ_0005&quot;&gt;&lt;a href=&quot;econ0003.smil#ec3a0003&quot;&gt;v&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;page-front&quot; id=&quot;econ_0006&quot;&gt;&lt;a href=&quot;econ0003.smil#ec3a0004&quot;&gt;vi&lt;/a&gt;&lt;/span&gt;
+...
+&lt;span class=&quot;page-normal&quot; id=&quot;econ_0021&quot;&gt;&lt;a href=&quot;econ0008.smil#ec8a0003&quot;&gt;1&lt;/a&gt;&lt;/span&gt;
+&lt;h1 class=&quot;part&quot; id=&quot;econ_0022&quot;&gt;&lt;a href=&quot;econ0009.smil#ec9a0001&quot;&gt;Part 1. The nature of economics&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 class=&quot;chapter&quot; id=&quot;econ_0023&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100001&quot;&gt;1. The economic problem&lt;/a&gt;&lt;/h2&gt;
+&lt;span class=&quot;page-normal&quot; id=&quot;econ_0024&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100002&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;page-normal&quot; id=&quot;econ_0025&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100003&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
+&lt;h3 id=&quot;econ_0026&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100004&quot;&gt;What is economics?&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;econ_0027&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100005&quot;&gt;Resources and commodities&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;econ_0028&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100006&quot;&gt;Scarcity&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;econ_0029&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100007&quot;&gt;Choice&lt;/a&gt;&lt;/h4&gt;
+&lt;span class=&quot;page-normal&quot; id=&quot;econ_0031&quot;&gt;&lt;a href=&quot;econ0010.smil#ec100008&quot;&gt;4&lt;/a&gt;&lt;/span&gt;
+...
+&lt;span class=&quot;page-special&quot; id=&quot;econ_0934&quot;&gt;&lt;a href=&quot;econ0085.smil#ec850027&quot;&gt;G-1&lt;/a&gt;&lt;/span&gt;
+&lt;h1 class=&quot;glossary&quot; id=&quot;econ_0935&quot;&gt;&lt;a href=&quot;econ0086.smil#ec860001&quot;&gt;Glossary&lt;/a&gt;&lt;/h1&gt;
+&lt;div id=&quot;econ_0936&quot; class=&quot;group&quot;&gt;&lt;a href=&quot;econ0086.smil#ec860002&quot;&gt;Glossary item 1&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&quot;econ_0937&quot; class=&quot;group&quot;&gt;&lt;a href=&quot;econ0086.smil#ec860003&quot;&gt;Glossary item 2&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&quot;econ_0938&quot; class=&quot;group&quot;&gt;&lt;a href=&quot;econ0086.smil#ec860004&quot;&gt;Glossary item 3&lt;/a&gt;&lt;/div&gt;
+...
+&lt;h1 id=&quot;econ_0946&quot;&gt;&lt;a href=&quot;econ0088.smil#ec880001&quot;&gt;Ending announcement&lt;/a&gt;&lt;/h1&gt;
+&lt;/body&gt;
+</pre>
+
+<h3 id="h2option">2.1.12 Optional content</h3>
+
+<div class="notice"><b>Note</b> - The features described in sections 2.1.12 to 2.1.13.2 are optional.</div>
+
+<p id="tnoptOnOff">The NCC may include references to elements that can be turned on or off by the end user. The default style for these items should be "on". <em>Note references</em>, <em>non-essential sidebars</em>, <em>optional producer notes</em>, and <em>page numbers</em> fall into this category. The XHTML <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">&lt;span&gt;</a> element must be used to indicate these items in the NCC &lt;body&gt;.</p>
+
+<p>The &lt;span&gt; element must contain the following attributes:</p>
+
+<dl>
+<dt>id</dt>
+<dd>As defined in <a href="#h3id">section 2.1.9</a></dd>
+<dt>class</dt>
+<dd>As defined in <a href="#option_clsattr">section 2.1.12.1</a></dd>
+</dl>
+
+<p>The &lt;span&gt; element must contain the following elements:</p>
+
+<dl>
+<dt>a</dt>
+<dd>As defined in <a href="#anchor">section 2.1.10</a></dd>
+</dl>
+
+<h4 id="option_clsattr">2.1.12.1 Optional content: valid class attribute values on the &lt;span&gt; element</h4>
+
+<p>Values for class attributes occurring on the &lt;span&gt; element are:</p>
+
+<dl>
+<dt>sidebar</dt>
+<dd>For references to sidebars, i.e. additional text that, in the print source, is presented as being separate from the main narrative of the book.</dd>
+<dt>optional-prodnote</dt>
+<dd>For optional producer notes, i.e. commentary from the narrator/producer that is not part of the original printed source material.</dd>
+<dt>noteref</dt>
+<dd>For a footnote, endnote, annotation, or rear note reference pair.</dd>
+<dt><em>Other valid values</em></dt>
+<dd>Usage for blocks as defined in section <a href="#blk_clsattr">2.1.8.1</a></dd>
+</dl>
+
+<h4 id="option_exampl">2.1.12.2 Optional content: NCC examples</h4>
+
+<h5>Sidebar Example</h5>
+
+<pre class="example">
+&lt;span class=&quot;sidebar&quot; id=&quot;econ0047&quot;&gt;
+  &lt;a href=&quot;econ0056.smil#ec560004&quot;&gt;Sidebar&lt;/a&gt;
+&lt;/span&gt;
+</pre>
+
+<h5>Optional Producer Note Example</h5>
+
+<pre class="example">
+&lt;span class=&quot;optional-prodnote&quot; id=&quot;econ0057&quot;&gt;
+  &lt;a href=&quot;econ0060.smil#ec600004&quot;&gt;Producer's Note&lt;/a&gt;
+&lt;/span&gt;
+</pre>
+
+<h5>Reference to Notes (Footnotes, Annotations, End Notes, Rear Notes) example</h5>
+
+<pre class="example">
+&lt;span class="noteref" id="ncc003"&gt;
+  &lt;a href="smil001.smil#par002"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;/span&gt;
+</pre>
+
+<h4 id="option_srval">2.1.12.3 Optional content: valid system-required attribute values on the SMIL &lt;par&gt; element</h4>
+
+<p id="tnsrOnPar">The SMIL 1.0 system-required test attribute shall be used to control selective playback of content such as sidebars, footnotes, producer notes, and page numbers. The system-required attribute must occur on &lt;par&gt; elements.</p>
+
+<p id="tnParAtts">Values for system-required attributes occurring on the &lt;par&gt; element are:</p>
+
+<dl>
+<dt>sidebar-on</dt>
+<dt>prodnote-on</dt>
+<dt>footnote-on</dt>
+<dt>pagenumber-on</dt>
+</dl>
+
+<h4 id="optex">2.1.12.4 Optional content: SMIL examples</h4>
+
+<h5>Sidebar example</h5>
+<p><em>For the NCC sidebar example above, the following usage of the switch mechanism in the SMIL document shall be used. (The same syntax applies to producer notes and pagenumbers.)</em></p>
+
+<pre class="example">
+&lt;seq dur="123.45s"&gt;
+  &lt;!--Par pre sidebar --&gt;
+  &lt;par endsync="last" id="ec560003"&gt; 
+    &lt;text src="ncc.html#econ0046" /&gt;
+    &lt;seq&gt;
+      &lt;audio src="audio001.mp3" clip-begin="npt=0.000s" clip-end="npt=2.507s" id="phrs_0001" /&gt;
+      &lt;audio src="audio001.mp3" clip-begin="npt=3.345" clip-end="npt=6.123s" id="phrs_0002" /&gt;
+    &lt;seq&gt;
+  &lt;/par&gt;
+  &lt;!--Par for sidebar --&gt;
+  &lt;par endsync="last" id=&quot;ec560004&quot; system-required=&quot;sidebar-on&quot;&gt;
+      &lt;text src=&quot;ncc.html#econ0047&quot; /&gt;
+      &lt;seq&gt;
+        &lt;audio src="audio001.mp3" clip-begin="npt=6.123s" clip-end="npt=8.345s" id="phrs_0003" /&gt;
+        &lt;audio src="audio001.mp3" clip-begin="npt=8.345ss" clip-end="npt=10.567s" id="phrs_0004" /&gt;
+      &lt;seq&gt;  
+  &lt;/par&gt;
+  &lt;!--Par post sidebar --&gt;
+  &lt;par endsync="last" id="ec560005"&gt; 
+    &lt;text src="ncc.html#econ0046" /&gt;
+    &lt;seq&gt;
+      &lt;audio src="audio001.mp3" clip-begin="npt=10.567s" clip-end="npt=22.347s" id="phrs_0005" /&gt;
+      &lt;audio src="audio001.mp3" clip-begin="npt=22.347s" clip-end="npt=26.435s" id="phrs_0006" /&gt;
+    &lt;seq&gt;
+  &lt;/par&gt;
+&lt;/seq&gt;
+</pre>
+
+<h5 id="noteex">Footnote example</h5>
+<p><em>The footnote SMIL syntax differs from that of sidebars and prodnotes. Here, a nested &lt;seq&gt; is used to contain two &lt;par&gt; elements; the first containing the note reference, and the second containing the note body. The following SMIL syntax corresponds to the NCC footnote example above.</em></p>
+
+<pre class="example">
+&lt;body&gt;
+  &lt;seq dur="123.45s"&gt;
+    &lt;!--Par pre footnote --&gt;
+    &lt;par endsync="last" id="par001"&gt; 
+      &lt;text src="ncc.html#ncc001" /&gt;
+      &lt;seq&gt;
+        &lt;audio src="audio001.mp3" clip-begin="npt=0.000s" clip-end="npt=2.507s" id="phrs_0001" /&gt;
+        &lt;audio src="audio001.mp3" clip-begin="npt=3.507" clip-end="npt=6.507s" id="phrs_0002" /&gt;
+      &lt;seq&gt;
+    &lt;/par&gt;
+    &lt;!--nested seq begins here--&gt;
+    &lt;seq&gt;
+      &lt;!--Par for note reference --&gt;  
+      &lt;par endsync="last" id="par002"&gt; 
+        &lt;text src="ncc.html#ncc003" /&gt;
+        &lt;seq&gt;
+        &lt;audio src="audio001.mp3" clip-begin="npt=6.507s" clip-end="npt=7.507s" id="phrs_0003" /&gt;
+        &lt;/seq&gt;
+      &lt;/par&gt;
+      &lt;!--Par for note body --&gt;
+      &lt;par endsync="last" id="par003" system-required="footnote-on"&gt; 
+        &lt;text src="ncc.html#ncc003" /&gt;
+        &lt;seq&gt;
+          &lt;audio src="audio009.mp3" clip-begin="npt=7.507s" clip-end="npt=10.507s" id="phrs_0004" /&gt;
+          &lt;audio src="audio009.mp3" clip-begin="npt=10.507s" clip-end="12.507s" id="phrs_0005" /&gt;
+        &lt;seq&gt;
+      &lt;/par&gt;
+    &lt;!--nested seq ends here--&gt;
+    &lt;/seq&gt; 
+    &lt;!--Par post footnote&gt;
+    &lt;par endsync="last"  id="par004"&gt; 
+      &lt;text src="ncc.html#ncc001" /&gt;
+      &lt;seq&gt;
+        &lt;audio src="audio001.mp3" clip-begin="npt=12.507s" clip-end="npt=14.507s" id="phrs_0006 /&gt;
+        &lt;audio src="audio001.mp3" clip-begin="npt=14.507s" clip-end="npt=18.507s"" id="phrs_0007" /&gt;
+      &lt;seq&gt;
+    &lt;/par&gt;
+  &lt;/seq&gt;
+&lt;/body&gt;
+</pre>
+
+<div class="sidebar">
+<h4>2.1.12.5 Optional content - typical playback system behavior</h4>
+<p id="tnuserPrec">The playback system allows the user to control the playback of document constructs by
+providing to the user a list of optional content, such as sidebars. If the user requests that sidebars not be presented, the system-required value of "sidebar-on" would not be active. In this case the playback system, when encountering the &lt;par&gt; element with system-required="sidebar-on", will ignore that element. If however sidebars are requested by the user, the playback system will set the "sidebar-on" value as active, and will play any element with the attribute system-required="sidebar-on".</p>
+</div>
+
+<div class="sidebar">
+<h4>2.1.12.6 Optional content - end user implications</h4>
+<p id="tnusrChoice">The end user may choose to have optional items off and then later use the NCC entry to navigate to these items.</p>
+</div>
+
+<h3>2.1.13 Resource file definition using CSS</h3>
+
+<p id="tnrfdefs">Playback systems, both hardware devices and software, require a mechanism to provide audio descriptions of the structural elements of a book. Though some playback systems may support synthetic speech presentation of textual information, pre-recorded audio announcements are preferred as they are most natural and can be supported by all devices. Pre-recorded messages allow a playback device to correctly announce elements such as "chapter", "section" or any other class name.</p>
+
+<p>A resource file can be used to achieve this. Resources in this case are individual audio
+files which are associated with structural elements. In traditional software development models, a single resource file may point to or contain multiple resource definitions. Presently, there are no
+existing standards for defining resource files for use with this particular application.</p>
+
+<p>Audio Style Sheets are used for defining this resource information. Audio Style Sheets are part of the W3C&acute;s <a href="http://www.w3.org/TR/REC-CSS2">Cascading Style Sheet recommendation</a>. In addition to providing resource definitions to be used by playback systems, Audio Cascading Style Sheets (ACSS) may be used for general audio styling during playback of DAISY 2.02 DTB&acute;s.</p>
+
+<p>Audio Style Sheets provide the necessary definition to associate an audio cue with a structural element. The structural element may be an element name (such as h1) or a class name (such as chapter).
+The playback system will interpret the Audio Style Sheet and use this information
+to play out the elements to the end user. Examples include position ("where am I"
+announcements) and structural information.</p>
+
+<p>Generalized audio styling may be supported by playback systems to implement "earcons" and to format textual content for presentation with speech synthesis. This particular utilization of audio styles is not formally defined or required in DAISY 2.02.</p>
+
+<h4>2.1.13.1 Example of ACSS used as a resource file</h4>
+
+<p><em>This is an example of a file which associates an audio file with a document element (h1) and with two class names ("chapter" and "subhead").</em></p>
+
+<pre class="example">
+h1 {cue-before: uri(&quot;resources/en-h1.wav&quot;)}
+.chapter {cue-before: uri(&quot;resources/en-chapter.mp3&quot;)}
+.subhead {cue-before: uri(&quot;resources/en-subhead.mp3&quot;)}
+</pre>
+
+<p>The uri value points to the file which contains the audio to be associated with the element or class name. The location of the audio resource files is left to the producer. In this example, the audio resource files are stored in a "resources" sub-directory.</p>
+
+<h4>2.1.13.2 Associating the ACSS file with a DTB</h4>
+
+<p>The standard mechanism for associating a Style Sheet with an XHTML document is through the &lt;link&gt; element. The format of the &lt;link&gt; element is:</p>
+
+<pre class="example">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;en-resource.css&quot; media=&quot;aural&quot; title=&quot;daisy Resource File&quot;&gt;
+</pre>
+
+<p>The style sheet link reference should be contained in the NCC.HTML file. Individual XHTML source files may also include additional style sheet references for visual and audio presentation. These
+must be specified in the documents themselves, using the XHTML style sheet &lt;link&gt; element, and reference the media attribute value appropriate to the stylesheet.</p>
+
+<h2 id="textdoc">2.2 The text content document (XHTML)</h2>
+
+<p>The NCC.HTML document may be used as the carrier of text content if the text content is limited to headings, pages, and simple references to other content,i.e. content conforming to <a href="#dtbclass">DTB types 1 and 2</a>. The use of additional text content documents is required if there is extensive text content in the DTB, i.e. content conforming to <a href="#dtbclass">DTB types 3 to 6</a>.</p>
+
+<p id="tnaddnltxt">Additional text content documents must be <a href="http://www.w3.org/TR/xhtml1/">XHTML 1.0</a> compliant documents. Use of <a href="http://www.w3.org/TR/html401">HTML 4.01</a> is deprecated in this version of the Daisy DTB specification.</p>
+
+<h3 id="add_head">2.2.1 Text content document &lt;head&gt;</h3>
+
+<p>The &lt;head&gt; element of a text content document must contain the following children:</p>
+
+<dl>
+<dt>title [exactly one]</dt>
+<dd>As defined in the <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">XHTML 1.0</a> specification</dd>
+</dl>
+
+<p>The &lt;head&gt; element of a text content document may contain the following children:</p>
+
+<dl>
+<dt>meta [zero or several]</dt>
+<dd>The DAISY 2.02 meta element set as defined in section <a href="#h3metadef">2.1.3</a></dd>
+</dl>
+
+<h4>2.2.1.1 Text content document metadata - definition</h4>
+The &lt;meta&gt; element set in text content documents must be compliant with the following definition list.
+
+<dl>
+<dt>dc:identifier</dt>
+<dd>content: identifier of the DAISY publication (unique to the publishing organization or group)</dd>
+<dd>scheme: identifier scheme, if existing</dd>
+<dd>occurrence: optional - recommended</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "ncc:identifier"</dd>
+
+<dt><em>Other &lt;meta&gt; elements</em></dt>
+<dd>Use of other bibliographic and technical-descriptive meta elements defined in <a href="#metadef">section 2.1.3</a> is optional.</dd> 
+</dl>
+
+<h3 id="add_body">2.2.2 Text content document &lt;body&gt; - recommendation</h3>
+
+<p>In the &lt;body&gt; of text content documents, the use of logical, simple use of structural block elements such as paragraphs, lists, tables, preformatted text, etc. is recommended. Use of tables to format text is discouraged. Use of frames and other graphical formatting features are discouraged.</p>
+
+<h3 id="additional">2.2.3 Multiple XHTML text content documents</h3>
+
+<p>Multiple XHTML files may be used to carry the text content. This may more often be the case with DTB's which are full text productions.</p>
+
+<p>To correctly identify the order of the XHTML files, the XHTML <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">link</a> element may be used.</p>
+
+<h4>2.2.3.1 Example of link data</h4>
+
+<pre class="example">
+&lt;head&gt;
+...
+  &lt;link rel=&quot;start&quot; href=&quot;first-file.html&quot;&gt;
+  &lt;link rel=&quot;previous&quot; href=&quot;previous-file.html&quot;&gt;
+  &lt;link rel=&quot;next&quot; href=&quot;next-file.html&quot;&gt;
+...
+&lt;/head&gt;
+</pre>
+
+<div id="tnstEnd" class="notice"><b>Note</b> - The starting file would have no link element containing a rel attribute with content "previous", and the last file would have no link element containing a rel attribute with content "next".</div>
+
+
+<h2 id="smil">2.3 The SMIL document</h2>
+
+<p id="tnsmiParse2">The SMIL document of a DAISY DTB is a <a href="http://www.w3.org/TR/REC-smil/">SMIL 1.0</a> compliant document that provides the
+text-audio synchronization functionality for all or defined segments of the DTB content. In text-audio synchronized DAISY DTB´s, one SMIL document is always in itself a continuous sequence, that contains one or several parallel time groupings or synchronization units referring to text and/or audio  media objects.</p>
+
+<p>The following describes the document structure convention for implementation of SMIL 1.0 in DAISY 2.02 DTB&acute;s.</p> 
+
+<h3>2.3.1 The SMIL &lt;head&gt;</h3>
+
+<p>The &lt;head&gt; element must contain the following children:</p>
+
+<dl>
+<dt id="tnsmMetaCount">meta [several]</dt>
+<dd>As defined in section <a href="#smilmeta_def">2.3.2.1</a></dd>
+</dl>
+
+<p>The &lt;head&gt; element may contain the following children:</p>
+
+<dl>
+<dt id="tnsmLayoutCount">layout [exactly one]</dt>
+<dd>As defined in section <a href="#smillayout_def">2.3.2.2</a></dd>
+</dl>
+
+<h4 id="smilhead_des">2.3.1.1 SMIL &lt;head&gt; elements - description</h4>
+<p>The syntax of &lt;meta&gt; elements used in the SMIL &lt;head&gt; corresponds to those used in NCC.HTML - see section <a href="#h3metadescr">2.1.2</a>.</p>
+
+<p>Additionally, the SMIL &lt;head&gt; may contain a &lt;layout&gt; element that determines how elements in the document´s &lt;body&gt; are positioned on an abstract rendering surface (visual or acoustic). 
+</p>
+
+<h3 id="smilhead_def">2.3.2 SMIL &lt;head&gt; elements - definition</h3>
+
+<h4 id="smilmeta_def">2.3.2.1 &lt;meta&gt; elements</h4>
+
+<dl>
+<dt>ncc:generator</dt>
+<dd>content: name and version of software that generated the SMIL document</dd>
+<dd id="tnsmGen">occurrence: optional</dd>
+
+<dt>dc:format</dt>
+<dd>content: code for DAISY book format; "Daisy 2.02"</dd>
+<dd id="tnsmFmt">occurrence: mandatory</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "format"</dd>
+
+<dt>dc:identifier</dt>
+<dd>content: identifier of the DAISY publication (unique to the publishing organization)</dd>
+<dd>scheme: identifier scheme, if existing</dd>
+<dd id="tnsmIdent">occurrence: optional - recommended</dd>
+
+<dt>dc:title</dt>
+<dd>Content: title of book or publication</dd>
+<dd id="tnsmdcTitle">Occurrence: optional</dd>
+
+<dt>title</dt>
+<dd>Content: title of SMIL section of book</dd>
+<dd id="tnsmTitle">Occurrence: optional</dd>
+
+<dt>ncc:totalElapsedTime</dt>
+<dd>content: Sum of SMIL time prior to the onset of the current SMIL document</dd> 
+<dd>scheme: SMIL clock; recommended syntax: "hh:mm:ss"</dd>
+<dd id="tnsmtet">occurrence: optional - recommended</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "total-elapsed-time"</dd>
+
+<dt>ncc:timeInThisSmil</dt>
+<dd>content: Sum of SMIL time in current SMIL document</dd>
+<dd>scheme: SMIL clock; recommended syntax: "hh:mm:ss"</dd>
+<dd id="tntits">occurrence: optional - recommended</dd>
+<dd class="deprecated">note: playback systems must also accept elements using the deprecated name "time-in-this-smil"</dd>
+</dl>
+
+<h4 id="smillayout_def">2.3.2.2 The &lt;layout&gt; element</h4>
+
+<p>The &lt;layout&gt; element defines how the &lt;text&gt; elements in the document's
+&lt;body&gt; are positioned when rendered.  If a document contains no layout
+element, the positioning of the body elements is implementation-dependent.</p>
+
+<p>The general syntax of the &lt;layout&gt; element is:</p>
+
+<pre class="example">
+&lt;layout&gt;
+  &lt;region id=&quot;value&quot; /&gt;
+&lt;/layout&gt;
+</pre>
+
+<p>The &lt;layout&gt; element must contain the following children:</p>
+
+<dl>
+<dt id="tnsmReg">region [one or several]</dt>
+<dd>As defined in section <a href="#smilregion">2.3.2.3</a></dd>
+</dl>
+
+<h4 id="smilregion">2.3.2.3 The &lt;region&gt; element</h4>
+
+<p>The &lt;region&gt; element controls the position, size and scaling of &lt;text&gt;
+elements. A region element is applied to a &lt;text&gt; element by setting the
+region attribute of the positionable element to the id value of the region.</p>
+
+<p>Attributes occurring on the &lt;region&gt; element are:</p>
+
+<dl>
+<dt>id</dt>
+<dd>content: an XML identifier</dd>
+<dd id="tnsmRegId">occurrence: mandatory</dd>
+
+<dt><em>Other attributes</em></dt>
+<dd id="othrAttrRegn">Other <a href="http://www.w3.org/TR/REC-smil/#region">SMIL 1.0 region attributes</a> may be used; although this goes beyond the scope of DAISY 2.02 compliance.</dd>
+</dl>
+
+<h3>2.3.3 The SMIL &lt;body&gt;</h3>
+
+<p>The &lt;body&gt; element of a DAISY 2.02 SMIL must contain the following children:</p>
+
+<dl>
+<dt id="tnsmSeq">seq [exactly one]</dt>
+<dd>As defined in <a href="#smilseq">section 2.3.3.1</a></dd>
+</dl>
+
+<h4 id="smilseq">2.3.3.1 The &lt;seq&gt; element</h4>
+
+<p>The &lt;seq&gt; element is a time container whose children form a temporal sequence. In the following definition lists, the &lt;seq&gt; element that occurs as a child of &lt;body&gt; is referred to as the "main" &lt;seq&gt;, and &lt;seq&gt; elements that are nested are referred to as "nested".</p>
+
+<p>The main &lt;seq&gt; element of a DAISY 2.02 SMIL must contain the following children:</p>
+
+<dl>
+<dt id="tnsmSeqPar">par [one or several]</dt>
+<dd>As defined in <a href="#smilpar">section 2.3.3.3</a></dd>
+</dl>
+
+<p>The main &lt;seq&gt; element of a DAISY 2.02 SMIL may contain the following children:</p>
+
+<dl>
+<dt id="tnsmSeqSeq">seq [one or several]</dt>
+<dd>Used only with <a href="#noteex">note references</a></dd>
+</dl>
+
+
+<p>Nested &lt;seq&gt; elements of a DAISY 2.02 SMIL must contain one of the following children:</p>
+
+<dl>
+<dt id="nseqAud">audio [one or several]</dt>
+<dd>As defined in <a href="#smilaudi">section 2.3.3.7</a></dd>
+
+<dt id="nseqPar">par [exactly two]</dt> 
+<dd>As defined in <a href="#smilpar">section 2.3.3.3</a></dd>
+<dd>Used only with <a href="#noteex">note references</a></dd>
+
+<dt id="nseqOthr"><em>Other children</em></dt>
+<dd>Other <a href="http://www.w3.org/TR/REC-smil/#media-object">SMIL 1.0 media  objects</a> may be children of &lt;seq&gt;; although this goes beyond the scope of DAISY 2.02 compliance.</dd>
+</dl>
+
+<p id="nseqChld">A nested &lt;seq&gt; element must not have children of different types.</p>
+
+<h4>2.3.3.2 Attributes on the &lt;seq&gt; element</h4>
+
+<p>Attributes occurring on the &lt;seq&gt; element are</p>
+
+<dl>
+<dt>dur</dt>
+<dd>content: SMIL clock value defining the explicit duration of the &lt;seq&gt;. </dd>
+<dd>scheme: SMIL timecount. Required syntax: "ss.s".</dd>
+<dd id="tnsmSeqDur">occurrence: required for the main &lt;seq&gt;.</dd>
+
+<dt>id</dt>
+<dd>content: an XML identifier</dd>
+<dd id="seqId">occurrence: optional</dd>
+</dl>
+
+<h4 id="smilpar">2.3.3.3 The &lt;par&gt; element</h4>
+
+<p>The &lt;par&gt; element is a time container whose children do not form a temporal sequence; as opposed to the &lt;seq&gt; element they instead occur simultaneously. In other words, media objects within a &lt;par&gt; element are synchronized with each other.</p>
+
+<p>The &lt;par&gt; element of a DAISY 2.02 SMIL must contain the following children:</p>
+
+<dl>
+<dt id="tnsmText">text [exactly one]</dt>
+<dd>As defined in <a href="#smiltext">section 2.3.3.5</a></dd>
+</dl>
+
+<p>The &lt;par&gt; element of a DAISY 2.02 SMIL may contain the following  children:</p>
+
+<dl>
+<dt>audio [exactly one]</dt>
+<dd>As defined in <a href="#smilaudi">section 2.3.3.7</a></dd>
+<dt>seq [one or several]</dt>
+<dd>As defined in <a href="#smilseq">section 2.3.3.1</a></dd>
+<dt><em>Other children</em></dt>
+<dd>Other <a href="http://www.w3.org/TR/REC-smil/#media-object">SMIL 1.0 media objects</a> may be children of &lt;par&gt;; although this goes beyond the scope of DAISY 2.02 compliance.</dd>
+</dl>
+
+<h4 id="parattr">2.3.3.4 Attributes on the &lt;par&gt; element</h4>
+
+<p>Attributes occurring on the &lt;par&gt; element are</p>
+
+<dl>
+<dt>endsync</dt>
+<dd>content: default value is "last", defining that the implicit duration of the par element is the maximum of the desired duration of its children</dd>
+<dd id="tnsmParEndsync">occurrence: required</dd>
+<dt>system-required</dt>
+<dd>content: values defined in <a href="#option_srval">section 2.1.12.3</a></dd>
+<dd id="tnsmSysReq">occurrence: required if the <a href="#h2option">optional content</a> feature is used</dd>
+<dt>id</dt>
+<dd>content: an XML identifier</dd>
+<dd id="tnsmParId">occurrence: optional - recommended</dd>
+</dl>
+
+<h4 id="smiltext">2.3.3.5 The &lt;text&gt; element</h4>
+
+<p>The &lt;text&gt; element is a media object without an intrinsic duration. In the case of DAISY DTB&acute;s <a href="#dtbclass">types 1 to 5</a>, its duration will be determined by the audio with which it is synchronized.</p>
+
+
+<h4>2.3.3.6 Attributes on the &lt;text&gt; element</h4>
+
+<p>Attributes occurring on the &lt;text&gt; element are</p>
+
+<dl>
+<dt>src</dt>
+<dd>content: media object URI with fragment identifier</dd>
+<dd id="tnsmTextSrc">occurrence: required</dd>
+<dt>id</dt>
+<dd>content: an XML identifier</dd>
+<dd id="tnsmTextID">occurrence: required</dd>
+<dt>region</dt>
+<dd>content: an idref matching one of the document's &lt;region&gt; elements (see
+<a href="#smilregion">2.3.2.3</a>)</dd>
+<dd id="tnsmReg2">occurrence: required if multiple regions are being used</dd>
+</dl>
+
+<p>The value of the src attribute is the URI of the media object. In this case it is a pointer to the currently synchronized XHTML document content - a heading, a
+page number, block text etc.</p>
+
+<p id="tnsmNccOnly">If any &lt;text&gt; element src attribute refers to the file NCC.HTML, then no other text element within the same DTB should contain a src attribute which refers to a file other than the NCC.HTML file.</p>
+
+<div class="notice"><b>Note</b>
+- src as a text element attribute expresses a subposition within a document (a <a href="http://www.ietf.org/rfc/rfc2396.txt">fragment identifier</a>) by pointing to an id attribute.</div>
+
+<h4 id="smilaudi">2.3.3.7 The &lt;audio&gt; element</h4>
+
+<p>The &lt;audio&gt; element is a media object with an intrinsic duration.</p>
+
+<h4>2.3.3.8 Attributes on the &lt;audio&gt; element</h4>
+
+<p>Attributes occurring on the &lt;audio&gt; element are</p>
+
+<dl>
+<dt>src</dt>
+<dd>content: media object URI with fragment identifier</dd>
+<dd id="tnsmAudioSrc">occurrence: required</dd>
+
+<dt>id</dt>
+<dd>content: XML identifier</dd>
+<dd id="tnsmAudioId">occurrence: required</dd>
+
+<dt>clip-begin</dt>
+<dd>content: SMIL clock value</dd>
+<dd>scheme: SMIL timecount. Required syntax: "npt=ss.s".</dd>
+<dd id="tnsmAudioCB">occurrence: required if sub-positions are used</dd>
+
+<dt>clip-end</dt>
+<dd>content: SMIL clock value</dd>
+<dd>scheme: SMIL timecount. Required syntax: "npt=ss.s".</dd>
+<dd id="tnsmAudioCE">occurrence: required if sub-positions are used</dd>
+</dl>
+
+<p>The value of the src attribute is the URI of the media object. In this case it is a pointer to the file containing the currently synchronized audio. If the referenced audio object is not to be played as a whole, subpositions are defined by the attributes clip-begin and clip-end, specifying the beginning and the end of the sub-clip. If several sub-positions occur sequentially they are placed within a seq element.</p>
+
+<p id="tnsmCBCE">The values of the clip-begin and clip-end attributes must be a metric specifier followed by a clock value. Of the metric specifiers allowed by the SMIL 1.0 specification, DAISY DTB´s must use "Normal Play Time". The metric specifier is "npt", and the clock value must be expressed in legal SMIL timecount values, using the default SMIL 1 timecount (seconds). It is highly recommended to specify fractions of seconds in millisecond resolution.</p>
+
+<p id="tnsmParTypes">A &lt;par&gt; must never contain several media objects of the same type - for example, not more than one &lt;text&gt; and one &lt;audio&gt; reference (unless the media objects are contained within a nested &lt;seq&gt;).</p>
+
+<div class="notice"><b>Note</b> - All referenced media objects must carry an id attribute.</div>
+
+<h3>2.3.4 Example of SMIL</h3>
+
+<p><em>The first &lt;par&gt; shows an example of where an entire audio file is to be rendered. The second &lt;par&gt; shows audio divided into segments (sub-positions) and contained within a &lt;seq&gt;.</em></p>
+
+<pre class="example">
+&lt;!DOCTYPE SMIL PUBLIC &quot;-//W3C//DTD SMIL 1.0//EN&quot; &quot;http://www.w3.org/TR/REC-SMIL/SMIL10.dtd&quot;&gt;
+&lt;smil&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;ncc:generator&quot; content=&quot;LpStudioGen v1.6&quot; /&gt;
+    &lt;meta name=&quot;dc:identifier&quot; content=&quot;DTB00345&quot; /&gt;
+    &lt;meta name=&quot;dc:format&quot; content=&quot;Daisy 2.02&quot; /&gt;
+    &lt;meta name=&quot;dc:title&quot; content=&quot;Economics&quot; /&gt;
+    &lt;meta name=&quot;title&quot; content=&quot;13. Monopoly&quot; /&gt;
+    &lt;meta name=&quot;ncc:totalElapsedTime&quot; content=&quot;14:04:48&quot; /&gt;
+    &lt;meta name=&quot;ncc:timeInThisSmil&quot; content=&quot;0:02:38&quot; /&gt;
+    &lt;layout&gt;
+        &lt;region id=&quot;txtView&quot; /&gt;
+    &lt;/layout&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;seq dur=&quot;158.485s&quot;&gt;
+      &lt;par endsync=&quot;last&quot; id=&quot;ec79_0002&quot;&gt;
+        &lt;text src=&quot;ncc.html#econ_0346&quot; id=&quot;ec79_0003&quot; /&gt;
+        &lt;audio src=&quot;econ25000c.mp3 id=&quot;ec79_0004&quot; /&gt;
+      &lt;/par&gt;
+      &lt;par endsync=&quot;last&quot; id=&quot;ec79_0005&quot;&gt;
+        &lt;text src=&quot;ncc.html#econ_0348&quot; id=&quot;ec79_0006&quot; /&gt;
+        &lt;seq id=&quot;ec79_0007&quot;&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=72.200s&quot; clip-end=&quot;npt=74.659s&quot; id=&quot;phrs_0011&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=74.659s&quot; clip-end=&quot;npt=81.269s&quot; id=&quot;phrs_0012&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=81.269s&quot; clip-end=&quot;npt=91.691s&quot; id=&quot;phrs_0013&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=91.691s&quot; clip-end=&quot;npt=95.477s&quot; id=&quot;phrs_0014&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=95.477s&quot; clip-end=&quot;npt=110.575s&quot; id=&quot;phrs_0015&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=110.575s&quot; clip-end=&quot;npt=115.777s&quot; id=&quot;phrs_0016&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=115.777s&quot; clip-end=&quot;npt=119.980s&quot; id=&quot;phrs_0017&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=119.980s&quot; clip-end=&quot;npt=127.816s&quot; id=&quot;phrs_0018&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=127.816s&quot; clip-end=&quot;npt=135.288s&quot; id=&quot;phrs_0019&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=135.288s&quot; clip-end=&quot;npt=141.507s&quot; id=&quot;phrs_0020&quot; /&gt;
+            &lt;audio src=&quot;econ25000d.mp3&quot; clip-begin=&quot;npt=141.507s&quot; clip-end=&quot;npt=158.485s&quot; id=&quot;phrs_0021&quot; /&gt;
+        &lt;/seq&gt;
+      &lt;/par&gt;
+    &lt;/seq&gt;
+  &lt;/body&gt;
+&lt;/smil&gt;
+</pre>
+
+<h4 id="ncc_smil">2.3.4.1 The NCC - SMIL - Audio relationships</h4>
+
+<p id="tnnccSmil">The first &lt;text&gt; element in the first &lt;par&gt; of each SMIL document must refer to a heading element (h1 through h6). In other words, each SMIL document must begin with providing synchronization for a HTML heading. It is recommended to begin with h1 headings. Other than this, there is no required relationship between text structure and SMIL.</p>
+
+<p>There is no required relationship between audio files and SMIL documents. One SMIL document may point to several audio files (at seq and at clip level), or to non-continuous segments of an audio file.</p>
+
+<p>This is an allowed SMIL &lt;seq&gt; segment series:</p>
+
+<pre class="example">
+     ...
+     &lt;audio src=&quot;econ0001.mp3&quot; clip-begin=&quot;npt=0.000s&quot; clip-end=&quot;npt=4.659s&quot; id=&quot;phrs_0001&quot; /&gt;
+     &lt;audio src=&quot;econ0002.mp3&quot; clip-begin=&quot;npt=74.659s&quot; clip-end=&quot;npt=81.269s&quot; id=&quot;phrs_0002&quot; /&gt;
+     &lt;audio src=&quot;econ0001.mp3&quot; clip-begin=&quot;npt=4.659s&quot; clip-end=&quot;npt=6.691s&quot; id=&quot;phrs_0003&quot; /&gt;
+     &lt;audio src=&quot;econ0001.mp3&quot; clip-begin=&quot;npt=6.691s&quot; clip-end=&quot;npt=8.477s&quot; id=&quot;phrs_0004&quot; /&gt;
+     ...
+</pre>
+
+<p>This is also an allowed SMIL &lt;seq&gt; segment series:</p>
+
+<pre class="example">
+     ...
+     &lt;audio src=&quot;econ0001.mp3&quot; clip-begin=&quot;npt=0.000s&quot; clip-end=&quot;npt=4.659s&quot; id=&quot;phrs_0001&quot; /&gt;
+     &lt;audio src=&quot;econ0001.mp3&quot; clip-begin=&quot;npt=74.659s&quot; clip-end=&quot;npt=81.269s&quot; id=&quot;phrs_0002&quot; /&gt;
+     &lt;audio src=&quot;econ0001.mp3&quot; clip-begin=&quot;npt=4.659s&quot; clip-end=&quot;npt=6.691s&quot; id=&quot;phrs_0003&quot; /&gt;
+     &lt;audio src=&quot;econ0001.mp3&quot; clip-begin=&quot;npt=6.691s&quot; clip-end=&quot;npt=8.477s&quot; id=&quot;phrs_0004&quot; /&gt;
+     ...
+<br />
+<br />
+</pre>
+
+<div class="sidebar">
+<h3>2.3.5 The NCC-SMIL relation: typical playback system behavior</h3>
+<p>A playback system uses the information in the NCC as entry points to the media objects to
+be rendered. The URI within synchronized NCC elements points to a fragment (id of a media object) within the SMIL document.</p>
+<p>Rendering continues until the last object in the current SMIL document has been fully rendered. After that the playback system returns to a higher level of control hierarchy (i.e. NCC) to find an URI pointing to the next SMIL object to render.</p>
+</div>
+
+<h3 id="smilExt">2.3.6 The SMIL file extension</h3>
+<p id="tnsmExt">All SMIL files must have the extension ".smil" or the extension ".SMIL".
+</p>
+
+<div class="notice"><b>Note</b> - When writing a CD-ROM the SMIL file extensions may be truncated to an invalid ".smi" extension. This and other path and file names can be affected by the file system of the CD-ROM selected. A distributor of DAISY DTB&acute;s on CD-ROM must be certain that the file system selected is compatible with the characters used in the production process. See <a href="#cdrom">section 3.4.</a></div>
+
+<h3 id="smilName">2.3.7 SMIL filenames</h3>
+
+<p id="tnsmName">In SMIL filenames, it is highly recommended to use only the letters ([A-Za-z]), digits ([0-9]), hyphens ("-"), and underscores ("_").</p>
+
+
+<h2 id="mastersmil">2.4 The Master SMIL document</h2>
+
+<p>The Master SMIL document is an optional <a href="http://www.w3.org/TR/REC-smil/">SMIL 1.0</a> compliant document consisting of a list of the DTB component SMIL documents in playback order.</p>
+
+<p id="tnsmMstr">To provide easy distinguishability from the other SMIL documents in the DTB, the Master SMIL document must be named "master.smil" or "MASTER.SMIL".</p>
+
+<h3>2.4.1 The Master SMIL &lt;head&gt;</h3>
+
+<p>The &lt;head&gt; element must contain the following children:</p>
+
+<dl>
+<dt id="msmMta">meta [several]</dt>
+<dd>As defined in section <a href="#mstrmeta_def">2.4.2</a></dd>
+</dl>
+
+<p>The &lt;head&gt; element may contain the following children:</p>
+
+<dl>
+<dt>layout [exactly one]</dt>
+<dd>As defined in <a href="#smillayout_def">section 2.3.2.2</a></dd>
+</dl>
+
+<h3 id="mstrmeta_def">2.4.2 Master SMIL metadata - definition</h3>
+
+<dl>
+<dt>dc:title</dt>
+<dd>content: title of DTB or publication</dd>
+<dd id="msmMtTtl">occurrence: mandatory</dd>
+
+<dt>dc:identifier</dt>
+<dd>content: identifier of the DAISY publication (unique to the publishing organization or group)</dd>
+<dd>scheme: identifier scheme, if existing</dd>
+<dd id="msmMtId">occurrence: mandatory</dd>
+
+<dt>dc:format</dt>
+<dd>content: code for Daisy DTB format; "Daisy 2.02"</dd>
+<dd id="msmMtFrm">occurrence: mandatory</dd>
+
+<dt>ncc:generator</dt>
+<dd>content: name and version of software that generated the master SMIL document</dd>
+<dd id="msmMtGen">occurrence: optional</dd>
+
+<dt>ncc:timeInThisSmil</dt>
+<dd>content: Sum of SMIL time in the master SMIL document</dd>
+<dd>scheme: SMIL clock; recommended syntax: "hh:mm:ss"</dd>
+<dd id="msmMtTts">occurrence: optional - recommended</dd>
+
+</dl>
+
+
+<h3>2.4.3 The Master SMIL &lt;body&gt;</h3>
+
+<p>The &lt;body&gt; element of a DAISY 2.02 Master SMIL must contain the following children:</p>
+<dl>
+<dt id="tnsmMstrBody">ref [one or several]</dt>
+</dl>
+
+<h4>2.4.3.1 Attributes on the &lt;ref&gt; element</h4>
+
+<p>Attributes occuring on the &lt;ref&gt; element are:</p>
+
+<dl>
+<dt>title</dt>
+<dd>content: the textual content of the first &lt;text&gt; element in the referenced SMIL document - presumably a heading.</dd>
+<dd id="tnsmTtl">occurrence: optional - recommended</dd>
+
+<dt>src</dt>
+<dd>content: a textual reference to the physical name of the referenced SMIL document</dd>
+<dd id="tnsmMsrc">occurrence: mandatory</dd>
+
+<dt>id</dt>
+<dd>content: an XML identifer</dd>
+<dd id="tnsmMid">occurrence: mandatory</dd>
+</dl>
+
+<h3>2.4.4 Example of Master SMIL</h3>
+
+<pre class="example">
+&lt;!DOCTYPE SMIL PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-SMIL/SMIL10.dtd"&gt; 
+&lt;smil&gt; 
+  &lt;head&gt; 
+    &lt;meta name="dc:title" content="Economics" /&gt; 
+    &lt;meta name="dc:identifier" content="DTB00345" /&gt; 
+    &lt;meta name="dc:format" content="Daisy 2.02" /&gt; 
+    &lt;meta name="ncc:generator" content="LpStudioGen 1.6" /&gt; 
+    &lt;meta name="ncc:timeInThisSmil" content="91:27:21" /&gt;
+    &lt;layout&gt;            
+      &lt;region id="txtView" /&gt;
+    &lt;/layout&gt;
+  &lt;/head&gt; 
+  &lt;body&gt; 
+    &lt;ref title="Economics by Richard G. Lipsey et.al." src="econ0001.smil" id="lpID_0001" /&gt; 
+    &lt;ref title="Information about the talking book" src="econ0002.smil" id="lpID_0002" /&gt; 
+    &lt;ref title="Contents in brief" src="econ0003.smil" id="lpID_0003" /&gt; 
+    ...
+    &lt;ref title="Part 1. The nature of economics" src="econ0009.smil" id="lpID_0007" /&gt; 
+    &lt;ref title="1. The economic problem" src="econ0010.smil" id="lpID_0008" /&gt; 
+    &lt;ref title="2. Economics as a social science" src="econ0011.smil" id="lpID_0009" /&gt; 
+    &lt;ref title="3. An overview of the market economy" src="econ0012.smil" id="lpID_0010" /&gt; 
+    ...
+    &lt;ref title="Ending announcement" src="econ0088.smil" id="lpID_0095" /&gt; 
+  &lt;/body&gt;
+&lt;/smil&gt; 
+</pre>
+
+<div class="notice"><b>Note</b> - the Master SMIL is included for future interoperability reasons. It may also be used to give generic SMIL players access to the content of the DTB.</div> 
+
+<h2 id="audioformats">2.5 Audio files and formats</h2>
+
+<h3 id="tnAudFmts">2.5.1 Supported audio formats</h3>
+
+<h4>2.5.1.1. PCM</h4>
+
+<p id="pcmRiff">The PCM file must use the Microsoft RIFF WAVE file format with a header indicating PCM as its format tag. The PCM file must use the file extension ".wav".</p>
+
+<h4>2.5.1.2. MPEG Audio</h4>
+
+<p id="tnAudMp">The MPEG file must use header and file structure as defined by either ISO/MPEG or Microsoft RIFF WAVE. The following subformats of MPEG Audio are supported: MPEG-1 Layer 2; MPEG-1 Layer 3; MPEG-2 Layer 2; MPEG-2 Layer 3. If the ISO/MPEG file format is used, the file extension should be ".mp2" or ".mp3" respectively. </p>
+
+<p id="riffExtn">If the Microsoft RIFF WAVE file format is used, the file extension should be ".wav".</p>
+
+<p>Use of the ISO/MPEG file format and its extensions is recommended.</p>
+
+<h4>2.5.1.3. ADPCM2</h4>
+
+<p>The ADPCM2 file must use the file extension ".wav".</p>
+
+<div id="adpcmNotice" class="notice"><b>Note</b> - The ADPCM2 format, used to encode DAISY DTB&acute;s in, for example, the Sigtuna 2 production tool, is proprietary.
+The header of the ADPCM2 file format does not fully comply with the RIFF WAVE specification, thus standard multimedia tools will not be able to render these files correctly.</div>
+
+<h3 id="audPrm">2.5.2. List of supported audio file format parameters</h3>
+
+<dl>
+<dt>PCM</dt>
+<dd id="tnAudBitDepth">Bitdepth: 8-24</dd>
+<dd>Sampling frequencies: all</dd>
+<dd>No of channels: 1 or 2 (mono or stereo)</dd>
+</dl>
+
+<div id="pcmFs" class="notice"><b>Note</b> - When using PCM, 16 bits per sample and sampling frequencies of 44.1, 22.05 or 11.025 are recommended, as some audio playback systems may not be able to render other variations correctly.</div>
+
+<dl>
+<dt>ADPCM2</dt>
+<dd id="tnAudadpcm2">Bitdepth: 4</dd>
+<dd>Sampling frequencies: all</dd>
+<dd>No of channels: 1 (mono)</dd>
+<dt>MPEG-1/MPEG-2, Layer 2/3</dt>
+<dd>Bitrates: all</dd>
+<dd>Sampling frequencies: all</dd>
+<dd>No of channels 1 or 2 (mono or stereo)</dd>
+</dl>
+
+<div id="vbrNotice" class="notice"><b>Note</b> - Some MP3 encoders offer a VBR (Variable Bit Rate encoding) feature. As some audio playback systems may not be able to decode VBR correctly it is not recommended for use with DAISY DTB's.</div>
+
+<h3 id="audioName">2.5.3 Audio filenames</h3>
+
+<p id="tnAuName">In audio filenames, it is highly recommended to use only the letters ([A-Za-z]), digits ([0-9]), hyphens ("-"), and underscores ("_").
+</p>
+
+<h1 id="distribution">3. DTB distribution issues</h1>
+
+<h2 id="singlebook">3.1 Single volume DTB</h2>
+
+<p id="tnMednccCnt">The NCC.HTML should be placed in the root of the carrier media, together with SMIL and media (audio) files. This is the default case.</p>
+
+<p>There are however optional exceptions to this case, and although they are allowed by the specification, producers should use them with caution since not all playback devices may be able to handle the non-default cases correctly.</p>
+
+<ol>
+<li>The NCC.HTML and its associated files may exist within a directory structure.</li>
+<li>The NCC.HTML and SMIL documents may include relative URI:s. In other words, the sum fileset of a DAISY DTB does not have to exist in one unified location.</li>
+</ol> 
+
+<p><em>For example, a NCC.HTML placed in the root of a media may have a heading element that looks like this:</em></p>
+
+<pre class="example">
+&lt;h1 id="econ0128"&gt;&lt;a href="./subfolder1/econ0065.smil#ec650001"&gt;Chapter 1&lt;/a&gt;&lt;/h1&gt;
+</pre>
+
+<p><em>and a corresponding SMIL section could look like this:</em></p>
+
+<pre class="example">
+	...
+        &lt;par endsync="last"&gt;
+          &lt;text src="../ncc.html#econ00128" id="ec650001" /&gt;
+          &lt;seq&gt;
+            &lt;audio src="./subfolder2/econ0034.wav" clip-begin=... /&gt;
+            &lt;audio src="./subfolder3/econ0035.wav" clip-begin=... /&gt;
+	...
+</pre>
+
+<p>To achieve DAISY 2.02 compliance, playback devices are only required to support playback of DTB&acute;s that conform to the default case.</p>
+
+<h2 id="multvolubook">3.2 Multiple volume DTB</h2>
+
+<p>If a DAISY DTB, due to its size, has to be placed on several (two or more) carrier media, the following method must be used.</p>
+
+<p>Each carrier media must contain a full NCC document, with the following additions:</p>
+
+<ol>
+<li>In the &lt;head&gt; element of the NCC.HTML document, a &lt;meta&gt; child is introduced that identifies the current volume of the set. In the NCC.HTML on the first media of a DTB distributed on three media, this element would read
+
+<pre class="example">
+&lt;meta name=&quot;ncc:setInfo&quot; content=&quot;1 of 3&quot; /&gt;
+</pre>
+Where the content "1 of 3", "2 of 3", or "3 of 3" denotes the order of the media.
+</li>
+</ol>
+
+<div class="notice"><b>Note</b> - The ncc:setInfo element is required for multiple volume DTB&acute;s only. Single volume DTB&acute;s are defined by the absence of this element.</div>
+
+<ol start="2">
+<li id="tnFirstNavEntry">Each carrier media must, as its first navigable entry, contain the title section of the book</li>
+
+<li>In those sections of the NCC document copy that point to non-local audio data, a SMIL file and a corresponding sound file is referenced containing the message "Please insert disc x", where x represents the number of the media in the set.</li>
+
+<li id="tnRelAttr">There must be a <a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">rel attribute</a> added to the anchor elements the NCC headings pointing to non-local information. The valid values of the rel attribute identifies the number of the media. Valid rel attributes are "1 of 3", "2 of 3", "3 of 3", etc.</li>
+</ol>
+
+<div class="sidebar">
+<h3>3.2.1 Multiple volume DTB: end user implications</h3>
+
+<p>A DTB of fifteen chapters is spanned over three media. Five chapters are contained on each medium. The end user, currently reading chapter 5, points to the beginning of chapter 6. The audio prompt "please insert disc two" is played. The end user inserts another media.</p>
+
+<p>If the inserted media is the correct one, playback continues exactly at the beginning of chapter 6.</p>
+
+<p>If the inserted media contains the right DTB but the wrong media number, the audio prompt "please insert disc 2" is played again.</p>
+
+<p>If the inserted media contains another DTB a general error message will be played, followed by the title information of the new DTB.</p>
+
+<p>The end user continues to insert other media until the correct one is found.
+At this point manual browsing to chapter 6 might be required, although several playback systems will be able to move automatically to the beginning of chapter 6.</p>
+
+<p>If the end user inserts media 2 of a set without previously having read media 1, the title information audio would be read,
+after which playback should commence at the first element that does not contain the rel attribute, that is, the first locally playable section of the DTB.</p>
+</div>
+
+
+<h3>3.2.2. Multiple volume DTB NCC and SMIL examples</h3>
+
+<h4>Example of multiple volume DTB NCC</h4>
+
+<p><em>The following example shows the second disc in a set of three.</em></p>
+
+<pre class="example">
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+  &lt;head&gt;
+    ... <i>other head elements</i> ...
+    &lt;meta name=&quot;setInfo&quot; content=&quot;2 of 3&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&quot;ec001&quot; class=&quot;title&quot;&gt; &lt;a href=title.smil#info0001&gt;Title section&lt;/a&gt;&lt;/h1&gt;
+    ...
+    &lt;h1 id=&quot;ec006&quot;&gt;&lt;a href=ch01.smil#ec01 rel=&quot;1 of 3&quot;&gt;Chapter 1&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec007&quot;&gt;&lt;a href=ch02.smil#ec01 rel=&quot;1 of 3&quot;&gt;Chapter 2&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec008&quot;&gt;&lt;a href=ch03.smil#ec01 rel=&quot;1 of 3&quot;&gt;Chapter 3&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec009&quot;&gt;&lt;a href=ch04.smil#ec01 rel=&quot;1 of 3&quot;&gt;Chapter 4&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec010&quot;&gt;&lt;a href=ch05.smil#ec01 rel=&quot;1 of 3&quot;&gt;Chapter 5&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec011&quot;&gt;&lt;a href=ch06.smil#ec01&gt;Chapter 6&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec012&quot;&gt;&lt;a href=ch07.smil#ec01&gt;Chapter 7&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec013&quot;&gt;&lt;a href=ch08.smil#ec01&gt;Chapter 8&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec014&quot;&gt;&lt;a href=ch09.smil#ec01&gt;Chapter 9&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec015&quot;&gt;&lt;a href=ch10.smil#ec01&gt;Chapter 10&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec016&quot;&gt;&lt;a href=ch11.smil#ec01 rel=&quot;3 of 3&quot;&gt;Chapter 11&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec017&quot;&gt;&lt;a href=ch12.smil#ec01 rel=&quot;3 of 3&quot;&gt;Chapter 12&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec018&quot;&gt;&lt;a href=ch13.smil#ec01 rel=&quot;3 of 3&quot;&gt;Chapter 13&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec019&quot;&gt;&lt;a href=ch14.smil#ec01 rel=&quot;3 of 3&quot;&gt;Chapter 14&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1 id=&quot;ec020&quot;&gt;&lt;a href=ch15.smil#ec01 rel=&quot;3 of 3&quot;&gt;Chapter 15&lt;/a&gt;&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h4>Example of multiple volume DTB SMIL</h4>
+
+<p><em>The following example corresponds to "ch01.smil" in the above NCC example</em></p>
+
+<pre class="example">
+&lt;!DOCTYPE SMIL PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-SMIL/SMIL10.dtd"&gt;
+&lt;smil&gt;
+  &lt;head&gt;
+    <i>...other head elements...</i>
+    &lt;layout&gt;
+      &lt;region id=&quot;txtView&quot; /&gt;
+    &lt;/layout&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;seq dur=&quot;4.024s&quot;&gt;
+      &lt;par endsync="last"&gt;
+        &lt;text src="ncc.html#ec001" id=&quot;info0001&quot; /&gt;
+        &lt;audio src=&quot;please_insert_cd_1.wav&quot; clip-begin=&quot;npt=0.000s&quot; clip-end=&quot;npt=1.456s&quot; id=&quot;info0004&quot; /&gt;
+      &lt;/par&gt;
+    &lt;/seq&gt;
+  &lt;/body&gt;
+&lt;/smil&gt;
+</pre>
+
+<h2 id="multbookvolu">3.3 Multiple DTB volume</h2>
+
+<p>If more than one DAISY DTB is provided on the same carrier media, the following method must be used.</p>
+
+<p id="tndiskInfo">Each DTB must be stored in a separate folder (directory). In the root of the carrier media a file called discinfo.html containing links to all DTB&acute;s on the media is created. This document must be structured as shown in section <a href="#discinfoexample">3.3.1</a>.</p>
+
+<h3 id="discinfoexample">3.3.1 Example of discinfo document</h3>
+
+<pre class="example">
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;CD Information&lt;/title&gt;
+    &lt;meta http-equiv="Content-type" content='text/html; charset="iso-8859-1"' /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a href=&quot;./book1/ncc.html&quot;&gt;Economics&lt;/a&gt;
+    &lt;a href=&quot;./book2/ncc.html&quot;&gt;Ecology&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<div class="sidebar">
+<h3>3.3.2 Multiple DTB volume: typical playback system behavior</h3>
+<p>A media containing three DAISY DTB&acute;s is inserted into a playback system. Via GUI and/or AUI the end user is informed that several DTB&acute;s exists on the medium.
+Following this the title section of each DTB is read, preceded by a number that denotes "bookshelf order". The end user selects which DTB to read by choosing the number for that DTB.</p>
+</div>
+
+<h2 id="cdrom">3.4 Distribution/storage media formats</h2>
+
+<p>Use of a file system that allows long file names (more than 8+3 characters) is required.</p><p> As for CD-ROM, use of the "Joliet" extension to ISO 9660 is recommended. The "Romeo" file system shall not be used.</p>
+
+<div class="notice"><b>Note</b> - For more information on these and other CD-ROM formats please see <a href="http://www.ping.be/~pin11466/formtxt.html">www.ping.be</a></div>
+
+<h1 id="changes">Appendix 1. Changes</h1>
+
+<h2 id="chng2021">A1.1 Changes between September 22 1998 DAISY 2.0 and September 21 1999 DAISY 2.01 versions</h2>
+
+<ul>
+<li>The end user may turn on or off the reading of page numbers, if this is supported in the player. When page numbers are in the NCC direct navigation is already supported.</li>
+
+<li>User control of note references, sidebars, and optional producer notes. These items may now be turned on or off by the end user, if the player supports this function. Footnotes, annotations, endnotes, and rear notes, along with non-essential producer notes, and floating sidebars can be turned on or off by the end user. These items may be placed in the NCC to make it easy for the end user to navigate to items they may have previously turned off.</li>
+
+<li>Resource list - This allows players to take advantage of the class attribute on structure elements. The player announcements may use these resources to tailor the description of items in the NCC.</li>
+</ul>
+
+<h2 id="chng2122">A1.2 Changes between September 21 1999 DAISY 2.01 and February 28 2001 DAISY 2.02 versions</h2>
+
+<ul>
+<li>Use of HTML 4 formally deprecated</li>
+<li>Revision and clarification of NCC.HTML metadata set</li>
+<li>Allowed ncc &lt;body&gt; children restricted to &lt;h1&gt; to &lt;h6&gt;, &lt;span&gt; and &lt;div&gt;</li>
+<li>Definition of SMIL metadata set</li>
+<li>Definition of SMIL &lt;head&gt; and &lt;body&gt;</li>
+<li>Definition of Master SMIL</li>
+<li>Definition of supported audio formats</li>
+<li>Features included in the 2.01 extension of 2.0 declared optional</li>
+<li>Changes in NCC and SMIL syntax for optional content (footnotes, sidebars, etc.)</li>
+<li>Use of &lt;head&gt; &lt;link&gt; element (when using multiple text content documents) declared optional</li>
+</ul>
+
+<h1 id="metatabs">Appendix 2. Tabular presentations of metadata sets in DAISY 2.02 documents</h1>
+
+<h2 id="nccMetaTab">A2.1 Tabular presentation of NCC.HTML metadata set</h2>
+
+<table>
+<tr>
+<td><b>Prefix</b></td>
+<td><b>Label</b></td>
+<td><b>Scheme</b></td>
+<td><b>Occurrence</b></td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>charset</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>contributor</td>
+<td>-</td>
+<td>optional*</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>coverage</td>
+<td>-</td>
+<td>optional*</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>creator</td>
+<td>-</td>
+<td>mandatory (if a creator is known)*</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>date</td>
+<td>ISO 8601</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>depth</td>
+<td>-</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>description</td>
+<td>-</td>
+<td>optional*</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>files</td>
+<td>-</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>footnotes</td>
+<td>-</td>
+<td>mandatory if footnotes are used</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>format</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>generator</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>http-equiv</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>identifier</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>kByteSize</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>language</td>
+<td>ISO 639-1/ISO 3166</td>
+<td>mandatory*</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>maxPageNormal</td>
+<td>-</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>multimediaType</td>
+<td>-</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>narrator</td>
+<td>-</td>
+<td>optional - recommended*</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>pageFront</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>pageNormal</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>pageSpecial</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>prodNotes</td>
+<td>-</td>
+<td>mandatory if producers´ notes are used</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>producedDate</td>
+<td>ISO 8601</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>producer</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>publisher</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>relation</td>
+<td>-</td>
+<td>optional*</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>revision</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>revisionDate</td>
+<td>ISO 8601</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>rights</td>
+<td>-</td>
+<td>optional*</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>setInfo</td>
+<td>k of n</td>
+<td>mandatory in multiple volume DTB´s</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>sidebars</td>
+<td>-</td>
+<td>mandatory if sidebars are used</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>source</td>
+<td>ISBN</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>sourceDate</td>
+<td>ISO 8601</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>sourceEdition</td>
+<td>-</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>sourcePublisher</td>
+<td>-</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>sourceRights</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>sourceTitle</td>
+<td>-</td>
+<td>optional (mandatory if the titles differ)</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>subject</td>
+<td>-</td>
+<td>optional - recommended*</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>title</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>tocItems</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>totalTime</td>
+<td>hh:mm:ss</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>type</td>
+<td>-</td>
+<td>optional*</td>
+</tr>
+</table>
+
+<p>* = this meta element may occur multiple times within the NCC meta element set.</p>
+
+
+<h2 id="smilMetaTab">A2.2 Tabular presentation of SMIL metadata set</h2>
+
+<table>
+<tr>
+<td><b>Prefix</b> </td>
+<td><b>Label</b> </td>
+<td><b>Scheme</b> </td>
+<td><b>Occurrence</b> </td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>format</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>generator</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>identifier</td>
+<td>-</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>timeInThisSmil</td>
+<td>SMIL clock</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>title</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>title</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>totalElapsedTime</td>
+<td>SMIL clock</td>
+<td>optional - recommended</td>
+</tr>
+
+</table>
+
+<h2 id="mSmilMetaTab">A2.3 Tabular presentation of Master SMIL metadata set</h2>
+<table>
+<tr>
+<td>dc</td>
+<td>format</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>generator</td>
+<td>-</td>
+<td>optional</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>identifier</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+<tr>
+<td>ncc</td>
+<td>timeInThisSmil</td>
+<td>SMIL clock</td>
+<td>optional - recommended</td>
+</tr>
+
+<tr>
+<td>dc</td>
+<td>title</td>
+<td>-</td>
+<td>mandatory</td>
+</tr>
+
+</table>
+
+<h1 id="interoperability">Appendix 3. Interoperability and DAISY Certification</h1>
+
+<p>The XHTML and SMIL files can all be validated using standard XML validation tools. The NCC, and the content of the book in XHTML can be validated against the XHTML 1.0 transitional specification. The SMIL files can be validated with a XML parser against the SMIL 1.0 specification.</p>
+
+<p>In addition to these standard tests by validation tools, several test books will be made available. Player manufacturers that wish to meet the DAISY 2.02 specification should use these specifications and the test books to perform internal testing. If all of the books provided in this test suite can be played by the player, then the player manufacturer may request to have their player certified as DAISY 2.02 compliant.</p>
+
+<p>Manufacturers of authoring tools must be able to meet these specifications in their authoring tool. If their authoring tool creates content which meets these specifications and which performs like the test suite materials, the developer may request to have their authoring tool certified as DAISY 2.02 compliant.</p>
+
+<p>To receive DAISY Consortium certification of their claims, the player or authoring tool must be submitted to the DAISY Consortium for performance testing.
+<br />
+<br />
+<br />
+</p>
+
+<hr />
+<div>
+<a href="http://validator.w3.org/check/referer">
+  <img height="31" width="88"
+         src="http://www.w3.org/Icons/valid-xhtml10" 
+         alt="Valid XHTML 1.0!" /></a>
+</div>
+<div>
+<a href="http://www.w3.org/WAI/WCAG1AAA-Conformance"
+      title="Explanation of Level Triple-A Conformance">
+  <img height="32" width="88" 
+          src="http://www.w3.org/WAI/wcag1AAA"
+          alt="Level Triple-A conformance icon, 
+          W3C-WAI Web Content Accessibility Guidelines 1.0" /></a>
+</div>
+</body>
+</html>

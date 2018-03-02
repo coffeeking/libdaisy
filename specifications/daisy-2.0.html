@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.daisy.org/sites/default/files/favicon_6.ico" type="image/vnd.microsoft.icon" />
+<style type="text/css">
+body {font-style: normal; font-weight: normal; font-family: arial, verdana, sans-serif; margin-right: 15%; margin-left: 10%;}
+h6 {font-weight: bold; font-size:  75%; color: #000099; margin-top: 1.2em; margin-bottom: 0.2em;}
+h5 {font-weight: bold; font-size:  80%; color: #000099; margin-top: 1.2em; margin-bottom: 0.2em;}
+h4 {font-weight: bold; font-size:  88%; color: #000099; margin-top: 2.0em; margin-bottom: 0.4em;}
+h3 {font-weight: bold; font-size: 100%; color: #000099; margin-top: 2.0em; margin-bottom: 0.5em; letter-spacing: 0.04em;}
+h2 {font-weight: bold; font-size: 115%; color: #000099; margin-top: 2.5em; margin-bottom: 0.5em; letter-spacing: 0.15em;}
+h1 {font-weight: bold; font-size: 130%; color: #000099; margin-top: 3.0em; margin-bottom: 0.5em; letter-spacing: 0.20em;}
+ul.linklist {list-style: none; margin-left: 0em;}
+ul.linklist ul {list-style: none; margin-left: 2em;}
+.top {font-size: 80%; display: block;}
+img {border:inherit none; float: right}
+*.box {font-size:95%; border: 1px solid rgb(100,100,100); padding:0.3em}
+*.author {color:#000099; font-size:80%;}
+*.comment {color:#000099; font-size:80%;}
+*.alert {border: 1px solid red; padding: 0.2em; font-size:95%; font-weight:bold;}
+*.action {color: rgb(0,0,153); font-size:90%; border: 1px solid rgb(0,0,50); padding: 0.2em; background-color: rgb(240,240,240); font-weight:bold;}
+span.bullet {font-family:"Courier New", sans-serif;}
+span.padding {font:.3em "Courier New", sans-serif;}
+code {font: 80% "Courier New", sans-serif;}
+span.indent {margin-left:1em;text-indent:-1em;}
+span.indent2 {text-indent:1.5em;}
+ol.indent3 {margin-top:0em;}
+dt {font-weight:bold;}
+pre {margin-left:10px;}
+.diff-ins {background:yellow;}
+.diff-del {text-decoration: line-through; background:pink; }
+.hidden { position:absolute; left:0px; top:-100px; width:0px; height:0px; overflow: hidden; }
+.center { text-align:center;}
+</style><link rel="canonical" href="/daisy20.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/14061" />
+
+  <title>DAISY 2.0 Specification | DAISY Consortium</title>
+
+  <meta name="description" content="All published information should be available for people with print disabilities at no greater cost. We develop and maintain international open DAISY standards." />
+
+  <meta name="keywords" content="accessible publishing, print disabilities, inclusive publishing, DAISY, accessible e-books, visually impaired, e-readers,
+libraries for the blind, reading technologies, software players" />
+
+  <link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_791YXBaKKm1ORM_7huSKEsIV9tSWq6wmRkERhuXpN6w.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_VAWJt5QWBzJpZ4IvBxqNwwgSECSD8x7Bd8EgQiXfvDU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_L9DlDeYSMj2TyMjJuGgObWDWFwt8T0VdOD3gSSdA1cY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.daisy.org/sites/default/files/css/css_Mr-4pjzF64jU3wyEDijBz9y5WaUtDw0s1MYPNVVV8Y0.css" media="all" />
+
+  <script type="text/javascript" src="http://www.daisy.org/sites/default/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script type="text/javascript" src="http://www.daisy.org/sites/default/files/js/js_lgAAOlplEun7p_8Pb-8dM079wtvnfwLZ0hAK0mH7Dto.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-327448-2"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"standalonehtml", "theme_token":"3QC1yAeSX28Ts9PuwTvggQU6-5fz8W-wkIIfNJ1rYDs", "js":{"misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Fmodules\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "0":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_api\u002Fdate.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Flogintoboggan\u002Flogintoboggan.css":1, "sites\u002Fall\u002Fmodules\u002Fmollom\u002Fmollom.css":1, "modules\u002Fnode\u002Fnode.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fcalendar\u002Fcss\u002Fcalendar_multiday.css":1, "modules\u002Fforum\u002Fforum.css":1, "sites\u002Fall\u002Fmodules\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fprint\u002Fcss\u002Fprintlinks.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fsystem.menus.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fnormalize.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fwireframes.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Flayouts\u002Fresponsive-sidebars.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fpage-backgrounds.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Ftabs.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fpages.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fblocks.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fnavigation.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fviews-styles.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fnodes.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fcomments.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fforms.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Ffields.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Fprint.css":1, "sites\u002Fall\u002Fthemes\u002Fstandalonehtml\u002Fcss\u002Ffresh.css":1}}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|application|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--><!]]>
+</script>
+
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-14061 node-type-html section-daisy20html" >
+
+  <div id="skip-link">
+
+    <a href="#main-content" class="element-invisible element-focusable">Skip to Main Content</a>
+
+  </div>
+
+  
+  
+<div id="page">
+
+  <div id="header">
+
+    
+    
+    
+    
+  </div>
+
+  <div id="main">
+
+    <div id="content" class="column">
+                  <a id="main-content"></a>
+	  
+<a href="/"><img src="http://www.daisy.org/images/daisylogo-w.gif" alt="DAISY Consortium Logo - Link to Home Page" width="150" height="110"  /></a>
+                    <h1 class="title" id="page-title">DAISY 2.0 Specification</h1>
+                                            <div class="region region-content">
+    <div id="block-system-main" class="block block-system first last odd">
+
+      
+  <div class="content">
+    <div id="node-14061" class="node node-html view-mode-full clearfix">
+
+  
+      
+  
+  
+  <div class="content">
+    <span class="print-link"></span><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>STATUS:</strong> This is a recommendation of the DAISY Consortium. September 22, 1998</p>
+<ul><li> <a href="#1.0%20INTRODUCTION"> 1.0 Introduction</a></li>
+  <ul><li><a href="#1.1%20DESCRIPTION">1.1 Description</a></li>
+  </ul><li><a href="#2.0%20PAGE%20NUMBERS">2.0 Page Numbers</a></li>
+  <ul><li><a href="#2.1%20CLASS%20ATTRIBUTES">2.1 Class Attributes</a></li>
+    <li><a href="#2.2%20ID">2.2 ID</a></li>
+    <li><a href="#2.3%20Examples%20Of%20Page%20Numbers">2.3 Examples Of Page Numbers</a> </li>
+  </ul><li><a href="#3.0%20STRUCTURAL%20TAGS">3.0 Structural Tags</a></li>
+  <ul><li><a href="#3.1%20Valid%20Class%20Attribute%20Values%20on%20Headings">3.1 Valid Class Attribute Values on Headings</a></li>
+    <li><a href="#3.2%20Examples">3.2 Examples</a></li>
+    <li><a href="#3.3%20Multiple%20HTML%20Files">3.3 Multiple HTML Files</a></li>
+    <li><a href="#3.3.1%20Example%20of%20the%20Link%20Data">3.3.1 Example of the Link Data</a></li>
+  </ul><li><a href="#4.0%20Dublin%20Core%20Bibliographic%20and%20Cataloging%20metadata">4.0 Dublin Core Bibliographic and Cataloging    Metadata</a></li>
+  <ul><li><a href="#4.1%20Example">4.1 Example</a></li>
+    <li><a href="#4.2%20Required%20Bibliographic%20Metadata">4.2 Required Bibliographic Metadata</a></li>
+  </ul><li><a href="#5.0%20NAVIGATION%20CONTROL%20CENTER%20%28NCC%29">5.0 Navigation Control            Center (NCC)</a></li>
+  <ul><li><a href="#5.1%20NCC%20File%20Names%20and%20Folders">5.1 NCC File Names and Folders</a></li>
+    <li><a href="#5.1.1%20Example%20Of%20discinfo.html%20File">5.1.1 Example Of Discinfo.html File</a></li>
+    <li><a href="#5.1.2%20CD-ROM%20Formats">5.1.2 CD-ROM Formats</a></li>
+    <li><a href="#5.1.3%20Multiple%20Volume%20Book">5.1.3 Multiple Volume Book</a></li>
+    <li><a href="#5.2%20NCC%20metadata">5.2 NCC Metadata</a></li>
+    <li><a href="#5.3%20Example">5.3 Example</a></li>
+    <li><a href="#5.4%20Optional%20metadata">5.4 Optional Metadata</a> </li>
+    <li><a href="#5.5%20Body%20Example">5.5 Body Example</a></li>
+  </ul><li><a href="#6.0%20SMIL%20Files">6.0 SMIL Files</a></li>
+  <ul><li><a href="#6.1%20metadata">6.1 Metadata</a></li>
+    <li><a href="#6.2%20Sound%20and%20SMIL%20file%20Extensions">6.2 Sound and SMIL File Extensions</a></li>
+  </ul><li><a href="#7.0%20Interoperability%20and%20DAISY%20Certification">7.0 Interoperability and DAISY Certification</a> </li>
+</ul><p>Document maintained by: George Kerscher<br />
+  If you have any questions, comments, or suggestions please contact George Kerscher at <a href="mailto:kerscher@montana.com">kerscher@montana.com</a></p>
+<h2>Acknowledgments</h2>
+<p>Thanks to everyone who has helped to author the working drafts that went into the DAISY  2.0 specification, and to all those who have sent suggestions and corrections. </p>
+<p>The authors of this specification, the members of the MarkUp Specification Team deserve  much applause for their diligent review of this document, their constructive comments, and  their hard work. A special thanks goes to:</p>
+<p>George Kerscher, DAISY Consortium / Recording For the Blind and Dyslexic; Mark  Hakkinen, Productivity Works; Harvey Bingham, Yuri Rubinski Insight Foundation; David  Pawson and Stephen King and Keith Gladstone, Royal National Institute for the Blind; Tatsu  Nishizawa, Plextor Ltd; Dominic Labbé and Gilles Pepin, VisuAide Inc.; Lynn Leith and  Barbara Freeze, Canadian National Institute for the Blind; Matthias Ragaz, Swiss Library  for the Blind and Visually Impaired; Michael Moodie and Lloyd Rasmussen, National Library  Service for the Blind and Physically Handicapped Library of Congress; Tom McCartney, Gray  Wolf Computing; Rej Tanikella, Recording For the Blind &amp; Dyslexic; Jason White, Web  Accessibility Initiative; Edmar Schut, Dutch Library for the Visually and  Print-handicapped Students and Professionals; Susanne Seidelin and Christian Wallin,  Danish National Library for the Blind; Thomas Kalish, Association of Talking Book  Libraries of Germany; Jan Lindholm, Labyrinten Inc; Daniel Dardailler and Philipp Hoschka,  World Wide Web Consortium.</p>
+<h2><a name="1.0 INTRODUCTION" id="1.0 INTRODUCTION">1.0 Introduction</a></h2>
+<p>The DAISY 2.0 HTML Specification is intended to be a simple set of conventions for the  structure of Digital Talking Books (DTB) that are marked up primarily to the level of  headings and page numbers. This is useful for organizations who produce books using the  Sigtuna authoring / Recording system. We may find that this specification is also useful  for books that are converted from analog recordings. It is also possible to support full  text. This specification uses the <a href="http://www.w3.org/TR/REC-html40/sgml/dtd.html">HTML  4.0 STRICT document type definition (DTD)</a> defined by the <a href="http://www.w3.org">World  Wide Web Consortium (W3C - http://www.w3.org)</a>. The DAISY Specification uses only a  small part of the HTML 4.0 tag set. </p>
+<h3><a name="1.1 DESCRIPTION" id="1.1 DESCRIPTION">1.1 Description</a></h3>
+<p>A book that complies with the DAISY 2.0 Specification must contain headings, page  number references, and metadata for book identification and cataloging. It is expected  that the current playback hardware and software will easily support this specification.  The specification identifies the essential HTML tags and their usage. Associated with the  HTML will be Synchronized Multimedia Integration Language (SMIL) files that synchronize  the structure with continuous digital human voice. This specification only describes the  metadata contents of the SMIL file. The full <a href="http://www.w3.org/TR/REC-smil/">SMIL  specification</a> is already defined by the W3C. There is also a required file for  navigation and control. The NCC file is required under this specification.</p>
+<p>It is expected that several mechanisms will be available to produce materials that meet  this specification. Using the Sigtuna Recording software materials can be produced that  comply with this specification. Sigtuna recorder, when released, will produce the required  Navigation Control Center (NCC) file, the SMIL files and the sound files. It should also  be possible to produce compliant materials from HTML files which include the structural  and optional full text components. The SMIL files and sound files will also need to be  present. The required NCC file may then be produced from the examination of the HTML data,  the SMIL, and the sound files. </p>
+<h2><a name="2.0 PAGE NUMBERS" id="2.0 PAGE NUMBERS">2.0 Page Numbers</a></h2>
+<p>Page references are provided in DAISY 2.0 books to support navigation to pages in a  book. Previous and next pages should always be supported by players. Go to a certain page  should also be supported and this specification provides flexibility in providing direct  access to pages. </p>
+<p>Page numbers are represented by the <a href="http://www.w3.org/TR/REC-html40/struct/global.html#h-7.5.4">HTML "span"  tag.</a> The span element identifies the beginning of the page. The content of the span  element is the page number as it appears in the book. Regardless of where a page number  appears on the printed page, the span element with the content must be placed before the  first word on that page. It is important to note that the exact representation of the page  number from the printed book is the content. The producer should not modify this content.  Player manufacturers should use the content for navigation and searching purposes. </p>
+<p>NOTE: blank pages should be marked with a span element whose content represents the  sequential number of the page. </p>
+<h3><a name="2.1 CLASS ATTRIBUTES" id="2.1 CLASS ATTRIBUTES">2.1 Class Attributes</a></h3>
+<p><a href="http://www.w3.org/TR/REC-html40/struct/global.html#adef-class">Class  attributes</a> of: <em>page-front</em>, <em>page-normal</em>, and <em>page-special</em> are  supported. </p>
+<p>The class attribute "page-front" indicates pages at the front of the book  before the normal page numbering begins. </p>
+<p>The class attribute "page-normal" indicates pages that have a normal scheme  that starts at 1 and continues to the back matter or to the end of the book. IT is very  important to note that the content of normal page numbers MUST BE THE ASCII VALUE OF A  POSITIVE WHOLE NUMBER. Players will use this positive integer for navigation purposes.</p>
+<p>The class attribute "page-special" indicates pages that are not front matter  and do not have a traditional numbering system. Many times these special page numbers are  compound page numbers. A compound page number has substructure. A page number may have a  prefix part, a separator, a sequential part at lower level (the traditional page number),  an optional separator and a suffix. For example, page '1-15b' could indicate section 1  page 15 second inserted page thereafter (right after '1-15a' and somewhere before page  '1-16' or '2-1'.)" </p>
+<p>That style is admittedly ugly, but is still used in the revision process for some  loose-leaf books. It may exist in some legacy books. </p>
+<h3><a name="2.2 ID" id="2.2 ID">2.2 ID</a></h3>
+<p>The ID of each element must be unique. The unique ID is used for synchronization  between the SMIL file, the NCC and the optional full text. The unique ID must be present  on each item used for synchronization. If full text is used, the ID must be present on  each element that is synchronized with the recording. Note that full text is not required,  but it is optional. The ID in most cases will be generated by software according to an  internal algorithm. The requirement is that the ID must be unique and conform to the <a href="http://www.w3.org/TR/REC-html40/types.html#type-id">HTML specification for an ID.</a></p>
+<p>NOTE: the W3C describes valid id attributes as follows. </p>
+<p>ID and NAME tokens must begin with a letter ([A-Z a-z]) and may be followed by any  number of letters, digits ([0-9]), hyphens ("-"), underscores ("_"),  colons (":"), and periods ("."). </p>
+<p>It is advised to avoid the use of the colon in IDs. The colon will be used in the  future and it is recommended to avoid confusion to refrain from using the colon. </p>
+<h3><a name="2.3 Examples Of Page Numbers" id="2.3 Examples Of Page Numbers">2.3 Examples Of Page Numbers</a> </h3>
+<p>If the page number in a book is "57" the span element would be: </p>
+<pre>&lt;span id="x1228" class="page-normal"&gt;57&lt;/span&gt;</pre>
+<p>There is no problem with this example and it is what one would expect. </p>
+<p>For page 3-85 where the book is numbered specially with the chapter followed by the  page number that restarts at 1 for each new chapter, we would have: </p>
+<pre>&lt;span id="z22273" class="page-special"&gt;3-85&lt;/span&gt;</pre>
+<p>For Front matter pages represented by Roman Numerals such as XV the span would be: </p>
+<pre>&lt;span id="xx34s7" class="page-front"&gt;XV&lt;/span&gt;</pre>
+<p>The final example is where the end matter does not use contiguous numbering to identify  pages. Let us say that appendix A is identified as page number "A 1" and that  this starts immediately after page 363. </p>
+<pre>&lt;span id="a123" class="page-special"&gt;A 1&lt;/span&gt;</pre>
+<h2><a name="3.0 STRUCTURAL TAGS" id="3.0 STRUCTURAL TAGS">3.0 Structural Tags</a></h2>
+<p>HTML headings tags one through six are supported. Class attributes can be used to  provide additional semantic information. </p>
+<h3><a name="3.1 Valid Class Attribute Values on Headings" id="3.1 Valid Class Attribute Values on Headings">3.1 Valid Class Attribute Values on Headings</a></h3>
+<p>The values for the class attribute should be chosen from:</p>
+<p>title, jacket, front, title-page, copyright-page, acknowledgments, prolog,  about-author, other-books, introduction, dedication, forward, preface, print-toc, part,  chapter, section, sub-section, minor-head, bibliography, glossary, appendix, index,  index-category. </p>
+<p>NOTE: In some cases blocks (group) of text can be used for navigation. For example,  next paragraph, or next list item or table row may be identified in the NCC to provide  this type of navigation. In the NCC the <a href="http://www.w3.org/TR/REC-html40/struct/global.html#h-7.5.4">"div"</a> element is used as a placeholder to point to this type of information. The class attribute  of "group" will be used. The content of the div in the NCC contains an anchor  (link). If full text is used, the div in the NCC can point to any HTML element with a  unique ID.</p>
+<p>The class attributes should be in lower case and enclosed with the double quote  character. </p>
+<p>HTML 4.0 does not require proper nesting of headings, but the DAISY 2.0 specification  suggests proper nesting. This means that you cannot have a h3 without it being preceded by  a h2 and the h2 must be preceded by a h1. It is permissible to skip a level, but it is  highly discouraged. Authoring software should warn that this convention is being violated.</p>
+<h3><a name="3.2 Examples" id="3.2 Examples">3.2 Examples</a></h3>
+<pre>&lt;h1 class="front"&gt;Front Matter&lt;/h1&gt;     &lt;h2 class="title-page"&gt;Title Page&lt;/h2&gt;     &lt;h2&gt; class="copyright-page"&gt;Copyright page&lt;/h2&gt;  &lt;h1 class="part"&gt;House pets&lt;/h1&gt;  &lt;h1 class="chapter"&gt;Chapter 1, All about Dogs &lt;/h1&gt;     &lt;h2&gt; class="section"&gt;Care and feeding&lt;/h2&gt;        &lt;h3 class="sub-section"&gt;Dog Food&lt;/h3&gt;           &lt;h4&gt; class="minor-head"&gt;Nutritional Value&lt;/h4&gt;              &lt;h5 class="minor-head"&gt;meat&lt;/h5&gt;                 &lt;h6 class="minor-head"&gt;lamb&lt;/h6&gt;        &lt;h3 class="sub-section"&gt;Exercise&lt;/h3&gt;     &lt;h2 class="section"&gt;Training&lt;/h2&gt;  &lt;h1 class="chapter"&gt;All about Cats&lt;/h1&gt;   .   .   .    &lt;h1 class="bibliography"&gt;For further Reading&lt;/h1&gt;  &lt;h1 class="glossary"&gt;Some terms you should use&lt;/h1&gt;  &lt;h1 class="appendix"&gt;Appendix A: First Aid Supplies&lt;/h1&gt;  &lt;h1 class="index"&gt;Index&lt;/h1&gt;  </pre>
+<p>NOTE: The indented information is simply provided to aid reading. It is not expected  that the HTML use this convention. It may or may not be used. The required ID attribute is  not provided in the above example to improve readability. Each of these structural tags  should have a unique ID. </p>
+<h3><a name="3.3 Multiple HTML Files" id="3.3 Multiple HTML Files">3.3 Multiple HTML Files</a></h3>
+<p>Producers may use multiple HTML files to create the content. This will especially be  the case if full text is used. In that case logical, simple use of structural block  elements such as paragraphs, lists, tables, preformatted text, etc. is expected. Use of  tables to format text is not allowed. Use of frames and other graphical formatting  features of HTML are discouraged .</p>
+<p>To correctly identify the order of the HTML files, the standard <a href="http://www.w3.org/TR/REC-html40/struct/links.html#edef-LINK">HTML link meta elements</a> should be used. This link information is contained in the header of each HTML file. </p>
+<h4><a name="3.3.1 Example of the Link Data" id="3.3.1 Example of the Link Data">3.3.1 Example of the Link Data</a></h4>
+<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"&gt;  &lt;html lang="en"&gt;  &lt;head&gt;  other heading information    &lt;link rel="start" href="first-file.html"&gt;  &lt;link rel="previous" href="previous-file.html"&gt;   &lt;link rel="next" href="next-file.html"&gt;   &lt;/head&gt; </pre>
+<p>Note: the starting file would have no previous and the last file would have no next. </p>
+<p>NOTE: In addition to the link values specified above the HTML 4.0 specification  identifies: contents, index, glossary, chapter, section, subsection, appendix, copyright,  help, and bookmark. Please refer to the <a href="http://www.w3.org/TR/REC-html40/types.html#type-links">HTML 4.0 specification</a> for more information. </p>
+<h2><a name="4.0 Dublin Core Bibliographic and Cataloging metadata" id="4.0 Dublin Core Bibliographic and Cataloging metadata">4.0 Dublin Core Bibliographic and Cataloging  Metadata</a></h2>
+<p>DAISY 2.0 provides bibliographic and cataloging information according to the Dublin  Core specification. The evolving reference description, including any defined qualifiers,  resides at <a href="http://purl.org/metadata/dublin_core">http://purl.org/metadata/dublin_core</a> </p>
+<p>The metadata must be included in the HTML file(s) used to store the heading and page  number information or the optional full text. The metadata must also be reproduced in the  NCC with the required "DC" prefix. The metadata in the full text would have the  DC prefix as well.</p>
+<p><strong>Note:</strong> For compatibility with <a href="http://www.w3.org/TR/REC-xml">XML</a> applications and <a href="http://www.w3.org/TR/REC-xml-names">W3C Namespaces</a> the tool  developers should use "DC:" and "NCC:", but be prepared to accept the  alternative separator ".", and the lower-case forms "dc" and  "ncc".</p>
+<p>The metadata labels are: title, creator, subject, description, publisher, Contributor,  date, type, format, identifier, source, language, relation, coverage, rights </p>
+<p>The <a href="http://www.w3.org/TR/REC-html40/struct/global.html#adef-scheme">"scheme"  attribute</a> must be used with the metadata to clarify the information. The scheme  attribute allows authors to provide user agents more context for the correct  interpretation of metadata. At times, such additional information may be critical, as when  metadata may be specified in different formats. Please refer to the HTML 4.0 specification  for more information. <a href="http://www.w3.org/TR/REC-html40/struct/global.html#profiles">http://www.w3.org/TR/REC-html40/struct/global.html#profiles </a></p>
+<p>Note: An evolving list of qualifiers to the Dublin Core scheme attribute can be found  at: <a href="http://www.loc.gov/marc/dcqualif.html">http://www.loc.gov/marc/dcqualif.html</a></p>
+<h3><a name="4.1 Example" id="4.1 Example">4.1 Example</a></h3>
+<pre>&lt;head&gt;  &lt;title&gt;All About Dogs&lt;/title&gt;  &lt;meta name="DC:title" content="All about Dogs"&gt;  &lt;meta name="DC:creator" content="George Kerscher"&gt;  &lt;meta scheme="keyword" name="DC:subject" content="animals"&gt;  &lt;meta scheme="keyword" name="DC:subject" content="pets"&gt;  &lt;meta scheme="original" name="DC:publisher" content="Barking Press"&gt;  &lt;meta scheme="yyyy-mm-dd" name="DC:date" content="1998-11-05"&gt;  </pre>
+<pre>&lt;meta scheme="ISBN" name="DC:identifier" content="333-333-333-333"&gt;    &lt;meta scheme="edition" name="DC:identifier" content="3rd"&gt;    &lt;meta name="DC:format"  content="DAISY 2.0"&gt;  &lt;meta name="DC:type" content="textbook"&gt;  &lt;meta name="language" content="en"&gt;  &lt;/head&gt;  </pre>
+<h3><a name="4.2 Required Bibliographic Metadata" id="4.2 Required Bibliographic Metadata">4.2 Required Bibliographic Metadata</a></h3>
+<p>For DAISY 2.0 books, the following is required bibliographic metadata: title, creator,  publisher, identifier including edition, type, format, date, language. </p>
+<p>Other Dublin Core labels may be used according to the specification. </p>
+<h2><a name="5.0 NAVIGATION CONTROL CENTER (NCC)" id="5.0 NAVIGATION CONTROL CENTER (NCC)">5.0 Navigation Control Center (NCC)</a></h2>
+<p>The NCC is normally automatically generated by software through an examination of the  HTML, the SMIL, and the digital recordings. Some software, such as the Sigtuna recorder,  may generate the NCC directly. The NCC is an HTML 4.0 file used by players to provide  navigation to headings, pages, and in some cases to blocks (groups) of text. This provides  basic identification information for the players. Contained in the NCC are required and  optional bibliographic metadata as specified in section four, and additional metadata for  the player and links for navigation into the SMIL. </p>
+<h3><a name="5.1 NCC File Names and Folders" id="5.1 NCC File Names and Folders">5.1 NCC File Names and Folders</a></h3>
+<p>Each DAISY book must have a file called NCC.html. The players look for this file and  use it as a way to gain access to all the associated files. Normally a single book would  be contained on the CD. The NCC.html file would be in the root of the CD. If more than one  DAISY book is provided on the same medium, each book should be stored in a separate folder  (directory) of its own. In the root of the CD, DVD, or other media a file called  discinfo.html must be created that contains links to all books on the media. </p>
+<h4><a name="5.1.1 Example Of discinfo.html File" id="5.1.1 Example Of discinfo.html File">5.1.1 Example Of Discinfo.html File</a></h4>
+<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"&gt;  &lt;html lang="en"&gt;  &lt;head&gt;&lt;title&gt;CD Information&lt;/title&gt;&lt;/head&gt;  &lt;body&gt;  &lt;a href="./book1/NCC.html"&gt;All About Dogs&lt;/a&gt;  &lt;a href="./book2/NCC.html"&gt;All About Cats&lt;/a&gt;  &lt;/body&gt;  &lt;/html&gt;  </pre>
+<h4><a name="5.1.2 CD-ROM Formats" id="5.1.2 CD-ROM Formats">5.1.2 CD-ROM Formats</a></h4>
+<p>NOTE: there is no restriction for file naming or mode types on CD-ROM delivery. This  means that MODE I &amp; II are supported. Also long file names of "Romeo  extensions" and "Joliet extensions" are supported. The original ISO 9660  standard levels are supported. The distributor should use the file system that is most  appropriate for them.</p>
+<p>The "Romeo " file system for CD-ROM delivery is recommended for Japanese  characters. This supports the long file names and this is the system used in Japanese and  many other double byte character set languages. The "Joliet" file system  supports the UNICODE character set.</p>
+<p>CAUTION: the extension".smi" is not valid. When writing CD-ROM the SMIL file  extensions may be truncated to an invalid ".smi" extension. This and other path  and file names can be affected by the file system of the CD-ROM selected. A distributor of  DAISY 2.0 books on CD-ROM must be certain that the file system selected is compatible with  the characters used in the production process. In other words, If you create your data in  Joliet, you should write Joliet CD-ROMS; and if you create your data using the Romeo  system, you should write the CD-ROM with the Romeo system.</p>
+<p>NOTE: For more information on these and other CD-ROM Formats please see <a href="http://www.ping.be/%7Epin11466/formtxt.html">http://www.ping.be/~pin11466/formtxt.html</a>.</p>
+<h4><a name="5.1.3 Multiple Volume Book" id="5.1.3 Multiple Volume Book">5.1.3 Multiple Volume Book</a></h4>
+<p>In most distribution cases, a single book will be contained on a single distribution  media. For example purposes we will describe a CD-Rom distribution system, but this can  apply to any removable media. It is suggested that a commonly used codec be used to reduce  the size of the sound files. For example, MPEG 2 level 2 should allow 40 hours of recorded  human speech. MPEG 2 layer 3 should allow more than 50 hours. However, it may still be  necessary to have more than one volume to deliver large books. </p>
+<p>The end user of a multiple volume book should be told to insert a CD-ROM of a set when  necessary. For example let us consider a book that requires three CD-ROM disks for  distribution. If the end user requested to go to page 802 which is on the third CD-ROM, a  message should say, "Please insert disk three." The user would eject the CD and  insert the third disk and the player would then go directly to page 802. To accomplish  this the following conventions must be followed: </p>
+<ol><li>Each CD-ROM must contain a full NCC with slightly different information.</li>
+  <li>There must be a meta tag that identifies the current volume of the set.<br />
+    &lt;meta name"NCC:setinfo" content="1 of 3" &gt;<br />
+    Where the content 1 of 3, 2 of 3, or 3 of 3 denotes the order of the CD-ROM.</li>
+  <li>Any information referenced that does not contain the audio data will refer to a SMIL      file and a corresponding sound file that contains the message, "Please insert disk      x." Where x represents the number of the disk in the set.</li>
+  <li>There must be a <a href="http://www.w3.org/TR/REC-html40/struct/links.html#adef-rel">"rel"      attribute</a> on items pointing to information not on the current CD. The valid values of      the rel attribute should identify the number of the CD. Valid rel attributes will be:      "1 of 3", "2 of 3", "3 of 3", etc.</li>
+</ol><p>In our example of a three CD-ROM volume book. the first CD-ROM would have all the  normal NCC information plus the setinfo metadata. The href information for the data not  contained on the first would point to the SMIL message file with the respective message.  All href items that point to data on the second CD-ROM would instead point to the same  message file. Most players store information about the place where you stopped reading.  When the next CD-ROM is inserted, it will go directly to that same ID, but this time it  would point to a href that represents the correct data. If the user inserts the wrong  CD-ROM, the end user will get the same message to insert the proper disk.</p>
+<p>NOTE: examples of this will be available as reference material supporting this  specification.</p>
+<h3><a name="5.2 NCC metadata" id="5.2 NCC metadata">5.2 NCC Metadata</a></h3>
+<p>In addition to the bibliographic metadata, the required meta labels for the NCC are  "NCC:format", "NCC:TOCItems", "NCC:page-front",  "NCC:charset", "NCC:page-normal", "NCC:page-special",  "NCC:generator", "NCC:publisher", and "NCC:identifier" </p>
+<p>* NCC:format valid content "DAISY 2.0" any additional supported DTB format  information should repeat the NCC:format meta element. </p>
+<p>* the NCC:TOCItems valid content is an integer which represents the number of  navigation points in the DAISY 2.0 document instance. </p>
+<p>* NCC:charset </p>
+<p>NOTE: One can download a list of registered charset values from <a href="ftp://ftp.isi.edu/in-notes/iana/assignments/character-sets">ftp://ftp.isi.edu/in-notes/iana/assignments/character-sets</a> The specification for character sets can be found at: <a href="http://www.w3.org/TR/REC-html40/charset.html#doc-char-set">http://www.w3.org/TR/REC-html40/charset.html#doc-char-set</a>.</p>
+<p>* NCC:page-front, NCC:page-special, NCC:page-normal has valid content of 0 or a  positive integer. This represents the number of pages of the type. </p>
+<p>* NCC:generator. is the software that generated the NCC. More than one program may have  been applied to produce the NCC. The NCC may have also been generated by hand and this  should be indicated.</p>
+<p>* NCC:publisher is the organization that produced the accessible version. </p>
+<p>* NCC:identifier is the unique identifier (book number, shelf number, etc.) used by the  dtb-publisher. </p>
+<h3><a name="5.3 Example" id="5.3 Example">5.3 Example</a></h3>
+<pre>&lt;meta name="NCC:format" content="DAISY 2.0"&gt;  &lt;meta name="NCC:Generator" content="Sigtuna Digital Audio Recorder 1.6"&gt;  &lt;meta name="NCC:ToCItems" content="57"&gt;  &lt;meta name="NCC:Charset" content="3,Windows ANSI CP 1252,Windows 3.1 Latin 1  code page (US\, Western Europe),3"&gt;    &lt;meta name="NCC:page-front" content="3"&gt;  &lt;meta name="NCC:page-normal" content="150"&gt;  &lt;meta name="NCC:page-special" content="0"&gt;  &lt;meta name="NCC:publisher" content="RFB&amp;D"&gt;  &lt;meta name="NCC:identifier" content="shelf zz999"&gt;  </pre>
+<h3><a name="5.4 Optional metadata" id="5.4 Optional metadata">5.4 Optional Metadata</a> </h3>
+<p>NOTE: the "NCC:totaltime" is optional, but is very useful for informing the  end user how much time is remaining. If this is provided along with the time meta  information in the SMIL files, players will be able to determine how much time has elapsed  and how much time remains.</p>
+<p>* NCC:total time is represented as hh:mm:ss. </p>
+<pre>&lt;meta name="NCC:TotalTime" content="3:04:11"&gt;  &lt;meta name="NCC:Country" content="SE,Sweden,99"&gt;  &lt;meta name="NCC:Producer" content="production site name"&gt;  &lt;meta name="NCC:ProducedDate" content="1998-03-11"&gt;  &lt;meta name="NCC:RecordedBy" content="technician name"&gt;  &lt;meta name="NCC:RecordedDate" content="1998-03-11"&gt;  &lt;meta name="NCC:Revision" content="1998-03-11"&gt;  &lt;meta name="NCC:LastRevision" content="1998-03-11"&gt;  &lt;meta name="NCC:Narrator" content="John Doe"&gt;  </pre>
+<pre>&lt;meta name="NCC:ProjectNumber" content="122"&gt;</pre>
+<h3><a name="5.5 Body Example" id="5.5 Body Example">5.5 Body Example</a></h3>
+<p>Headings, page numbers, and optionally blocks (group) of text for navigation are  identified and a URL to the SMIL file and the id to the SMIL fragment are provided in the  anchor. This provides standard mechanisms to link to the components of the DAISY document  for navigation and playing of the digitized human voice. The first entry in the body of  the NCC must be the title of the book. The class attribute is "title".</p>
+<pre>&lt;h1 class="title" id="t1"&gt;&lt;a href="title.sml#t1"&gt;All about pets&lt;/a&gt;&lt;/h1&gt;    &lt;h1 id="h1_004" class="chapter"&gt; &lt;a href="DAIS004A.smil#h1_004"&gt;All About Dogs&lt;/a&gt;&lt;/h1&gt;    &lt;div id="p004_001a" class="group"&gt;  &lt;a href="DAIS004A.smil#p004_001a"&gt;&lt;/a&gt;&lt;/div&gt;    &lt;h2 id="h2_000" class="section"&gt; &lt;a href="DAIS004B.smil#h2_000"&gt;Care and Feeding&lt;/a&gt;&lt;/h2&gt;    &lt;h3 id="h3_001" class="sub-section"&gt; &lt;a href="DAIS0018.smil#h3_001"&gt;Dog Food&lt;/a&gt;&lt;/h3&gt;    &lt;span id="p21" class="page-normal"&gt; &lt;a href="DAIS0018.smil#i21"&gt;21&lt;/a&gt;&lt;/span&gt;  </pre>
+<h2><a name="6.0 SMIL Files" id="6.0 SMIL Files">6.0 SMIL Files</a></h2>
+<p>The SMIL files must conform to the <a href="http://www.w3.org/TR/REC-smil/">W3C  specification for SMIL 1.0</a>. In addition to this specification some metadata is  required and several conventions will be used. </p>
+<h3><a name="6.1 metadata" id="6.1 metadata">6.1 Metadata</a></h3>
+<p>The following is required.</p>
+<pre>&lt;meta name="format" content="Daisy 2.0"/&gt;  </pre>
+<p>The following is optional:</p>
+<pre>&lt;meta name="DC:title" content="Title of book"/&gt;  </pre>
+<p>The following is optional:</p>
+<pre>&lt;meta name="title" content="Title of SMIL Section of book"/&gt;  </pre>
+<p>The following is optional, but if provided allows players to inform end users of the  elapsed time and time remaining in the audio portions of a document.</p>
+<pre>&lt;meta name="total-elapsed-time" content="03:32:02"/&gt;  &lt;meta name="time-in-this-smil" content="01:10:22"/&gt;  </pre>
+<p>NOTE: the time information in the meta data above will be replaced with information  contained within a "master SMIL file" in future versions of this specification.</p>
+<h3><a name="6.2 Sound and SMIL file Extensions" id="6.2 Sound and SMIL file Extensions">6.2 Sound and SMIL File Extensions</a></h3>
+<p>All sound files must be stored using the de facto standard convention for the file  extension. For example, PCM and ADPCM wave files must use the ".wav" extension.  SMIL files must use the ".sml" or ".smil" extension. These file  extensions are registered under Microsoft Windows. Some other examples are: </p>
+<ul><li>".mpg" for MPEG files.</li>
+  <li>".mp2" for MPEG 2 layer 2 files</li>
+  <li>".mp3" for MPEG 2 layer 3 files.</li>
+  <li>".ra" for Real Audio files.</li>
+  <li>".vqe .vqf, or vql" for Twin VQ files.</li>
+</ul><h2><a name="7.0 Interoperability and DAISY Certification" id="7.0 Interoperability and DAISY Certification">7.0 Interoperability and DAISY Certification</a></h2>
+<p>The HTML, and SMIL files can all be validated using standard SGML and XML validation  tools. The NCC, and the content of the book in HTML can be validated against the <a href="http://www.w3.org/TR/REC-html40/sgml/dtd.html">HTML 4.0 strict specification</a>.  The SMIL files can be validated with a XML parser against the <a href="http://www.w3.org/TR/REC-smil/#dtd">SMIL 1.0 specification</a>. </p>
+<p>In addition to these standard tests by validation tools, several test books will be  made available. Player manufacturers that wish to meet the DAISY 2.0 specification should  use these specifications and the test books to perform internal testing. If all of the  books provided in this test suite can be played by the player, then the player  manufacturer may request to have their player certified as DAISY 2.0 compliant. </p>
+<p>Manufacturers of authoring tools must be able to meet these specifications in their  authoring tool. If the specifications are met and if the materials produced by their  authoring tool create content that is like the test suite materials, the developer may  request to have their authoring tool certified as DAISY 2.0 compliant. </p>
+<p>To receive DAISY Consortium certification of their claims, the player or authoring tool  must be submitted to the DAISY Consortium for performance testing. </p></div></div></div>  </div>
+
+  <ul class="links inline"><li class="print_html first last"><a href="/print/14061" title="Display a printer-friendly version of this page." class="print-page" rel="nofollow">Printer-friendly version</a></li>
+</ul>
+  
+</div><!-- /.node -->
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+          </div><!-- /#content -->
+
+    <div id="navigation">
+
+      
+      
+    </div><!-- /#navigation -->
+
+    
+    
+  </div><!-- /#main -->
+
+  
+</div><!-- /#page -->
+
+
+  
+</body>
+
+</html>
